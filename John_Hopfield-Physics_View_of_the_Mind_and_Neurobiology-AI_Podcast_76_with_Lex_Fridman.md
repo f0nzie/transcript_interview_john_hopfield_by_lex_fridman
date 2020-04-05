@@ -44,6 +44,8 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** Adaptation is everything when you get down to it. But there are differences between adaptation, where your learning goes on the over generations in evolutionary time, or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system.
 
+*10:02*
+
 **[Lex]**  What do you mean by mathematical system? Where where's the math in the biology?
 
 **[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution the thing, and the fact that biology is about a system which you can build in three dimensions. If you look at computer chips, computer chips are basically two dimensional structures a 2.1 dimensions but they really have difficulty doing three-dimensional wiring. Biology in the neocortex is actually also sheet-like and it sits on top of the white matter which is about ten times the volume of the gray matter and contains all what you might call the wires. But there's is a huge ...  the effect of computer structure on what is easy and what is hard is immense. And biology does ... makes some things easy that are very difficult to understand how to do computationally. On the other hand, you can't do simple floating-point arithmetic because  it's awfully stupid.
@@ -67,10 +69,6 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 **[Lex]**  Turnover ...
 
 **[John]** What is not effective, what is not wired well enough to use at the moment is thrown out.
-
-
-
-
 
 **[Lex]** It's a mysterious process. Let me ask from what field do you think the biggest breakthroughs in understanding the mind will come in the next decades? Is it neural science, computer science, neurobiology, psychology, physics, maybe math, maybe literature? [Laughter] 
 
@@ -100,11 +98,11 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** But the rhythms, what?
 
-*18:27*
-
 **[Lex]** okay I'll tell you: it's like you're comparing the greatest classical musician in the world to a child first learning to play. The question I'm at - but they're still both playing the piano - I'm asking, will it ever go on at Google? Do you have a hope because you're one of the seminal figures in both launching both disciplines, both sides of the river ...
 
 **[John]** I think it's going to go on generation after generation the way it has, where you might call the AI computer science community, and says: "let's take the following this is our model of neurobiology at the moment. Let's pretend it's good enough and do everything we can with it". And it does interesting things and after the while sort of grinds into the sand and you say "Oh something else is needed from neurobiology". And some other grand thing comes in and enables you to go a lot further according ==to the sandakan everything it could be== generations of this evolution. I don't know how many of them. And each one is going to get you further into what a brain does. In some sense, passed the Turing test longer and in more broad aspects. And how many of these are good there are going to have to be before you say "I've made something, I've made a human", I don't know.
+
+*20:15*
 
 **[Lex]** But your sense is it might be a couple ...
 
@@ -186,6 +184,8 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 ### Consciousness
 
+*40:00*
+
 **[Lex]** yeah that memory thing that's fundamentally a feedback kind of mechanism. You're going back to something yes it's hard it's hard it's hard to understand so I don't respect let alone consciousness 
 
 **[John]** Oh, let alone consciousness 
@@ -228,127 +228,133 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[Lex]** Can we go there for a second? You've talked about attractor networks and just maybe you could say what our attractor networks and more broadly what are interesting network dynamics that emerge in these or other complex systems.
 
-*40:00*
 
-**[John]** you have to be willing to think in a huge number of dimensions because there's a huge number of dimensions the behavior of a system can be thought of as just the motion of the point over time in those huge number of dimensions. an attractor network is simply a network where there is a line and other lines converge on it in time that's the essence of an attractor network that's how you 
+
+**[John]** you have to be willing to think in a huge number of dimensions because there's a huge number of dimensions the behavior of a system can be thought of as just the motion of the point over time in those huge number of dimensions. An attractor network is simply a network where there is a line and other lines converge on it in time that's the essence of an attractor network that's how you ... 
 
 **[Lex]** In a highly dimensional space 
 
-**[John]** and the easiest way to get that is to do it in a high dimensional space where some of these dimensions provide the dissipation which base which a kind of a physical system trajectories can dig our contract everywhere they have to get tracked in some places and expand in others there was a fundamental classical theorem most statistical mechanics which goes under the name of Louville's theorem which says you can't contract everywhere after country if you contract somewhere you were expand somewhere else do you and is in interesting physical systems you get driven systems where you have a small subsystem which is the interesting part and the rest of the contraction of an expansion the physicists say it's the entropy flow in this other part of the system. but basically attractor networks are dynamics funneling downs of you can't be any so if you start somewhere in the dynamical system you will soon find yourself on a pretty well determined pathway which goes somewhere you start somewhere else you'll wind up on a different pathway but you don't have just all possible things you have some defined pathways which are allowed and under which you will converge and that's the way you make a stable computer and that's the way you make a stable behavior
+**[John]** And the easiest way to get that is to do it in a high dimensional space where some of these dimensions provide the dissipation ==which base which a kind of== a physical system, trajectories can contract everywhere they have to get contract in some places and expand in others. There was a fundamental classical theorem most statistical mechanics which goes under the name of Louville's Theorem which says you can't contract everywhere; if you contract somewhere you were expand somewhere else. and is in interesting physical systems you get driven systems where you have a small subsystem which is the interesting part and the rest of the contraction of an expansion the physicists say it's the entropy flow in this other part of the system. but basically attractor networks are dynamics funneling downs of you can't be any so if you start somewhere in the dynamical system you will soon find yourself on a pretty well determined pathway which goes somewhere you start somewhere else you'll wind up on a different pathway but you don't have just all possible things you have some defined pathways which are allowed and under which you will converge. And that's the way you make a stable computer and that's the way you make a stable behavior.
 
-**[Lex]**  so in general, looking at the physics of the emergent stability in these not--when networks what are some interesting characteristics that what are some interesting insights from studying the dynamics of such high dimensional systems? 
+*51:06*
 
-**[John]** Most dynamical systems supposed I'm done driven dynamical systems I driven there are couples I'm out to an energy source and so their dynamics keeps going because it's coupling to the energy source most of them it's very difficult as all to understand it all with the devil the dynamical behavior is going to be 
+**[Lex]** So, in general, looking at the physics of the emergent stability in networks, what are some interesting characteristics that ..,  what are some interesting insights from studying the dynamics of such high dimensional systems? 
 
-**[Lex]** you have to run it out 
+**[John]** Most dynamical systems supposed I'm done driven dynamical systems I driven there are couples I'm out to an energy source and so their dynamics keeps going because it's coupling to the energy source. Most of them it's very difficult as all to understand it all what the dynamical behavior is going to be 
 
-**[John]** you have to running there's this there's a subset of systems which has what was a clean tone to the mathematicians as as the Alpen of function and those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the alpha naught functions were in the simple model I made in the early eighties; it was an energy function so you could understand how you get this channeling I'm as under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down 
+**[Lex]** You have to run it
 
-**[Lex]** there's certain properties of the system that when you can know that 
+**[John]** You have to run it. There's this there's a subset of systems which has what was a clean tone to the mathematicians as the Alpen of function and those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Alpha Naught functions were in the simple model I made in the early eighties; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down 
 
-**[John]** that's right and not all systems behave that way 
+**[Lex]** There's certain properties of the system that when you can know that 
 
-**[Lex]** most don't 
+**[John]** That's right and not all systems behave that way 
 
-**[John]** probably both don't but it provides you with the metaphor for thinking about systems which are stable in the whoo to have these attractors behave even if you can't find the idly up and a function behind them or an energy function behind them it gives you a metaphor for thought 
+**[Lex]** Most don't 
 
-**[Lex]** speaking of thought if I had a glint in my eye with excitement and said you know I'm really excited about this something called deep learning and neural networks and I would like to create an intelligence system and came to you as an adviser, what would you recommend is it a hopeless pursuit she's knew all networks that she thought is it, what kind of mechanism should we explore what kind of ideas should we explore 
+**[John]** Most don't. But it provides you with the metaphor for thinking about systems which are stable in the whoo to have these attractors behave even if you can't find the Alpha Naught function behind them or an energy function behind them it gives you a metaphor for thought. 
 
-**[John]** well you look at this as the simple network for everyone networks. They don't support multiple hypotheses very well as I have tried to work with very simple systems which do something which you might consider to be thinking . Thought has to do with the ability to do mental exploration before you make it take a physical action 
+**[Lex]** Speaking of thought, if I had a glint in my eye with excitement and said you know I'm really excited about this something called deep learning and neural networks and I would like to create an intelligent system and came to you as an adviser, what would you recommend? Is it a hopeless pursuit she's knew all networks that she thought is it, what kind of mechanism should we explore what kind of ideas should we explore?
 
-**[Lex]** almost they like we were mentioning playing chess visualizing simulating inside your head different outcomes 
+**[John]** Well, you look at this as the simple network for everyone networks. They don't support multiple hypotheses very well. As I have tried to work with very simple systems which do something which you might consider to be thinking . Thought has to do with the ability to do mental exploration before you make it take a physical action. 
 
-**[John]** and now you could do that as a feed-forward Network because you've pre calculated all kinds of things but I think the way neurobiology does it hasn't pre calculated everything exactly as parts of a dynamical system in which you're doing exploration in a way which is 
+**[Lex]** Almost they like we were mentioning playing chess visualizing, simulating inside your head different outcomes ...
 
-**[Lex]** there's a creative element like there's an there's that 
+**[John]** And you could do that as a feed-forward network because you've pre calculated all kinds of things. But I think the way neurobiology does it hasn't pre calculated everything exactly as parts of a dynamical system in which you're doing exploration in a way which is ...
 
-**[John]** there's there's a creative element and in a simple-minded neural net you ever a constellation of instances from which you've learned and if you are within that space you know if a new fan new question is the question within this space you can actually rely on that system pretty well to come up with a good suggestion for what to do if on the other hand the query comes from outside the space you have no way of knowing how the system is going to behave there are no limitations on what could happen and so with the artificial neural network is always very much I have a a population of examples. the test set must be drawn from the equivalent population as the test as examples which are from a population which is completely different there's no way that you could expect to get the answer right 
+**[Lex]** There's a creative element like 
 
-**[Lex]**  what they saw outside the distribution?
+**[John]** there's there's a creative element and in a simple-minded neural net you ever a constellation of instances from which you've learned, and if you are within that space you know if a new fan new question is the question within this space you can actually rely on that system pretty well to come up with a good suggestion for what to do. If on the other hand the query comes from outside the space you have no way of knowing how the system is going to behave there are no limitations on what could happen and so with the artificial neural network is always very much I have a a population of examples. the test set must be drawn from the equivalent population as the test as examples which are from a population which is completely different there's no way that you could expect to get the answer right.
 
-**[John]** that's right and so if you see a ball rolling across the streets and dusk if there wasn't in your your training set the idea that a child may be coming close behind that is not going to occur with the neural net 
+**[Lex]**  What they call outside the distribution?
 
-**[Lex]** and it is to our there's something in your biology that allows that yeah there's 
+**[John]** That's right. And  if you see a ball rolling across the streets and dusk if there wasn't in your your training set the idea that a child may be coming close behind that is not going to occur with the neural net. 
 
-**[John]** there's something in the way of what it means to be outside of the of the population of the training set the probability is that the training set isn't just sort of the set of examples it's there's more to it than that and it gets back to my own question of where's is it to understand something 
+**[Lex]** and it is to our there's something in your biology that allows that 
 
-**[Lex]** yeah you know is in a small tangent you've talked about the value of thinking of deductive reasoning in science versus large data collection so sort of thinking about the problem but I suppose it's the physics side of you of going back to first principles and thinking but what do you think is the value of deductive reasoning in in a scientific process?
+**[John]** there's something in the way of what it means to be outside of the of the population of the training set, the probability is that the training set isn't just sort of the set of examples. There's more to it than that and it gets back to my own question of where's is it to understand something 
 
-**[John]**  well look there obviously scientific questions in which the route to the answer to it come through the analysis of a hell of a lot of data 
+**[Lex]** You know is in a small tangent you've talked about the value of thinking of deductive reasoning in science versus large data collection, so sort of thinking about the problem but I suppose it's the physics side of you of going back to first principles and thinking, but what do you think is the value of deductive reasoning in in a scientific process?
 
-**[Lex]** right cosmology at honest and that
+**[John]**  There obviously scientific questions in which the route to the answer to it come through the analysis of a hell of a lot of data 
 
-**[John]**  that's never written the kind of problem in which I've had any particular insight though I would say if you look at cosmology is was one of those. If you look at the actual things that Jim Peebles one of this year's don't go prized for the vision physics ones from a local physics department the kinds of things he's done, he's never crunched large data never, never, never he's used the encapsulation of the work of others in this regard 
+**[Lex]** Right. Cosmology and that kind of stuff
 
-**[Lex]** but I ultimately boil down to thinking through the problem, like what are the principles under which a particular phenomena operates yeah and 
+**[John]**  that's never written the kind of problem in which I've had any particular insight though I would say if you look at cosmology it is was one of those. If you look at the actual things that Jim Peebles one of this year's don't go prized for the vision physics ones from a local physics department the kinds of things he's done, he's never crunched large data never, never, neve. He's used the encapsulation of the work of others in this regard 
 
-**[John]** look physics is always going to look for ways in which you can describe the system and which rises above the rises above the details and to the hard died the world biologists biology works because of the details and physics to the physicists we want an explanation which is right in spite of the details and they will leave questions which we cannot answer as physicists because the answer cannot be found that way 
+**[Lex]** But ultimately boils down to thinking through the problem, like what are the principles under which a particular phenomena operates?
 
-**[Lex]** there's a met sure if you're familiar with the entire field of brain-computer interfaces. it has become more and more intensely researched and developed recently especially with companies like neural link what Elon Musk you know 
+**[John]** look physics is always going to look for ways in which you can describe the system, which rises above the details and to the hard died the world biologists biology works because of the details, and physics to the physicists we want an explanation which is right in spite of the details and they will leave questions which we cannot answer as physicists because the answer cannot be found that way.
 
-**[John]** I know they've always been the interested both in things like getting the eyes to be able to control things or getting the thought patterns to be able to move what had been a they connected limb which is now connected through a computer 
+*60:00*
 
-**[Lex]** that's right so in the case of neural they're doing thousand-plus connections where they're able to do two-way activate and read spikes in your neural spikes do you have hope for that kind of computer brain interaction in the near or maybe even far future of being able to expand the ability of the mind of cognition or understand the mind 
+**[Lex]** If you're familiar with the entire field of brain-computer interfaces. it has become more and more intensely researched and developed recently especially with companies like Neural Link with Elon Musk 
 
-**[John]** as this was watching things go when I first became interested in neurobiology most of the practitioners thought you would be able to understand neurobiology by techniques which allowed you to record only one cell at a time. people like David Hoople very strongly reflected that point of view and that's been taken over by a generation a couple of generations later a set of people who says not until we can record from 10 to the 4 or 10 to the 5 at a time who we actually be able to understand how the brain actually works and in a general sense I think that's right you have to look you have to begin to be able to look for the collective modes of the collective operations of things. it doesn't rely on this action potential or death cell it relies on the collective properties of this set of cells connected to this kind of patterns so on. And you're not going to see did the thing what those collective activities are without recording many cells at once. 
+**[John]** I know they've always been the interested both in things like getting the eyes to be able to control things or getting the thought patterns to be able to move what had been a connected limb which is now connected through a computer 
 
-**[Lex]** And the question is how many at once what's the threshold and that's the that's the no and 
+**[Lex]** that's right. so in the case of neural they're doing thousand-plus connections where they're able to do two-way activate and read spikes in your neural spikes. Do you have hope for that kind of computer brain interaction in the near or maybe even far future? Of being able to expand the ability of the mind of cognition or understand the mind?
 
-**[John]** and because we pursued hard in the motor cortex the motor cortex does something which is complex and yet with the problem you're trying to address is very it's really simple now neurobiology does it in ways the different from the way an engineer would do it. An engineer would put in six highly accurate stepping motors are controlling a limb rather than 2,000 muscle fibers each of which has to be individually controlled. So understanding how to do things in a way which is much more forgiving and much more neural I think would benefit the engineering world. The engineering world touch that's where their pressure sensor or to let very them an array of of a gazillion pressure sensors none of what you're accurate all of which are perpetually recalibrating themselves. 
+**[John]** as this was watching things go when I first became interested in neurobiology most of the practitioners thought you would be able to understand neurobiology by techniques which allowed you to record only one cell at a time. People like David Hoople, very strongly reflected that point of view. And that's been taken over by a generation, a couple of generations later a set of people who says not until we can record from 10 to the 4 or 10 to the 5 at a time who we actually be able to understand how the brain actually works. And in a general sense I think that's right you have to look you have to begin to be able to look for the collective modes, of the collective operations of things. it doesn't rely on this action potential or death cell it relies on the collective properties of this set of cells connected to this kind of patterns, so on. And you're not going to see did the thing what those collective activities are without recording many cells at once. 
 
-**[Lex]** so you're saying your hope is your advice for the engineers of the future is to the embrace the large chaos of a messy error-prone system like those of the biological systems like that's probably the way to solve some of these challenges
+**[Lex]** And the question is how many at once what's the threshold?
 
-**[John]** I think you'll be able to make better compete computations last robotics that way than by trying to force things into a into a robotics for joint motors are powerful and stepping motors are accurate but 
+**[John]** The motor cortex does something which is complex and yet with the problem you're trying to address is very it's really simple. Now neurobiology does it in ways the different from the way an engineer would do it. An engineer would put in six highly accurate stepping motors are controlling a limb rather than 2,000 muscle fibers each of which has to be individually controlled. So, understanding how to do things in a way which is much more forgiving and much more neural I think would benefit the engineering world. The engineering world touch that's where their pressure sensor or to let very them an array of of a gazillion pressure sensors none of what you're accurate all of which are perpetually recalibrating themselves. 
 
-**[Lex]** then, the physicist the physicist in you will be lost forever in such systems because there's no simple fundamentals to exploring systems that are so large 
+**[Lex]** You're saying your hope is your advice for the engineers of the future is to the embrace the large chaos of a messy error-prone system like those of the biological systems, like that's probably the way to solve some of these challenges?
 
-**[John]** there's a lot of physics and the navier-stokes equations the equations of nonlinear hydrodynamics huge amount of physics in them all the physics of atoms and molecules has been lost but it's been replaced or this other set of equations which is just as true as the equations of the bottle though those those equations are going to be harder to find in general biology but the physicist of me says there are probably some equations of there sort 
+**[John]** I think you'll be able to make better compete computations last robotics that way than by trying to force things into a into a robotics for joint motors are powerful and stepping motors are accurate
 
-**[Lex]** they're out there there 
+**[Lex]** But then the physicist in you will be lost forever in such systems because there's no simple fundamentals to exploring systems that are so large 
+
+**[John]** There's a lot of physics. the Navier-Stokes equations, the equations of nonlinear hydrodynamics. Huge amount of physics in them all the physics of atoms and molecules has been lost but it's been replaced or this other set of equations which is just as true as the equations of the bottle though those those equations are going to be harder to find in neural biology but the physicist in me says there are probably some equations of that sort 
+
+**[Lex]** They're out there 
 
 **[John]** they're out there and the physics is going to contribute anything it may contribute to trying to find out what those equations are and how to capture them from them biology 
 
-**[Lex]** would you say that's one of the main open problems of our age is to discover those equations 
+**[Lex]** Would you say that's one of the main open problems of our age is to discover those equations? 
 
-**[John]** yeah if you look at theirs molecules, there's psychological behavior these two are somehow related there are layers of detail, they're layers of collectiveness and to capture this to capture that at some vague wait several stages on the way up to see how these things that can actually be linked together 
+**[John]** Yeah. If you look at theirs molecules, there's psychological behavior these two are somehow related. There are layers of detail, they're layers of collectiveness and to capture this to capture that at some vague wait several stages on the way up to see how these things that can actually be linked together 
 
-**[Lex]** so it seems in our universe there's a lot of a lot of elegant equations that can describe the fundamental way that things behave which is a surprise I mean it's compressible into equations it's simple and beautiful but there isn't it's still an open question whether that link is equally between molecules and the brain is equally compressible into elegant equations but your ear sounds some well you're both a physicist and a dreamer you have a sense that 
+**[Lex]** so it seems in our universe there's a lot of elegant equations that can describe the fundamental way that things behave which is a surprise I mean it's compressible into equations it's simple and beautiful. But there isn't it's still an open question whether that link is equally between molecules and the brain is equally compressible into elegant equations but your ear sounds some well you're both a physicist and a dreamer you have a sense that 
 
-**[John]** yes I can although I can only dream physics dreams physics shapes there was an interesting book called Einsteins dreams Forge alternates between chapters on his life and descriptions of the way time might have been but isn't as linking between these being of course the ideas that Einstein might have had to think about the essence of time as he was thinking about time 
+**[John]** Yes. But I can only dream physics dreams. There was an interesting book called "Einsteins dreams". Forge alternates between chapters on his life and descriptions of the way time might have been but isn't. As linking between these being of course the ideas that Einstein might have had to think about the essence of time as he was thinking about time 
 
-**[Lex]** so speaking of the essence of time in neurobiology, you're one human famous impactful human but just one human with a brain, living the human condition but you're ultimately mortal like all of us. Has studying the mind as a mechanism change the way you think about your own mortality 
+**[Lex]** So speaking of the essence of time in neurobiology, you're one human famous impactful human but just one human with a brain, living the human condition but you're ultimately mortal like all of us. Has studying the mind as a mechanism change the way you think about your own mortality? 
 
-**[John]** it has really because as particularly as you get older in the body comes apart in various ways I became much more aware of the fact that what is somebody is contained in the brain and out in the body that you worry about burying. And it is to a certain extent true that for people who write things down equations dreams notepads diaries, fractions of their thought does continue to live after they're dead and gone after their body is dead and gone. And there's a sea change in there going on in my lifetime between what if my father died when except for the things that you're actually ridden by hymns that were very few facts about him will have ever been recorded and the number of facts which are recorded about each and every one of us forever now as far as I can see in the digital world and so the whole question of what is death may be different for people a generation to go in a generation or through ahead 
+**[John]** It has really because as particularly as you get older in the body comes apart in various ways I became much more aware of the fact that what is somebody is contained in the brain and out in the body that you worry about burying. And it is to a certain extent true that for people who write things down equations, dreams, notepads, diaries, fractions of their thought does continue to live after they're dead and gone, after their body is dead and gone. And there's a sea change in there going on in my lifetime between what if my father died when except for the things that you're actually ridden by hymns that were very few facts about him will have ever been recorded and the number of facts which are recorded about each and every one of us forever now as far as I can see in the digital world, and so the whole question of what is death may be different for people a generation ago or in a generation ahead 
 
-**[Lex]** maybe we have become immortal under some definitions 
+**[Lex]** Maybe we have become immortal under some definitions?
 
-**[John]** yeah yeah 
+**[John]** Yeah, yeah 
 
-**[Lex]** last easy question what is the meaning of life? Looking back studied the mind a weird descendants of apes what's the meaning of our existence on this little earth 
+**[Lex]** last easy question: what is the meaning of life? Looking back, studied the mind, weird descendants of apes: what's the meaning of our existence on this little Earth?
 
-**[John]** Oh word meaning is as slippery as the word understand 
+**[John]** Oh. The word meaning is as slippery as the word understand 
 
-**[Lex]** interconnected somehow perhaps. is there it's slippery but is there something you despite being slippery can hold long enough to express?
+**[Lex]** Interconnected somehow perhaps. Is there -it's slippery-, but is there something you despite being slippery can hold long enough to express?
 
-**[John]** all I've been amazed at how hard it is to define the things in a living system in the sense that what a hydrogen atom is pretty much like another. One bacterium is not so much like another like another bacterium even of the same nominal species in fact the whole notion of what as the species gets a little bit fuzzy. And do species exists in the absence of certain classes of environments and pretty soon one winds up with with the biology which the whole thing is living but whether there's actually any element of it which by itself would be said to be living is becomes a little bit vague in my mind 
+**[John]** I've been amazed at how hard it is to define the things in a living system in the sense that what a hydrogen atom is pretty much like another. One bacterium is not so much like another like another bacterium even of the same nominal species, in fact the whole notion of what as the species gets a little bit fuzzy. And do species exists in the absence of certain classes of environments and pretty soon one winds up with the biology which the whole thing is living but whether there's actually any element of it which by itself would be said to be living is becomes a little bit vague in my mind 
 
-**[Lex]** so in a sense the idea of meaning is something that's possessed by an individual like a conscious creature and you're saying that it's all interconnected in some kind of way that there might not even be an individual, we're all kind of this complicated mess of biological systems at all different levels where the human starts and when the human ends is unclear you know 
+**[Lex]** So, in a sense the idea of meaning is something that's possessed by an individual like a conscious creature. And you're saying that it's all interconnected in some kind of way that there might not even be an individual, we're all kind of this complicated mess of biological systems at all different levels where the human starts and when the human ends is unclear
 
-**[John]** yeah and we're the neurobiology where the oh you say that the your cortex does the thinking but there's lots of things that are done in the spinal cord. And so we say where's the essence of thought it's just going to be neocortex can't be  
+**[John]** Yeah and we're the neurobiology where the oh you say that the neo-cortex does the thinking but there's lots of things that are done in the spinal cord. And so we say, where's the essence of thought it's just going to be neocortex? Can't be .
 
-**[Lex]** yeah maybe to understand and to build thought you have to build the universe along with the the neocortex it's all interlinked through the spinal cord. John is a huge honor talking today thank you so much for your time I really appreciate it 
+**[Lex]** Yeah, maybe to understand and to build thought you have to build the universe along with the neocortex; it's all interlinked through the spinal cord. 
 
-**[John]** well thank you for the challenge of talking with you and the interesting to see whether you can win a 5 in 5 minutes out of that just coherent sense to anywhere 
+John is a huge honor talking today. Thank you so much for your time I really appreciate it. 
 
-**[Lex]** beautiful thanks for listening to this conversation with john hopfield and thank you to our presenting sponsor cash app downloaded used coal export cast you'll get ten dollars and ten dollars will go to first an organization that inspires and educates young minds to become science and technology innovators of tomorrow if you enjoy this podcast subscribe I need to give it five stars an Apple podcast supported on Patreon or simply connect with me on Twitter at Lex Friedman. 
+**[John]** Well thank you for the challenge of talking with you and the interesting to see whether you can ___ in 5 minutes out of that just coherent sense to anywhere 
+
+**[Lex]** Beautiful. 
 
 ## End of Interview
 
+Thanks for listening to this conversation with John Hopfield. And thank you to our presenting sponsor CashApp. Download it, used coal export cast you'll get ten dollars, and ten dollars will go to FIRST, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. if you enjoyed this podcast subscribe in YouTube, give it five stars in Apple podcast, support on Patreon, or simply connect with me on Twitter at @LexFriedman. 
 
+And now let me leave you with some words of wisdom from John Hopfield in his article titled now what
 
-And now let me leave you with some words of wisdom from john hopfield in his article titled now what
-
->    "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span and science problems thus i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable give him my particular talents he then goes on to say what I have done in science relies entirely on experimental and theoretical studies by experts I have a great respect for them especially for those who are willing to attempt communication with someone who is not an expert in the field I would only add that experts are good at answering questions if you're brash enough ask your own too much about how you found them.
+>    "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable give him my particular talents. He then goes on to say what I have done in science relies entirely on experimental and theoretical studies by experts I have a great respect for them. Especially for those who are willing to attempt communication with someone who is not an expert in the field. I would only add that experts are good at answering questions. If you're brash enough, ask your own. Don't worry too much about how you found them.
 
 **[Lex]** Thank you for listening and hope to see you next time.
 
