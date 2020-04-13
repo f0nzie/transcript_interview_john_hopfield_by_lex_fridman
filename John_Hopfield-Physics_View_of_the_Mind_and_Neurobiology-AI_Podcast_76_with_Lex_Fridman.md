@@ -1,12 +1,20 @@
+---
+title: Transcript of interview to John Hopfield by Lex Fridman
+author: Alfonso R. Reyes
+date: '2020-04-13'
+categories: [ai, artificial intelligence, transcript]
+typora-copy-images-to: ./assets
+---
+
 # Transcript of interview to John Hopfield by Lex Fridman
 
 
 
-## John Hopfield: Physics View of the Mind and Neurobiology | AI Podcast #76 with Lex Fridman
+![image-20200413132931-1503x822](assets/image-20200413132931-1503x822.png)
 
 
 
-
+## John Hopfield: Physics View of the Mind and Neurobiology | AI Podcast #76 with Lex Fridman | Feb 29, 2020
 
 ## Introduction by Lex Fridman
 
@@ -208,7 +216,7 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** The dynamics of the feedback ... if you don't have feedback it's a little bit like a building a big computer and having running up through one clock cycle, and then you can't do anything do you put you reload something coming in. How do you use the fact that there are multiple clocks? How do I use the fact that you can close your eyes stop listening to me and think about a chessboard for two minutes without any input whatsoever? 
 
-### Consciousness
+### On Consciousness
 
 *40:00*
 
