@@ -4,12 +4,14 @@ author: "Alfonso R. Reyes"
 date: '2020-04-13'
 output:
   pdf_document: 
+    highlight: pygments
     toc: yes
     toc_depth: 4
 categories:
 - ai
 - artificial intelligence
 - transcript
+urlcolor: blue
 typora-copy-images-to: ./assets
 ---
 
@@ -31,7 +33,7 @@ typora-copy-images-to: ./assets
 
 The following is a conversation with [John Hopfield](http://pni.princeton.edu/john-hopfield), professor of Princeton, whose life's work weave beautifully through Biology, Chemistry, Neuroscience and Physics. Most crucially he saw the messy world of Biology through the piercing eyes of a physicist. He's perhaps best known for his work on associative neural networks, now known as [Hopfield Networks][hopfield-networks], that were one of the early ideas that catalyzed the development of the modern field of [deep learning](https://en.wikipedia.org/wiki/Deep_learning). As his 2019 [Franklin medal in Physics award](https://pni.princeton.edu/news/professor-emeritus-john-hopfield-awarded-2019-benjamin-franklin-medal-physics) states, he applied concepts of theoretical physics to provide new insights and important biological questions in a variety of areas including Genetics and Neuroscience with significant impact on machine learning. And as John says in his 2018 article titled ["Now what?"](https://pni.princeton.edu/john-hopfield/john-j.-hopfield-now-what), his accomplishments have often come about by asking that very question "now what?", and often responding by a major change of direction.
 
-This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If you enjoy it, subscribe on [YouTube](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4), give it five stars on [Apple Podcast](https://podcasts.apple.com/us/podcast/artificial-intelligence-ai-podcast-with-lex-fridman/id1434243584), support it on [Patreon](https://www.patreon.com/), or simply contact with me on Twitter [@lexfridman](https://twitter.com/lexfridman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor). As usual, I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show is presented by [CashApp](https://cash.app/), the number one finance app on the AppStore. When you get it use *LexPodcast*. CashApp lets you send money to friends, buy Bitcoins, and invest in the stock market with as little as \$1. Since CashApp does fractional share trading, let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is to me an algorithmic marvel. So, big props to the CashApp engineers for solving a hard problem that in the end provides an easy interface that takes a step up the next layer of abstraction over the stock market, making trading more accessible for new investors and diversification much easier. So, again, if you get CashApp from the AppStore or Google Play and use use code *LexPodcast*, you'll get \$10 and CashApp will also donate $10 to [FIRST](https://www.firstinspires.org/robotics/frc), one of my favorite organizations that is helping advanced robotics and [STEM](https://www.livescience.com/43296-what-is-stem-education.html) education for young people around the world. And now here's my conversation with John Hopfield.
+This is the [Artificial Intelligence podcast](https://lexfridman.com/ai/). If you enjoy it, subscribe on [YouTube](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4), give it five stars on [Apple Podcast](https://podcasts.apple.com/us/podcast/artificial-intelligence-ai-podcast-with-lex-fridman/id1434243584), support it on [Patreon](https://www.patreon.com/), or simply contact with me on Twitter @[lexfridman](https://twitter.com/lexfridman). As usual, I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show is presented by [CashApp](https://cash.app/), the number one finance app on the AppStore. When you get it use *LexPodcast*. CashApp lets you send money to friends, buy Bitcoins, and invest in the stock market with as little as \$1. Since CashApp does fractional share trading, let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is to me an algorithmic marvel. So, big props to the CashApp engineers for solving a hard problem that in the end provides an easy interface that takes a step up the next layer of abstraction over the stock market, making trading more accessible for new investors and diversification much easier. So, again, if you get CashApp from the AppStore or Google Play and use use code *LexPodcast*, you'll get \$10 and CashApp will also donate $10 to [FIRST](https://www.firstinspires.org/robotics/frc), one of my favorite organizations that is helping advanced robotics and [STEM](https://www.livescience.com/43296-what-is-stem-education.html) education for young people around the world. And now here's my conversation with John Hopfield.
 
 ## Start of Interview
 
@@ -407,7 +409,7 @@ Thanks for listening to this conversation with John Hopfield. And thank you to o
 
 ## Epilogue
 
-And now let me leave you with some words of wisdom from John Hopfield in his article titled "Now What."
+And now let me leave you with some words of wisdom from John Hopfield in his article titled ["Now What"](https://pni.princeton.edu/john-hopfield/john-j.-hopfield-now-what).
 
 > "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents."" 
 
