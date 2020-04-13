@@ -8,6 +8,10 @@ typora-copy-images-to: ./assets
 
 # Transcript of interview to John Hopfield by Lex Fridman
 
+[toc]
+
+
+
 
 
 ![image-20200413132931-1503x822](assets/image-20200413132931-1503x822.png)
@@ -54,11 +58,11 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** [Adaptation](https://en.wikipedia.org/wiki/Adaptation) is everything when you get down to it. But there are differences between adaptation, where your learning goes on generations over generations in evolutionary time, or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system.
 
-*10:02*
+10:02
 
-**[Lex]**  What do you mean by mathematical system? Where's the math in the biology?
+[Lex]  What do you mean by mathematical system? Where's the math in the biology?
 
-**[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. If you [look at computer chips](https://www.extremetech.com/extreme/191996-zoom-into-a-computer-chip-watch-this-video-to-fully-appreciate-just-how-magical-modern-microchips-are), computer chips are basically two dimensional structures; a 2.1 dimensions. They really have difficulty doing three-dimensional wiring. Biology in the neocortex is actually also sheet-like and it sits on top of the white matter which is about ten times the volume of the gray matter that contains all what you might call the wires. But there's is a huge ...  the effect of computer structure on what is easy and what is hard is immense. And biology does ... makes some things easy that are very difficult to understand how to do computationally. On the other hand, you can't do simple floating-point arithmetic because it's awfully stupid.
+[John] Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. If you look at computer chips, computer chips are basically two dimensional structures; a 2.1 dimensions. They really have difficulty doing three-dimensional wiring. Biology in the neocortex is actually also sheet-like and it sits on top of the white matter which is about ten times the volume of the gray matter that contains all what you might call the wires. But there's is a huge ...  the effect of computer structure on what is easy and what is hard is immense. And biology does ... makes some things easy that are very difficult to understand how to do computationally. On the other hand, you can't do simple floating-point arithmetic because it's awfully stupid.
 
 **[Lex]** You're saying this kind of three dimensional complicated structure makes ... it's still math; it's still doing math? The kind of math is doing enables you to solve problems of a very different kind?
 
@@ -444,10 +448,11 @@ He then goes on to say:
 
 ## Links
 
-*   Podcast
-*   Video
-*   Transcript in GitHub
-*   Transcript in LinkedIn
+*   Podcast: https://lexfridman.com/john-hopfield/
+*   Video: https://www.youtube.com/watch?v=DKyzcbNr8WE&t=12s
+*   Transcript in GitHub: https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman
+*   Transcript in LinkedIn: https://www.linkedin.com/pulse/transcript-interview-john-hopfield-lex-fridman-alfonso-r-reyes
+*   Tweet: https://twitter.com/OilGains/status/1249787240076775431?s=20
 
 
 
