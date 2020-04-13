@@ -424,11 +424,11 @@ Thanks for listening to this conversation with John Hopfield. And thank you to o
 
 And now let me leave you with some words of wisdom from John Hopfield in his article titled "Now What."
 
->    "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents. 
+> "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents."" 
 
 He then goes on to say:
 
->     What I have done in science relies entirely on experimental and theoretical studies by experts. I have a great respect for them. Especially for those who are willing to attempt communication with someone who is not an expert in the field. I would only add that experts are good at answering questions. If you're brash enough, ask your own. Don't worry too much about how you found them.
+> "What I have done in science relies entirely on experimental and theoretical studies by experts. I have a great respect for them. Especially for those who are willing to attempt communication with someone who is not an expert in the field. I would only add that experts are good at answering questions. If you're brash enough, ask your own. Don't worry too much about how you found them.""
 
 **[Lex]** Thank you for listening and hope to see you next time.
 
@@ -439,8 +439,6 @@ He then goes on to say:
 ## References
 
 
-
-[hopfield-networks]: https://en.wikipedia.org/wiki/Hopfield_network
 
 
 
