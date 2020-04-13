@@ -268,7 +268,7 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 ### Attractor Networks
 
-**[Lex]** Can we go there for a second? You've talked about [attractor networks](attractor networks), and just maybe you could say what are attractor networks, and more broadly what are interesting network dynamics that emerge in these or other complex systems?
+**[Lex]** Can we go there for a second? You've talked about [attractor networks](http://www.scholarpedia.org/article/Attractor_network), and just maybe you could say what are attractor networks, and more broadly what are interesting network dynamics that emerge in these or other complex systems?
 
 **[John]** You have to be willing to think in a huge number of dimensions. In a huge number of dimensions the behavior of a system can be thought of as just the motion of the point over time in those huge number of dimensions. An attractor network is simply a network where there is a line and other lines converge on it in time. That's the essence of an attractor network that's how you ... 
 
