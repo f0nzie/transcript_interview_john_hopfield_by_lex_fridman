@@ -20,6 +20,8 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 
 
+### Biological vs Artificial Neural Networks
+
 **[Lex]** What difference between [biological neural networks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2974103/) and [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) is most captivating and profound to you, at the higher philosophical level, let's not get technical just yet?
 
 **[John]** One of the things very much intrigues me is the fact that neurons have all kinds of components, properties to them. [Evolutionary biology](https://royalsocietypublishing.org/doi/10.1098/rsfs.2016.0145), has some little quirks on how a molecule works, of how a cell works, that can be made use of, evolution will sharpen it up and make it into a useful feature rather than a glitch. So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons, how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks.
@@ -70,6 +72,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** What is not effective, what is not wired well enough to use at the moment is thrown out.
 
+
+
+### Neural Networks lack Understanding
+
 **[Lex]** It's a mysterious process. Let me ask from what field do you think the biggest breakthroughs in understanding the mind will come in the next decades? Is it neuroscience, computer science, neurobiology, psychology, physics, maybe math, maybe literature? [Laughter] 
 
 **[John]** Well, of course, I see the world always through a lens of physics. I grew up in physics and the way I pick problems is very characteristic of physics and of an intellectual background which is not psychology, which is not chemistry, and so on, and so on.
@@ -100,6 +106,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[Lex]** It's like ... you're comparing the greatest classical musician in the world to a child first learning to play. The question I'm at - but they're still both playing the piano - I'm asking, will it ever go on at Google? Do you have a hope? Because you're one of the seminal figures in both launching both disciplines, both sides of the river ...
 
+
+
+### A Timeline for Artificial Intelligence
+
 **[John]** I think it's going to go on generation after generation the way it has, where you might call the AI computer science community, and says: "let's take the following: this is our model of neurobiology at the moment. Let's pretend it's good enough and do everything we can with it". And it does interesting things, and after a while sort of grinds into the sand, and you say "Oh something else is needed from neurobiology". And some other grand thing comes in and enables you to go a lot further. What was going on [ininteligible] It can be generations of this evolution. I don't know how many of them. And each one is going to get you further into what a brain does. In some sense, passes the Turing test longer and in more broad aspects. And how many of these are good there are going to have to be before you say "I've made something, I've made a human", I don't know.
 
 *20:15*
@@ -115,6 +125,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 **[Lex]** You're very right. It might have to return several times to neurobiology and try to make our transistors more messy ...
 
 **[John]** Yeah, yeah. At the same time the simple ones will conquer big aspects, and I think one of the most ..., biggest surprises to me was how well learning systems, which are manifesting non-biological, how important they can be actually, and how important, how useful they can be in AI.
+
+
+
+### Hopfield Networks and Associative Memory
 
 **[Lex]**  If we can just take a stroll to some of your work, that is incredibly surprising that it works as well as it does that launched a lot of the recent work with neural networks, if we go to what are now called Hopfield Networks, can you tell me what is [associative memory](https://en.wikipedia.org/wiki/Associative_memory_(psychology)) in the mind for the human side? Let's explore memory for a bit. 
 
@@ -136,6 +150,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** It is weird ...
 
+
+
+### Neural Networks aren't Dynamical Systems
+
 **[Lex]** Yeah. But nevertheless that's what everyone calls them. So, here we are. So, that's a simplification. That's what a physicists would do. You and [Richard Feynman](https://www.britannica.com/biography/Richard-Feynman) sat down and talked about associative memory. Now, if you look at the mind ... you can't quite simplify it so perfectly ...
 
 **[John]** Let me backtrack just a little bit. Biology is about dynamical systems. Computers are dynamical systems. If you want to [ininteligible] neurobiology. What is the time scale? there's a dynamical system in which you have a fairly fast timescale in which ... the synapses don't change much during this computation, so I'll think of the synapses are fixed, and just do the dynamics of the activity. Or, you can say the synapses are changing fast enough that I have to have the synapses dynamics working at the same time as the system dynamics in order to understand the biology. If you look at the feed-forward of artificial neural nets they're all done as learning. First of all. I spent some time learning and not performing, then I turned off learning and I perform ...
@@ -149,6 +167,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 *30:02*
 
 **[John]** Yes. And there's nothing necessarily separating the time scales. The time scales can be separate. And it's neat for the physicists - of the mathematicians point of view-, but it's not necessarily true in neurobiology.
+
+
+
+### Hopfield Networks and Learning
 
 **[Lex]** You're kind of dancing beautifully between showing a lot of respect to physics, and then also saying that physics cannot quite reach the complexity of biology. So, where do you land, or do you continuously dance between the two?
 
@@ -165,6 +187,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 **[Lex]** So, there's a the physical metaphor that seems to work here?
 
 **[John]** That's right
+
+
+
+### Boltzmann Machines
 
 **[Lex]** So, these kinds of networks actually led to a lot of the work that is going on now in neural networks, artificial neural networks. So, the follow-on work with restrictive Boltzmann Machines and Deep Belief Nets, followed on from the from these ideas of the Hopfield network. What do you think about this continued progress of that work towards now reinvigorated exploration of feed-forward neural networks and recurrent neural networks, convolutional neural networks, and kinds of networks that are helping solve image recognition, natural language processing, all that kind of stuff?
 
@@ -228,7 +254,11 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[Lex]**  Answering questions of freewill and consciousness naturally lead to contradictions from a physics perspective. It eventually ends up with quantum mechanics, and then you get into that whole mess of trying to understand how much from a physics perspective, how much is determined -already predetermined-, much is already deterministic about our universe, there's lots of difference ...
 
-**[John]** And if you don't push quite that far you can say "essentially all of neurobiology which is relevant it can be captured by classical equations of motion." Because in my view of the mysteries of the brain are not the mysteries of quantum mechanics but the mysteries of what can happen when you have a dynamical system, a driven system, with 10 to the 14 (10^14) parts. The bare complexity is something which is ..., the physical complex system is at least as badly understood as the physics of phase coherence and quantum mechanics 
+**[John]** And if you don't push quite that far you can say "essentially all of neurobiology which is relevant it can be captured by classical equations of motion." Because in my view of the mysteries of the brain are not the mysteries of quantum mechanics but the mysteries of what can happen when you have a dynamical system, a driven system, with 10 to the 14 (10^14) parts. The bare complexity is something which is ..., the physical complex system is at least as badly understood as the physics of phase coherence and quantum mechanics. 
+
+
+
+### Attractor Networks
 
 **[Lex]** Can we go there for a second? You've talked about [attractor networks](attractor networks), and just maybe you could say what are attractor networks, and more broadly what are interesting network dynamics that emerge in these or other complex systems?
 
@@ -246,7 +276,7 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[Lex]** You have to run it ...
 
-**[John]** You have to run it. There's this subset of systems which []ininteligible] known to mathematicians as the [Lyapunov functions](https://stanford.edu/~boyd/papers/pdf/springer_15_colloquium.pdf). And those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Lyapunov functions were in the simple model I made in the early 80s; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down 
+**[John]** You have to run it. There's this subset of systems which [ininteligible] known to mathematicians as the [Lyapunov functions](https://stanford.edu/~boyd/papers/pdf/springer_15_colloquium.pdf). And those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Lyapunov functions were in the simple model I made in the early 80s; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down 
 
 **[Lex]** There's certain properties of the system that when you can know that?
 
@@ -255,6 +285,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 **[Lex]** Most don't 
 
 **[John]** Most don't. But it provides you with the metaphor for thinking about systems which are stable enough to have these attractors behave even if you can't find the Lyapunov function behind them or an energy function behind them. That gives you a metaphor for thought. 
+
+
+
+### Neural Networks not a Biological System
 
 **[Lex]** Speaking of thought, if I had a glint in my eye with excitement and said: "you know I'm really excited about this something called deep learning and neural networks, and I would like to create an intelligent system." And came to you as an adviser, what would you recommend? Is it a hopeless pursuit these neural networks, what kind of mechanism should we explore what kind of ideas should we explore?
 
@@ -276,17 +310,25 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** There's something in the way of what it means to be outside of the population, of the training set, the [ininteligible] is that the training set isn't just [ininteligible] set of examples. There's more to it than that. It gets back to my own question of where's is it to understand something. 
 
+
+
+### Physics and Data
+
 **[Lex]** You know is in a small tangent, you've talked about the value of thinking of [deductive reasoning](https://en.wikipedia.org/wiki/Deductive_reasoning) in science versus large data collection, so sort of thinking about the problem but I suppose it's the physics side of you of going back to first principles and thinking, but what do you think is the value of deductive reasoning in in a scientific process?
 
 **[John]**  There obviously scientific questions in which the route to the answer to it come through the analysis of a hell of a lot of data 
 
 **[Lex]** Right. Cosmology and that kind of stuff ...
 
-**[John]**  that's never written the kind of problem in which I've had any particular insight though I would say if you look at cosmology, it is was one of those. If you look at the actual things that [Jim Peebles](https://www.princeton.edu/news/2019/10/08/princetons-james-peebles-receives-nobel-prize-physics), one of this year's Nobel Prize, [ininteligible] the kinds of things he's done. He's never crunched large data never, never, never. He's used the encapsulation of the work of others in this regard. 
+**[John]**  [ininteligible] never written the kind of problem in which I've had any particular insight though I would say if you look at cosmology, it is was one of those. If you look at the actual things that [Jim Peebles](https://www.princeton.edu/news/2019/10/08/princetons-james-peebles-receives-nobel-prize-physics), one of this year's Nobel Prize, [ininteligible] the kinds of things he's done. He's never crunched large data never, never, never. He's used the encapsulation of the work of others in this regard. 
 
 **[Lex]** But ultimately boils down to thinking through the problem, like what are the principles under which a particular phenomena operates?
 
 **[John]** Look. Physics is always going to look for ways in which you can describe the system, in which rises above the details and [ininteligible]. Biology works because of the details. And physics, to the physicists, we want an explanation which is right in spite of the details and they will leave questions which we cannot answer as physicists because the answer cannot be found that way.
+
+
+
+### Brain-Machine Interfaces
 
 *60:00*
 
@@ -306,6 +348,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** I think you'll be able to make better computations towards robotics that way than by trying to force things into a robotics, where joint motors are powerful and stepping motors are accurate.
 
+
+
+### Equations as the Confluence of Biology and Physics
+
 **[Lex]** But then the physicist in you will be lost forever in such systems because there's no simple fundamentals to exploring systems that are so large ... 
 
 **[John]** Well..., there's a lot of physics. The [Navier-Stokes](https://www.grc.nasa.gov/www/k-12/airplane/nseqs.html) equations, the equations of non-linear hydrodynamics;  huge amount of physics in them. All the physics of atoms and molecules has been lost but they have been replaced by this other set of equations which is just as true as the equations that [ininteligible] them. Those equations are going to be harder to find in neural biology but the physicist in me says there are probably some equations of that sort.
@@ -324,6 +370,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 **[John]** Yes. But I can only dream physics dreams. There was an interesting book called ["Einstein's Dreams"](https://en.wikipedia.org/wiki/Einstein%27s_Dreams), which alternates between chapters on his life and descriptions of the way time might have been but isn't. As linking between these things, of course, ideas that Einstein might have had to think about the essence of time as he was thinking about time. 
 
+
+
+### A Digital Version of Immortality
+
 **[Lex]** So, speaking of the essence of time in neurobiology, you're one human, famous impactful human, but just one human with a brain, living the human condition. But you're ultimately mortal like all of us. Has studying the mind as a mechanism changes the way you think about your own mortality? 
 
 **[John]** It has, really. Because as particularly as you get older in the body comes apart in various ways, I became much more aware of the fact that what if somebody is contained in the brain and not in the body that you worry about burying. And it is to a certain extent true that for people who write things down: equations, dreams, notepads, diaries. Fractions of their thought does continue to live after they're dead and gone -after their body is dead and gone. And there's a sea change in there going on in my lifetime between - when my father died - when, except for the things that were actually written by him, there were very few facts about him that had been recorded. And the number of facts which are recorded about each and every one of us, forever, -now, as far as I can see-, in the digital world. And so the whole question of "what is death?" It may be different for people a generation ago and in a generation ahead 
@@ -331,6 +381,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 **[Lex]** Maybe we have become immortal under some definition?
 
 **[John]** Yeah, yeah. 
+
+
+
+### On the meaning of life
 
 **[Lex]** Last easy question: what is the meaning of life? Looking back, you studied the mind, as weird descendants of apes? What's the meaning of our existence on this little Earth?
 
@@ -356,6 +410,10 @@ This is the [Artificial Intelligence podcast]( https://lexfridman.com/ai/). If y
 
 Thanks for listening to this conversation with John Hopfield. And thank you to our presenting sponsor CashApp. Download it, used LexPodcast you'll get ten dollars, and ten dollars will go to FIRST, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. if you enjoyed this podcast subscribe in YouTube, give it five stars in Apple podcast, support on Patreon, or simply connect with me on Twitter at @LexFridman. 
 
+
+
+## Epilogue
+
 And now let me leave you with some words of wisdom from John Hopfield in his article titled "Now What."
 
 >    "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents. 
@@ -380,12 +438,10 @@ He then goes on to say:
 
 ## Links
 
-[para 5]:
+*   Podcast
+*   Video
+*   Transcript in GitHub
+*   Transcript in LinkedIn
 
 
-
-## Glossary
-
-*   Epiphenomenon, epi-phenomenon
-*   Subconscious mind
 
