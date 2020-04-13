@@ -1,8 +1,16 @@
 ---
-title: Transcript of interview to John Hopfield by Lex Fridman
-author: Alfonso R. Reyes
+title: "Transcript of interview to John Hopfield by Lex Fridman"
+author: "Alfonso R. Reyes"
 date: '2020-04-13'
-categories: [ai, artificial intelligence, transcript]
+output:
+  html_document: default
+  pdf_document: 
+    toc: yes
+    toc_depth: 4
+categories:
+- ai
+- artificial intelligence
+- transcript
 typora-copy-images-to: ./assets
 ---
 
