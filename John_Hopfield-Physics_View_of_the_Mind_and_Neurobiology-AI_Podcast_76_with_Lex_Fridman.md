@@ -3,7 +3,6 @@ title: "Transcript of interview to John Hopfield by Lex Fridman"
 author: "Alfonso R. Reyes"
 date: '2020-04-13'
 output:
-  html_document: default
   pdf_document: 
     toc: yes
     toc_depth: 4
