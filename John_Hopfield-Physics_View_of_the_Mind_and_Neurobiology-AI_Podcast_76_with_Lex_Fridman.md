@@ -313,7 +313,7 @@ This is the [Artificial Intelligence podcast](https://lexfridman.com/ai/). If yo
 
 
 
-**[John]** There's something in the way of what it means to be outside of the population, of the training set, the ==[ininteligible]== is that the training set isn't just ==[ininteligible]== set of examples. There's more to it than that. It gets back to my own question of where's is it to understand something.==
+**[John]** There's something in the way of what it means to be outside of the population, of the training set, the ==[ininteligible]== is that the training set isn't just ==[ininteligible]== set of examples. There's more to it than that. It gets back to my own question of where's is it to understand something.
 
 ### Physics and Data
 
@@ -339,7 +339,7 @@ This is the [Artificial Intelligence podcast](https://lexfridman.com/ai/). If yo
 
 **[Lex]** That's right. So, in the case of NeuraLink they're doing thousand-plus connections where they're able to do two-way: activate and read spikes, neural spikes. Do you have hope for that kind of computer-brain interaction in the near -or maybe even- far future? Of being able to expand the ability of the mind of cognition, or understand the mind?
 
-**[John]** This is as watching things go. When I first became interested in neurobiology most of the practitioners thought you would be able to understand neurobiology by techniques which allowed you to record only one cell at a time. People like [David Hoople](), very strongly reflected that point of view. And that's been taken over by a generation, a couple of generations later, by a set of people who says: "Not until we can record from 10 to the 4 (10^4​), or 10 to the 5 (10^5) at a time, where we actually be able to understand how the brain actually works." And in a general sense, I think that's right. You have to look you have to begin to be able to look for the collective modes, collective operations of things. It doesn't rely on this action potential or death of cells; it relies on the collective properties of this set of cells connected to this kind of patterns, and so on. And you're not going to see did the thing what those collective activities are without recording many cells at once. 
+**[John]** This is as watching things go. When I first became interested in neurobiology most of the practitioners thought you would be able to understand neurobiology by techniques which allowed you to record only one cell at a time. People like [David Hubel](https://en.wikipedia.org/wiki/David_H._Hubel), very strongly reflected that point of view. And that's been taken over by a generation, a couple of generations later, by a set of people who says: "Not until we can record from 10 to the 4 (10^4), or 10 to the 5 (10^5) at a time, where we actually be able to understand how the brain actually works." And in a general sense, I think that's right. You have to look you have to begin to be able to look for the collective modes, collective operations of things. It doesn't rely on this action potential or death of cells; it relies on the collective properties of this set of cells connected to this kind of patterns, and so on. And you're not going to see did the thing what those collective activities are without recording many cells at once. 
 
 **[Lex]** And the question is how many at once what's the threshold?
 
