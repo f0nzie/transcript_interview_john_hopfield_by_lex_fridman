@@ -38,18 +38,16 @@ The following is a conversation with [John Hopfield](http://pni.princeton.edu/jo
 # Start of Interview
 
 ## **Biological vs Artificial Neural Networks**
-<br>
-<br>
-    
+
 **Lex**: What difference between [biological neural networks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2974103/) and [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) is most captivating and profound to you -at the higher philosophical level? Let's not get technical just yet.
 
 **John**: One of the things very much intrigues me is the fact that neurons have all kinds of components, properties to them. [Evolutionary biology](https://royalsocietypublishing.org/doi/10.1098/rsfs.2016.0145), has some little quirks on how a molecule works, of how a cell works, that can be made use of. And evolution will sharpen it up and make it into a useful feature rather than a glitch. So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons ... how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks.
 
-```{r NeuralDev, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap="Neural development starts at the embryo phase. The millions of neurons that the human brain requires for thought, is reached by a process of proliferation through cell divisions.",}
+```{r NeuralDev, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap="Neural development starts at the embryo phase. The millions of neurons that the human brain requires for thought is reached by a process of proliferation through cell divisions.",}
 knitr::include_graphics("./assets/oxfordhb-9780190456757-graphic-019-full.jpg")
 ```
 ```{marginfigure}
-See paper [Development of the Nervous System of Invertebrates](https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780190456757.001.0001/oxfordhb-9780190456757-e-3) at oxfordhandbooks.com.
+Source: [Development of the Nervous System of Invertebrates](https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780190456757.001.0001/oxfordhb-9780190456757-e-3) at oxfordhandbooks.com.
 ```
 
 
@@ -156,7 +154,6 @@ If you look at computer chips, computer chips are basically two dimensional stru
 
 ```{r fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = "Stained brain sections in marmosets indicating the primary visual cortex and the primary auditory cortex."}
 knitr::include_graphics("./assets/visual_auditory_cortex.png")
-
 ```
 ```{marginfigure}
 Source: [Whole-brain metallomic analysis of the common marmoset (Callithrix jacchus)](https://pubs.rsc.org/en/content/articlehtml/2017/mt/c7mt00012j) at pubs.rsc.org.
@@ -246,21 +243,53 @@ In some sense, passes the Turing test longer and in more broad aspects. And how 
 
 **[Lex]** But your sense is it might be a couple ...
 
+
 **[John]** My sense is might be a couple more. And going back to my brain waves of the word. From the AI point of view, they would say "ah, maybe these are epi-phenomena and not important at all." The first car I had ==[ininteligible]== a 1936 Dodge. It could go 45 miles an hour and the wheels were shimmering. Good speedometer. Now, ==[ininteligible]== design the cars that way, the cars now ==[ininteligible]== function to have that. But in biology, it would be useful to know when are you going more than 45 miles an hour, you just capture that and you wouldn't worry about where it came from. It'll be a long time before that kind of thing which can take place in large complex networks of things is actually used in the computation. Look, how many transistors are there in a laptop these days? 
+
 
 **[Lex]** Actually, I don't know the number ...
 
-**[John]** it's on a scale of 10 to the 10 (10^10), I can't remember the number either. All the transistors are somewhat similar and most physical systems with that many parts, all of which are similar, have collective properties. Sound waves in air; earthquakes, what have you, have collective properties. Weather. There are no collective properties used in artificial neural networks, in AI. If biology uses them it's gonna take us some more generations ==[ininteligible]== before people actually dig in and see how they are used, what they mean. 
+**[John]** it's on a scale of 10 to the 10 ^[In fact, a CPU in a laptop has above $10^9$ transisistors], I can't remember the number either. All the transistors are somewhat similar and most physical systems with that many parts, all of which are similar, have [collective properties](). 
+
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Earthquake collective properties."}
+knitr::include_graphics("./assets/earthquake_properties.png")
+```
+```{marginfigure}
+Source: [Time-advanced occurrence of moderate-size earthquakes...](https://www.researchgate.net/figure/Seismic-properties-of-two-moderate-size-earthquakes-a-Spatial-distribution-of-the-15_fig2_327475650) at researchgate.net.
+\
+\
+```
+
+
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Sound waves produced by a speaker showing collective properties such as phase, frequency, interferance, wavelentgh, and amplitude."}
+knitr::include_graphics("./assets/soundwaves_air.jpg")
+```
+```{marginfigure}
+Source: [Normal Modes of a Standing Sound Wave](https://courses.lumenlearning.com/suny-osuniversityphysics/chapter/17-4-normal-modes-of-a-standing-sound-wave/) at courses.lumenlearning.com.
+```
+
+
+Sound waves in air; earthquakes, what have you, have collective properties. Weather. There are no collective properties used in artificial neural networks, in AI. If biology uses them it's gonna take us some more generations ==[ininteligible]== before people actually dig in and see how they are used, what they mean. 
 
 **[Lex]** You're very right. It might have to return several times to neurobiology and try to make our transistors more messy ...
 
 **[John]** Yeah, yeah. At the same time the simple ones will conquer big aspects, and I think one of the most ..., biggest surprises to me was how well learning systems, which are manifesting non-biological, how important they can be actually, and how important, how useful they can be in AI.
 
-## Hopfield Networks and Associative Memory
+## **Hopfield Networks and Associative Memory**
+ 
 
 **[Lex]**  If we can just take a stroll to some of your work, that is incredibly surprising that it works as well as it does that launched a lot of the recent work with neural networks, if we go to what are now called Hopfield Networks, can you tell me what is [associative memory](https://en.wikipedia.org/wiki/Associative_memory_(psychology)) in the mind for the human side? Let's explore memory for a bit. 
 
 **[John]** What you mean by associative memory is: "oh, you have a memory of each of your friends. your friend has all kinds of properties from what they look like, whether voice sounds like, where they went to college, where you met them, go on and on, what science papers they've written." If I start talking about a five foot ten weary cognitive scientist that's got a very bad back. It doesn't take very long for you to say "are you talking about Geoff Hinton". I never mentioned the name, or anything very particular, but somehow a few facts are associated with this, with a particular person, enables you to get a hold of the rest of the facts, or of another subset of of them. It's this the ability to link things together, link experiences together, which goes under the general name of [associative memory](http://www.borgelt.net/doc/hfnd/hfnd.html), and a large part of intelligent behavior is actually just large associative memories at work, as far as I can see.
+
+
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Associative memories are what allow individuals to make certain connections and inferences even when they're not clearly explained or spelled out."}
+knitr::include_graphics("./assets/an-overview-of-associative-memory-4.jpg")
+```
+```{marginfigure}
+Source: [An Overview Of Associative Memory
+](https://www.betterhelp.com/advice/memory/an-overview-of-associative-memory/) at betterhelp.com.
+```
 
 **[Lex]** What do you think is the mechanism of how it works in the mind? Is it is it a mystery to you still? Do you have inklings of how this essential thing for cognition works?
 
@@ -543,6 +572,14 @@ knitr::include_graphics("./assets/Topology-of-Hopfield-networks-here-with-3-neur
 ```
 
 
+
+```{r fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = "Moore's law and number of transistors."}
+knitr::include_graphics("./assets/1280px-Moore's_Law_Transistor_Count_1971-2018.png")
+```
+```{marginfigure}
+Source: [Number of transistors for microprocessors](https://en.wikipedia.org/wiki/Moore%27s_law#/media/File:Moore's_Law_Transistor_Count_1971-2018.png) at en.wikipedia.org.
+\
+```
 
 `r margin_note("Keywords: neurobiology evolution of the nervour system")` 
 
