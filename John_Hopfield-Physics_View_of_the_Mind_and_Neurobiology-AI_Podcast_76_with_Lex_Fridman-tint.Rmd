@@ -307,11 +307,22 @@ Source: [An Overview Of Associative Memory
 
 **[John]** It is weird ...
 
+
 ## Neural Networks aren't Dynamical Systems
 
 **[Lex]** Yeah. But nevertheless that's what everyone calls them. So, here we are. So, that's a simplification. That's what a physicists would do. You and [Richard Feynman](https://www.britannica.com/biography/Richard-Feynman) sat down and talked about associative memory. Now, if you look at the mind ... you can't quite simplify it so perfectly ...
 
 **[John]** Let me backtrack just a little bit. Biology is about dynamical systems. Computers are dynamical systems. If you want to ==[ininteligible]== neurobiology. What is the time scale? there's a dynamical system in which you have a fairly fast timescale in which ... the synapses don't change much during this computation, so I'll think of the synapses are fixed, and just do the dynamics of the activity. Or, you can say the synapses are changing fast enough that I have to have the [synaptic dynamics](http://news.mit.edu/2012/inhibitory-and-excitatory-synapse-dynamics-in-the-brain) working at the same time as the system dynamics in order to understand the biology. If you look at the feed-forward of artificial neural nets they're all done as learning. First of all. I spent some time learning and not performing, then I turned off learning and I perform ...
+
+
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Synaptic Dynamics diagram showing a network of spiking integrate-and-fire neurons; decision-making netowkr; and energy  at different phases."}
+knitr::include_graphics("./assets/synaptic_dynamics_abc.png")
+```
+```{marginfigure}
+Source: [Synaptic dynamics and decision making](https://www.pnas.org/content/107/16/7545#F2) at pnas.org.
+```
+
+
 
 **[Lex]** Right 
 
