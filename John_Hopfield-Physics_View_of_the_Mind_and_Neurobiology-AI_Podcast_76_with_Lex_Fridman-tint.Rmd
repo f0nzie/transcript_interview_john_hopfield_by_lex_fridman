@@ -411,7 +411,8 @@ It's still a useful way to understand learning, and the learning that you unders
 
 **[John]** The dynamics of the feedback ... if you don't have feedback it's a little bit like a building a big computer and running it up through one clock cycle, and then you can't do anything until you reload something coming in. How do you use the fact that there are multiple clocks? How do I use the fact that you can close your eyes, stop listening to me, and think about a chessboard for two minutes without any input whatsoever? 
 
-## On Consciousness
+
+## **On Consciousness**
 
 [40:00](https://youtu.be/DKyzcbNr8WE?t=2400)
 
@@ -421,11 +422,11 @@ It's still a useful way to understand learning, and the learning that you unders
 
 **[Lex]** Yes. Because that's tied up in there too. You can't just put that on another shelf ...
 
-**[John]** Every once in a while like I get interested in consciousness and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them. 
+**[John]** Every once in a while like I get interested in consciousness^[The words “conscious” and “consciousness” are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective “conscious” is heterogeneous in its range, being applied both to whole organisms—creature consciousness—and to particular mental states and processes—state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/)] and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them. 
 
 **[Lex]** What's consciousness? Let's try to take a brief step into that room ...
 
-**[John]** Well, that's [Marvin Minsky](https://web.media.mit.edu/~minsky/); his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an [epi-phenomenon](https://en.wikipedia.org/wiki/Epiphenomenon), after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it. 
+**[John]** Well, that's Marvin Minsky^[Marvin Lee Minsky (August 9, 1927 – January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/)]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon^[An epi-phenomenon is a secondary phenomenon that occurs alongside or in parallel to a primary phenomenon. [Source: wikipedia.org](https://en.wikipedia.org/wiki/Epiphenomenon)], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it. 
 
 **[Lex]** So his view that consciousness is not ... that's just like little icing on the cake. The real cake is in the subconscious?
 
@@ -437,7 +438,15 @@ It's still a useful way to understand learning, and the learning that you unders
 
 **[Lex]** Yeah. It's that's a confusing word subconscious 
 
-**[John]** [Nicholas Chater](https://www.wbs.ac.uk/about/person/nick-chater/) wrote an interesting book, I think its title is ["The mind is flat"](https://www.worldcat.org/title/mind-is-flat-the-remarkable-shallowness-of-the-improvising-brain/oclc/1099681439). Flat, in a neural net sense, flat is something which is of very broad neural net without anything other than the layers in depth, or as a deep brain would be many layers and not so broad. In the same sense that if you push Minsky hard enough he would talk to you and say "consciousness is your effort to explain to yourself that what you have already done."
+**[John]** [Nicholas Chater](https://www.wbs.ac.uk/about/person/nick-chater/) wrote an interesting book, I think its title is ["The mind is flat"](https://www.worldcat.org/title/mind-is-flat-the-remarkable-shallowness-of-the-improvising-brain/oclc/1099681439). 
+
+```{r fig.margin = TRUE, out.width="90%", cache=TRUE, echo=FALSE, fig.cap = "The Mind Is Flat."}
+knitr::include_graphics("./assets/the_mind_is_flat.png")
+```
+```{marginfigure}
+Book: [The Mind Is Flat: The Remarkable Shallowness of the Improvising Brain](https://www.amazon.com/Mind-Flat-Remarkable-Shallowness-Improvising/dp/030023872X) at *amazon.com*.
+```
+In a neural net sense, flat is something which is of very broad neural net without anything other than the layers in depth, or as a deep brain would be many layers and not so broad. In the same sense that if you push Minsky hard enough he would talk to you and say "consciousness is your effort to explain to yourself that what you have already done."
 
 **[Lex]** Yeah, it's the weaving of the narrative around the things that already been computed for you ...
 
@@ -445,7 +454,16 @@ It's still a useful way to understand learning, and the learning that you unders
 
 **[Lex]** By the way, that's a beautiful description of consciousness. Where do you stand in today -perhaps has changed day to day-, but where do you stand on the importance of consciousness in our whole big mess of cognition? Is it just a little narrative maker, or is it actually fundamental to intelligence? 
 
-**[John]** That's a very hard one. I asked [Francis Crick](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick) about consciousness. He launched forward a long monologue about handling the peas, and how [Mendel](https://www.nature.com/scitable/topicpage/gregor-mendel-a-private-scientist-6618227/) knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his [position](https://www.nytimes.com/2004/04/13/science/scientists-work-francis-crick-christof-koch-after-double-helix-unraveling.html). If you read this [book]() which he wrote with Koch, I think ...
+**[John]** That's a very hard one. I asked Francis Crick^[Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick)] about consciousness. He launched forward a long monologue about handling the peas, and how Mendel^[Gregor Mendel, (born July 22, 1822, Heinzendorf, Silesia, Austrian Empire [now Hynčice, Czech Republic]—died January 6, 1884, botanist, teacher, and Augustinian prelate, the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism. [Source: britannica.com](https://www.britannica.com/biography/Gregor-Mendel)] knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his position^[
+Dr. Crick, in his 28 years at the Salk Institute for Biological Studies, has focused on the mind, and in particular the question of consciousness. While many scientists assume that consciousness is a global property of the brain - 'a gestalt phenomenon' - Dr. Koch and Dr. Crick say they believe that only a few neurons are responsible at any given moment. Of the 50 billion or so neurons in the brain, Dr. Crick says that perhaps only tens of thousands, or even a few thousand, give rise to the feeling of conscious awareness. 'We believe it is essentially a local phenomenon,' he said. [Source: nytimes.com](https://www.nytimes.com/2004/04/13/science/scientists-work-francis-crick-christof-koch-after-double-helix-unraveling.html)]. If you read this [book]() which he wrote with Koch, I think ...
+
+
+```{r fig.margin = TRUE, out.width="90%", cache=TRUE, echo=FALSE, fig.cap = "The Quest for Consciousness: A Neurobiological Approach."}
+knitr::include_graphics("./assets/quest_for_consciousness.jpg")
+```
+```{marginfigure}
+Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr_ext_tmb) at *amazon.com*.
+```
 
 **[Lex]** Yeah, [Christof Koch](https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/christof-koch/) 
 
