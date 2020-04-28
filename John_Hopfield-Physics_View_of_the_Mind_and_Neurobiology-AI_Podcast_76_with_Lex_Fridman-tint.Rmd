@@ -343,11 +343,28 @@ Source: [Synaptic dynamics and decision making](https://www.pnas.org/content/107
 
 **[Lex]** How did Hopfield Networks help you understand what insight to give us about memory, about learning?
 
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "A small Hopfield network of 3 nodes. Energy on the y-axis of the diagram"}
+knitr::include_graphics("./assets/small_hopfield_network.png")
+```
+```{marginfigure}
+Source: [Discovery of Salient Low-Dimensional Dynamical Structure ... Using Hopfield Networks](https://www.researchgate.net/publication/300252504_Discovery_of_Salient_Low-Dimensional_Dynamical_Structure_in_Neuronal_Population_Activity_Using_Hopfield_Networks) at researchgate.net.
+```
+
 **[John]** They didn't give insights about learning. They gave insights about how things having learned could be expressed. How having learned a picture -of a picture of you- reminds me of your name. That didn't describe a reasonable way of actually doing the learning. Only says if it had previously learned the connections of this kind of pattern would now be able to behave in a physical way ==[ininteligible]== part of the pattern in here, the other part of the pattern will complete over here. I can understand that physics if the right learning stuff had already been put in, and you couldn't understand why then putting in a picture of somebody else would generate something else over here. But it did not have a reasonable description of the learning process.
 
 **[Lex]** But even ... forget learning, I mean that's just a powerful concept that sort of forming representations that are useful to be robust, you know, for error correction kind of thing. So, this is kind of what the biology does we're talking about?
 
-**[John]** What my paper did was simply enable you. There are lots of ways of being robust. If you think of it a dynamical system here, you think of a system where a path is going on and in time, and if you think for a computer is a computational path which is going out in a huge dimensional space of ones and zeros. And an error-correcting system is a system which if you get a little bit off that trajectory will push you back onto that trajectory again till you get to the same answer in spite of the fact that there were things though that the computation wasn't being ideally done all the way along a line. There are lots of models for error correction but one of the models for error correction is to say: there's a valley that you're following flowing down, and if you push a little bit off the valley, it's just like water being pushed a little bit by a rock gets back and follows the course of the river, and then basically the analog in the physical system just enables you to say "oh, yes error free computation and an associative memory are very much like things that I can understand from the point of view of a physical system." The physical system can be under some circumstances an accurate metaphor. It's not the only metaphor. There are error correction schemes which don't have a valley and energy behind them but those are correction schemes such a mathematician may be able to understand but I don't.
+**[John]** What my paper did was simply enable you. There are lots of ways of being robust. If you think of it a dynamical system here, you think of a system where a path is going on and in time, and if you think for a computer is a computational path which is going out in a huge dimensional space of ones and zeros. And an error-correcting system is a system which if you get a little bit off that trajectory will push you back onto that trajectory again till you get to the same answer in spite of the fact that there were things though that the computation wasn't being ideally done all the way along a line. 
+
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "error-correcting system"}
+knitr::include_graphics("./assets/error_correction.png")
+```
+```{marginfigure}
+Source: [error_correction.png]() at .
+```
+
+
+There are lots of models for error correction but one of the models for error correction is to say: there's a valley that you're following flowing down, and if you push a little bit off the valley, it's just like water being pushed a little bit by a rock gets back and follows the course of the river, and then basically the analog in the physical system just enables you to say "oh, yes error free computation and an associative memory are very much like things that I can understand from the point of view of a physical system." The physical system can be under some circumstances an accurate metaphor. It's not the only metaphor. There are error correction schemes which don't have a valley and energy behind them but those are correction schemes such a mathematician may be able to understand but I don't.
 
 **[Lex]** So, there's a the physical metaphor that seems to work here?
 
@@ -357,7 +374,30 @@ Source: [Synaptic dynamics and decision making](https://www.pnas.org/content/107
 
 **[Lex]** So, these kinds of networks actually led to a lot of the work that is going on now in neural networks, artificial neural networks. So, the follow-on work with restrictive Boltzmann Machines and Deep Belief Nets, followed on from the from these ideas of the Hopfield network. What do you think about this continued progress of that work towards now reinvigorated exploration of feed-forward neural networks and recurrent neural networks, convolutional neural networks, and kinds of networks that are helping solve image recognition, natural language processing, all that kind of stuff?
 
-**[John]** it's always intrigued me one of the most long-lived of the learning systems is the [Boltzmann Machine](http://www.scholarpedia.org/article/Boltzmann_machine), which is intrinsically a [feedback network](http://feedbacknet.stanford.edu/). And was the brilliance of Hinton and [Sejnowski](https://en.wikipedia.org/wiki/Terry_Sejnowski) to understand how to do learning in that. It's still a useful way to understand learning, and the learning that you understand has something to do with the way that feed-forward systems work. But it's not always exactly simple to express that intuition. It always amuses me, as Geoff Hinton keeps going back to that, well yet again, on a form of the Boltzmann machine because really ... which has feedback and interesting probabilities in it. This is a lovely encapsulation of something in computational. 
+
+
+```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "A graphical representation of a Boltzmann machine with a few weights."}
+knitr::include_graphics("./assets/Boltzmannexamplev2.png")
+```
+```{marginfigure}
+Source: [Boltzmann Machines](https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf) at *cs.toronto.edu*.
+```
+
+**[John]** it's always intrigued me one of the most long-lived of the learning systems is the [Boltzmann Machine](http://www.scholarpedia.org/article/Boltzmann_machine), which is intrinsically a [feedback network](http://feedbacknet.stanford.edu/). And was the brilliance of Hinton^[[Geoff Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)] and Sejnowski^[[Terry Sejnowski](https://en.wikipedia.org/wiki/Terry_Sejnowski)] to understand how to do learning in that. 
+
+```{r fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "A feedback based learning model."}
+knitr::include_graphics("./assets/feedback_network.png")
+```
+```{r fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Feedback vs Feedforward computation graphs."}
+knitr::include_graphics("./assets/feedback_vs_feedforward.png")
+```
+
+```{marginfigure}
+Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2016/projects/wu_shen.pdf) at *web.stanford.edu*.
+```
+
+
+It's still a useful way to understand learning, and the learning that you understand has something to do with the way that feed-forward systems work. But it's not always exactly simple to express that intuition. It always amuses me, as Geoff Hinton keeps going back to that, well yet again, on a form of the Boltzmann machine because really ... which has feedback and interesting probabilities in it. This is a lovely encapsulation of something in computational. 
 
 **[Lex]** Something computational?
 
