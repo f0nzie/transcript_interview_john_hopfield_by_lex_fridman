@@ -27,6 +27,7 @@ knitr::include_graphics("./assets/The_Franklin_Institute_Awards.png")
 ```{marginfigure}
 Prof. Hopfield received the Benjamin Franklin of Physics 2019 for applying concepts of theoretical physics to provide new insights on important biological questions in a variety of areas, including neuroscience and genetics, with significant impact on machine learning, an area of computer science.
 In 1982, Hopfield developed a model of neural networks to explain how memories are recalled by the brain. The Hopfield model explains how systems of neurons interact to produce stable memories and, further, how neuronal systems apply simple processes to complete whole memories based on partial information. The contemporary impact of the `Hopfield model` is evident in fields as diverse as physics, biology, and computer science. By constructing an artificial neural network capable of modeling certain functions of the human brain, machines can now use these processes to store “memories.”
+\linebreak
 ```
 
 
@@ -41,38 +42,42 @@ The following is a conversation with [John Hopfield](http://pni.princeton.edu/jo
 **Lex**: What difference between [biological neural networks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2974103/) and [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) is most captivating and profound to you -at the higher philosophical level? Let's not get technical just yet.
 
 **John**: One of the things very much intrigues me is the fact that neurons have all kinds of components, properties to them. [Evolutionary biology](https://royalsocietypublishing.org/doi/10.1098/rsfs.2016.0145), has some little quirks on how a molecule works, of how a cell works, that can be made use of. And evolution will sharpen it up and make it into a useful feature rather than a glitch. 
-
-So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons ... how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks. 
+So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons ... how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks. *See Figure \ref{fig:NeuralDev}*.
 
 
 ```{r NeuralDev, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap="Neural development starts at the embryo phase. The millions of neurons that the human brain requires for thought is reached by a process of proliferation through cell divisions.",}
 knitr::include_graphics("./assets/oxfordhb-9780190456757-graphic-019-full.jpg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Development of the Nervous System of Invertebrates](https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780190456757.001.0001/oxfordhb-9780190456757-e-3) at oxfordhandbooks.com.
 ```
 
 
 **[Lex]** So, the glitches become features in the biological neural networks? 
 
-**[John]** They can. Let me take one of the things that I used to do research on. If you take things which oscillate, their rhythms, which are sort of close to each other, under some circumstances, these things will have a phase transition, and suddenly because of this rhythm everybody will fall into step. There was a marvelous physical example of that in the [Millennium bridge](https://en.wikipedia.org/wiki/Millennium_Bridge,_London) across the Thames River about 2001. Pedestrians walking across. Pedestrians don't walk synchronized, they don't walk in lockstep. But if they're all walking about the same frequency, the bridge could sway at that frequency, and the slight sway made pedestrians tend a little bit to walk in lockstep. After a while, the bridge was oscillating back and forth and the pedestrians were walking in step to it. You could see it ==[ininteligible]== at the bridge. The engineers made a simple-minded a mistake: they had a feeling that when you walk is step, step, step; it's back and forth motion. But when you walk it's also right foot, left foot, side to side motion. And the side to side motion -for which the bridge was strong enough-, but it wasn't stiff enough. As a result you would feel the motion and you'd fall under step with it. People were very uncomfortable with it. They closed the bridge for two years while adding stiffening for it. 
+**[John]** They can. Let me take one of the things that I used to do research on. If you take things which oscillate, their rhythms, which are sort of close to each other, under some circumstances, these things will have a phase transition, and suddenly because of this rhythm everybody will fall into step. There was a marvelous physical example of that in the [Millennium bridge](https://en.wikipedia.org/wiki/Millennium_Bridge,_London) across the Thames River about 2001, (*Figure \ref{fig:millenium_bridge})*. Pedestrians walking across. Pedestrians don't walk synchronized, they don't walk in lockstep. But if they're all walking about the same frequency, the bridge could sway at that frequency, and the slight sway made pedestrians tend a little bit to walk in lockstep. After a while, the bridge was oscillating back and forth and the pedestrians were walking in step to it. You could see it ==[ininteligible]== at the bridge. The engineers made a simple-minded a mistake: they had a feeling that when you walk is step, step, step; it's back and forth motion. But when you walk it's also right foot, left foot, side to side motion. And the side to side motion -for which the bridge was strong enough-, but it wasn't stiff enough. As a result you would feel the motion and you'd fall under step with it. People were very uncomfortable with it. They closed the bridge for two years while adding stiffening for it. 
 
-```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Viscous passive dampers were installed at several locations at The Millenium Bridge in London to limit dynamic excitation by pedestrians walking in synchronization with the bridge movement."}
+```{r millenium_bridge, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Viscous passive dampers were installed at several locations at The Millenium Bridge in London to limit dynamic excitation by pedestrians walking in synchronization with the bridge movement."}
 knitr::include_graphics("./assets/millenium_bridge_modifications.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Archived web page of the Millenium Bridge project](https://web.archive.org/web/20071015055209/http://www.arup.com/MillenniumBridge/challenge/modifications.html). Video of oscillating bridge [here](https://www.youtube.com/watch?v=y2FaOJxWqLE).
+\newline
 ```
 
 
-Now, nerve cells produce [action potentials](https://qbi.uq.edu.au/brain-basics/brain/brain-physiology/action-potentials-and-synapses). You have a bunch of cells, which are loosely coupled together, producing action potentials at the same rate. There'll be some circumstances under which these things can lock together; other circumstances which they won't. Well, if they fire together you can be sure the other cells are going to notice it. So, you could make a computational feature out of this in an evolving brain. Most artificial neural networks don't even have action potentials, let alone have the possibility for synchronizing them.  
+Now, nerve cells produce [action potentials](https://qbi.uq.edu.au/brain-basics/brain/brain-physiology/action-potentials-and-synapses). (*Figure \ref{fig:action-potential}*). You have a bunch of cells, which are loosely coupled together, producing action potentials at the same rate. There'll be some circumstances under which these things can lock together; other circumstances which they won't. Well, if they fire together you can be sure the other cells are going to notice it. So, you could make a computational feature out of this in an evolving brain. Most artificial neural networks don't even have action potentials, let alone have the possibility for synchronizing them.  
 
 
-```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Action potential, the brief (about one-thousandth of a second) reversal of electric polarization of the membrane of a nerve cell (neuron) or muscle cell."}
+```{r action-potential, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Action potential, the brief (about one-thousandth of a second) reversal of electric polarization of the membrane of a nerve cell (neuron) or muscle cell."}
 knitr::include_graphics("./assets/action-potential.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Generation of Action Potentials](https://teachmephysiology.com/nervous-system/synapses/action-potential/) at teachmephysiology.com, and [Action potential](https://www.britannica.com/science/action-potential) at britannica.com.
+\newline
 ```
 
 **[Lex]** You mentioned the evolutionary process. The evolutionary process that builds on top of biological systems leverages the weird mess of it, somehow? So, how do you make sense of that ability to leverage all the different kinds of complexities in the biological brain?
@@ -84,6 +89,7 @@ Source: [Generation of Action Potentials](https://teachmephysiology.com/nervous-
 knitr::include_graphics("./assets/OSC_Microbio_11_02_RepFork.jpg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [DNA Replication](https://courses.lumenlearning.com/microbiology/chapter/dna-replication/) at lumenlearning.com.
 ```
 
@@ -105,9 +111,9 @@ Now, if that molecule was just slightly different has a function which helped an
 knitr::include_graphics("./assets/evolutionary_developments.jpg")
 ```
 ```{marginfigure}
+\vspace*{-16px}\noindent
 Source: [Evolutionary neuroscience of cumulative culture](https://www.pnas.org/content/114/30/7861) at Proceedings of the National Academy of Sciences (PNAS).
-\
-\
+\vspace*{15px}
 ```
 
 But there are differences between adaptation, where your learning goes on generations over generations in evolutionary time, or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system.
@@ -118,12 +124,12 @@ But there are differences between adaptation, where your learning goes on genera
 knitr::include_graphics("./assets/lifetime_development.png")
 ```
 ```{marginfigure}
+\vspace*{-16px}\noindent
 Source: [Cognitive Development](https://www.sciencedirect.com/topics/psychology/cognitive-development) at sciencedirect.com.
+\vspace*{15px}
 ```
 
 **[Lex]**  What do you mean by mathematical system? Where's the math in the biology?
-
-
 
 **[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. 
 
@@ -132,6 +138,7 @@ Source: [Cognitive Development](https://www.sciencedirect.com/topics/psychology/
 knitr::include_graphics("./assets/multidimensional_connections_cortex.jpg")
 ```
 ```{marginfigure}
+\vspace*{-16px}\noindent
 Source: [Cliques of Neurons Bound into Cavities Provide a Missing Link between Structure and Function](https://www.frontiersin.org/articles/10.3389/fncom.2017.00048/full#supplementary-material) at frontiersin.org.
 ```
 
@@ -157,11 +164,9 @@ If you look at computer chips, computer chips are basically two dimensional stru
 knitr::include_graphics("./assets/visual_auditory_cortex.png")
 ```
 ```{marginfigure}
+\vspace*{-16px}\noindent
 Source: [Whole-brain metallomic analysis of the common marmoset (Callithrix jacchus)](https://pubs.rsc.org/en/content/articlehtml/2017/mt/c7mt00012j) at pubs.rsc.org.
-\
-\
-\
-\
+\vspace*{20px}
 ```
 
 
@@ -174,6 +179,7 @@ Source: [Whole-brain metallomic analysis of the common marmoset (Callithrix jacc
 knitr::include_graphics("./assets/early_development.jpg")
 ```
 ```{marginfigure}
+\vspace*{-16px}\noindent
 Source: [Physical biology of human brain development](https://www.frontiersin.org/articles/10.3389/fncel.2015.00257/full) at frontiersin.org.
 ```
 
@@ -214,6 +220,7 @@ Source: [Physical biology of human brain development](https://www.frontiersin.or
 knitr::include_graphics("./assets/brain_transient_oscillations.jpeg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Brain rhythms and neural syntax: implications for efficient coding of cognitive content and neuropsychiatric disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3553572/) at ncbi.nlm.nih.gov.
 ```
 
@@ -233,6 +240,7 @@ Source: [Brain rhythms and neural syntax: implications for efficient coding of c
 knitr::include_graphics("./assets/turing_computing_machinery.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [The Turing Digital Archive](http://www.turingarchive.org/viewer/?id=473&title=1) at turingarchive.org.
 ```
 
@@ -256,9 +264,9 @@ In some sense, passes the Turing test longer and in more broad aspects. And how 
 knitr::include_graphics("./assets/earthquake_properties.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Time-advanced occurrence of moderate-size earthquakes...](https://www.researchgate.net/figure/Seismic-properties-of-two-moderate-size-earthquakes-a-Spatial-distribution-of-the-15_fig2_327475650) at researchgate.net.
-\
-\
+\vspace*{20px}\noindent
 ```
 
 
@@ -266,6 +274,7 @@ Source: [Time-advanced occurrence of moderate-size earthquakes...](https://www.r
 knitr::include_graphics("./assets/soundwaves_air.jpg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Normal Modes of a Standing Sound Wave](https://courses.lumenlearning.com/suny-osuniversityphysics/chapter/17-4-normal-modes-of-a-standing-sound-wave/) at courses.lumenlearning.com.
 ```
 
@@ -288,6 +297,7 @@ Sound waves in air; earthquakes, what have you, have collective properties. Weat
 knitr::include_graphics("./assets/an-overview-of-associative-memory-4.jpg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [An Overview Of Associative Memory
 ](https://www.betterhelp.com/advice/memory/an-overview-of-associative-memory/) at betterhelp.com.
 ```
@@ -320,6 +330,7 @@ Source: [An Overview Of Associative Memory
 knitr::include_graphics("./assets/synaptic_dynamics_abc.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Synaptic dynamics and decision making](https://www.pnas.org/content/107/16/7545#F2) at pnas.org.
 ```
 
@@ -348,6 +359,7 @@ Source: [Synaptic dynamics and decision making](https://www.pnas.org/content/107
 knitr::include_graphics("./assets/small_hopfield_network.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Discovery of Salient Low-Dimensional Dynamical Structure ... Using Hopfield Networks](https://www.researchgate.net/publication/300252504_Discovery_of_Salient_Low-Dimensional_Dynamical_Structure_in_Neuronal_Population_Activity_Using_Hopfield_Networks) at researchgate.net.
 ```
 
@@ -361,6 +373,7 @@ Source: [Discovery of Salient Low-Dimensional Dynamical Structure ... Using Hopf
 knitr::include_graphics("./assets/error_correction.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [error_correction.png]() at .
 ```
 
@@ -381,6 +394,7 @@ There are lots of models for error correction but one of the models for error co
 knitr::include_graphics("./assets/Boltzmannexamplev2.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Boltzmann Machines](https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf) at *cs.toronto.edu*.
 ```
 
@@ -394,6 +408,7 @@ knitr::include_graphics("./assets/feedback_vs_feedforward.png")
 ```
 
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2016/projects/wu_shen.pdf) at *web.stanford.edu*.
 ```
 
@@ -423,11 +438,11 @@ It's still a useful way to understand learning, and the learning that you unders
 
 **[Lex]** Yes. Because that's tied up in there too. You can't just put that on another shelf ...
 
-**[John]** Every once in a while like I get interested in consciousness^[The words “conscious” and “consciousness” are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective “conscious” is heterogeneous in its range, being applied both to whole organisms—creature consciousness—and to particular mental states and processes—state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/)] and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them. 
+**[John]** Every once in a while like I get interested in consciousness^[The words “conscious” and “consciousness” are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective “conscious” is heterogeneous in its range, being applied both to whole organisms—creature consciousness—and to particular mental states and processes—state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/) \vspace{10px}] and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them. 
 
 **[Lex]** What's consciousness? Let's try to take a brief step into that room ...
 
-**[John]** Well, that's Marvin Minsky^[Marvin Lee Minsky (August 9, 1927 – January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/)]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon^[An epi-phenomenon is a secondary phenomenon that occurs alongside or in parallel to a primary phenomenon. [Source: wikipedia.org](https://en.wikipedia.org/wiki/Epiphenomenon)], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it. 
+**[John]** Well, that's Marvin Minsky^[Marvin Lee Minsky (August 9, 1927 – January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/) \vspace{10px}]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon^[An epi-phenomenon is a secondary phenomenon that occurs alongside or in parallel to a primary phenomenon. [Source: wikipedia.org](https://en.wikipedia.org/wiki/Epiphenomenon)], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it. 
 
 **[Lex]** So his view that consciousness is not ... that's just like little icing on the cake. The real cake is in the subconscious?
 
@@ -445,6 +460,7 @@ It's still a useful way to understand learning, and the learning that you unders
 knitr::include_graphics("./assets/the_mind_is_flat.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Book: [The Mind Is Flat: The Remarkable Shallowness of the Improvising Brain](https://www.amazon.com/Mind-Flat-Remarkable-Shallowness-Improvising/dp/030023872X) at *amazon.com*.
 ```
 In a neural net sense, flat is something which is of very broad neural net without anything other than the layers in depth, or as a deep brain would be many layers and not so broad. In the same sense that if you push Minsky hard enough he would talk to you and say "consciousness is your effort to explain to yourself that what you have already done."
@@ -455,14 +471,15 @@ In a neural net sense, flat is something which is of very broad neural net witho
 
 **[Lex]** By the way, that's a beautiful description of consciousness. Where do you stand in today -perhaps has changed day to day-, but where do you stand on the importance of consciousness in our whole big mess of cognition? Is it just a little narrative maker, or is it actually fundamental to intelligence? 
 
-**[John]** That's a very hard one. I asked Francis Crick^[Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick)] about consciousness. He launched forward a long monologue about handling the peas, and how Mendel^[Gregor Mendel, (born July 22, 1822, Heinzendorf, Silesia, Austrian Empire [now Hynčice, Czech Republic]—died January 6, 1884, botanist, teacher, and Augustinian prelate, the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism. [Source: britannica.com](https://www.britannica.com/biography/Gregor-Mendel)] knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his position^[
-Dr. Crick, in his 28 years at the Salk Institute for Biological Studies, has focused on the mind, and in particular the question of consciousness. While many scientists assume that consciousness is a global property of the brain - 'a gestalt phenomenon' - Dr. Koch and Dr. Crick say they believe that only a few neurons are responsible at any given moment. Of the 50 billion or so neurons in the brain, Dr. Crick says that perhaps only tens of thousands, or even a few thousand, give rise to the feeling of conscious awareness. 'We believe it is essentially a local phenomenon,' he said. [Source: nytimes.com](https://www.nytimes.com/2004/04/13/science/scientists-work-francis-crick-christof-koch-after-double-helix-unraveling.html)]. If you read this [book]() which he wrote with Koch, I think ...
+**[John]** That's a very hard one. I asked Francis Crick^[Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick) \vspace{10px}] about consciousness. He launched forward a long monologue about handling the peas, and how Mendel^[Gregor Mendel, (born July 22, 1822, Heinzendorf, Silesia, Austrian Empire [now Hynčice, Czech Republic]—died January 6, 1884, botanist, teacher, and Augustinian prelate, the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism. [Source: britannica.com](https://www.britannica.com/biography/Gregor-Mendel) \vspace{10px}] knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his position^[
+Dr. Crick, in his 28 years at the Salk Institute for Biological Studies, has focused on the mind, and in particular the question of consciousness. While many scientists assume that consciousness is a global property of the brain - 'a gestalt phenomenon' - Dr. Koch and Dr. Crick say they believe that only a few neurons are responsible at any given moment. Of the 50 billion or so neurons in the brain, Dr. Crick says that perhaps only tens of thousands, or even a few thousand, give rise to the feeling of conscious awareness. 'We believe it is essentially a local phenomenon,' he said. [Source: nytimes.com](https://www.nytimes.com/2004/04/13/science/scientists-work-francis-crick-christof-koch-after-double-helix-unraveling.html) \vspace{10px}]. If you read this [book]() which he wrote with Koch, I think ...
 
 
 ```{r fig.margin = TRUE, out.width="90%", cache=TRUE, echo=FALSE, fig.cap = "The Quest for Consciousness: A Neurobiological Approach."}
 knitr::include_graphics("./assets/quest_for_consciousness.jpg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr_ext_tmb) at *amazon.com*.
 ```
 
@@ -502,6 +519,7 @@ Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr
 knitr::include_graphics("./assets/lyapunov.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [120 Years of Lyapunov’s Methods](https://stanford.edu/~boyd/papers/pdf/springer_15_colloquium.pdf) at *stanford.edu*.
 ```
 
@@ -581,6 +599,7 @@ Source: [120 Years of Lyapunov’s Methods](https://stanford.edu/~boyd/papers/pd
 knitr::include_graphics("./assets/navier_stokes.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Navier-Stokes](https://www.grc.nasa.gov/www/k-12/airplane/nseqs.html) at *grc.nasa.gov*.
 ```
 
@@ -604,6 +623,7 @@ Source: [Navier-Stokes](https://www.grc.nasa.gov/www/k-12/airplane/nseqs.html) a
 knitr::include_graphics("./assets/einstein_dreams_book.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Einstein's Dreams](https://en.wikipedia.org/wiki/Einstein%27s_Dreams) at *en.wikipedia.org*.
 ```
 
@@ -625,10 +645,11 @@ Source: [Einstein's Dreams](https://en.wikipedia.org/wiki/Einstein%27s_Dreams) a
 
 **[Lex]** Interconnected somehow perhaps. Is there -it's slippery-, but is there something you, despite being slippery, can hold long enough to express?
 
-```{r fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Layered cortex and interconnections."}
+```{r cortex_layered, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Layered cortex and interconnections."}
 knitr::include_graphics("./assets/cortex_layered.jpg")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [How to build a General Intelligence: Circuits and Pathways](https://agi.io/2015/12/22/how-to-build-a-general-intelligence-circuits-and-pathways/) at *agi.io*.
 ```
 
@@ -637,18 +658,16 @@ Source: [How to build a General Intelligence: Circuits and Pathways](https://agi
 [70:00](https://youtu.be/DKyzcbNr8WE?t=4200)
 
 
-
 **[Lex]** So, in a sense the idea of meaning is something that's possessed by an individual, like a conscious creature. And you're saying that it's all interconnected in some kind of way that there might not even be an individual. We're all kind of this complicated mess of biological systems at all different levels. Where the human starts and when the human ends is unclear?
 
 
+**[John]** Yeah. As in neurobiology where you say the [neocortex](https://human-memory.net/neocortex/) (*Fig. \ref{fig:cortex_layered}*) does the thinking but there's lots of things that are done in the spinal cord (*Fig. \ref{fig:cortex_spinal_cord}*). And so we say, where's the essence of thought? It's just going to be the neocortex? It can't be, it can't be.
 
-
-**[John]** Yeah. As in neurobiology where you say the [neocortex](https://human-memory.net/neocortex/) does the thinking but there's lots of things that are done in the spinal cord. And so we say, where's the essence of thought? It's just going to be the neocortex? It can't be, it can't be.
-
-```{r fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Cortex to spinal cord."}
+```{r cortex_spinal_cord, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Cortex to spinal cord."}
 knitr::include_graphics("./assets/cortex_spinal_cord.png")
 ```
 ```{marginfigure}
+\vspace*{-15px}\noindent
 Source: [Neuroanatomy Primer: Structure and Function of the Human Nervous System](https://link.springer.com/chapter/10.1007/978-0-387-76978-3_3) at *springer.com*.
 ```
 
@@ -660,16 +679,14 @@ Source: [Neuroanatomy Primer: Structure and Function of the Human Nervous System
 
 # End of Interview
 
-Thanks for listening to this conversation with John Hopfield. And thank you to our presenting sponsor CashApp. Download it, used LexPodcast you'll get ten dollars, and ten dollars will go to FIRST, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. if you enjoyed this podcast subscribe in YouTube, give it five stars in Apple podcast, support on Patreon, or simply connect with me on Twitter at [\@LexFridman](https://twitter.com/lexfridman). 
+Thanks for listening to this conversation with John Hopfield. And thank you to our presenting sponsor CashApp. \marginnote{\textbf{CashApp} is a sponsor of this podcast.} Download it, used LexPodcast you'll get ten dollars, and ten dollars will go to FIRST, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. if you enjoyed this podcast subscribe in YouTube, give it five stars in Apple podcast, support on Patreon, or simply connect with me on Twitter at [LexFridman](https://twitter.com/lexfridman). 
 
 
 
 # Epilogue
 
-\footnote{This is a sidenote that was entered
-using the \texttt{\textbackslash footnote} command.}
-
-And now let me leave you with some words of wisdom from John Hopfield in his article titled *Now What*^[Article published in October 2008. | [Link to article at princeton.edu](https://pni.princeton.edu/john-hopfield/john-j.-hopfield-now-what). |  [Link to article in PDF](https://pni.princeton.edu/sites/default/files/basic-page/files/John%20Hopfield%20Now%20What%203_0.pdf)]
+And now let me leave you with some words of wisdom from John Hopfield in his article titled *Now What* \footnote{Article published in October 2008. \newline
+\href{https://pni.princeton.edu/sites/default/files/basic-page/files/John Hopfield Now What 3_0.pdf}{Link to article in PDF}}
 
 > "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents."" 
 
@@ -684,9 +701,7 @@ He then goes on to say:
 
 `r margin_note("Keywords: neurobiology evolution of the nervour system")` 
 
-\marginnote{This is a
-margin note.  Notice that there isn't a number preceding the note, and
-there is no number in the main text where this note was written.}
+
 
 # References
 
