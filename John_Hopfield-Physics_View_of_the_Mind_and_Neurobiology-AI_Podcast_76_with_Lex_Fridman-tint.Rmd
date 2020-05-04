@@ -504,6 +504,26 @@ Source: [120 Years of Lyapunov’s Methods](https://stanford.edu/~boyd/papers/pd
 
 **[John]** That's right and not all systems behave that way ...
 
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\begin{margintable}%
+  \centering
+  \begin{tabular}{l}
+    The breadth of Lyapunov's idea \\
+    \midrule
+    \tabitem performance indices  \\
+    \tabitem decay/growth rate, Lyapunov exponent  \\
+    \tabitem uncertain dynamics, stochastic systems \\
+    \tabitem time delay systems  \\
+    \tabitem reachabilty  \\
+    \tabitem input/output analysis (passivity, gain)  \\
+    \tabitem state feedback synthesis  \\
+    \tabitem stochastic control  \\
+    \bottomrule
+  \end{tabular}
+  \caption{Lyapunov functions can be used for a wide variety of problems, way beyond stability. Source: \href{https://stanford.edu/~boyd/papers/pdf/springer_15_colloquium.pdf}{120 Years of Lyapunov’s Methods} at *stanford.edu*.}
+  \label{tab:lyapunov}
+\end{margintable}
+
 **[Lex]** Most don't 
 
 **[John]** Most don't. But it provides you with the metaphor for thinking about systems which are stable enough to have these attractors behave. Even if you can't find the Lyapunov function behind them, or an energy function behind them. That gives you a metaphor for thought. 
