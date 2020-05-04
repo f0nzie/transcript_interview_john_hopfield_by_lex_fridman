@@ -490,15 +490,7 @@ Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr
 
 **[Lex]** You have to run it ...
 
-**[John]** You have to run it. There's this subset of systems which has a clean tone known to mathematicians as the *Lyapunov functions* [Fig. \ref{fig:lyapunov}]. And those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Lyapunov functions were in the simple model I made in the early 80s; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down 
-
-```{r lyapunov, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Lyapunov functions."}
-knitr::include_graphics("./assets/lyapunov.png")
-```
-```{marginfigure}
-\vspace*{-15px}\noindent
-Source: [120 Years of Lyapunov’s Methods](https://stanford.edu/~boyd/papers/pdf/springer_15_colloquium.pdf) at *stanford.edu*.
-```
+**[John]** You have to run it. There's this subset of systems which has a clean tone known to mathematicians as the *Lyapunov functions* [Table \ref{tab:lyapunov}]. And those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Lyapunov functions were in the simple model I made in the early 80s; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down. 
 
 **[Lex]** There's certain properties of the system that when you can know that?
 
