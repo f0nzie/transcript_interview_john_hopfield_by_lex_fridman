@@ -44,7 +44,7 @@ The following is a conversation with [John Hopfield](http://pni.princeton.edu/jo
 **John**: One of the things very much intrigues me is the fact that neurons have all kinds of components, properties to them. [Evolutionary biology](https://royalsocietypublishing.org/doi/10.1098/rsfs.2016.0145), has some little quirks on how a molecule works, of how a cell works, that can be made use of. And evolution will sharpen it up and make it into a useful feature rather than a glitch. 
 So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons ... how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks. [Fig. \ref{fig:NeuralDev}].
 
-```{r NeuralDev, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap="Neural development starts at the embryo phase. The millions of neurons that the human brain requires for thought is reached by a process of proliferation through cell divisions.",}
+```{r NeuralDev, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap="Neural development starts at the embryo phase. The millions of neurons that the human brain requires for thought is reached by a process of proliferation through cell divisions."}
 knitr::include_graphics("./assets/oxfordhb-9780190456757-graphic-019-full.jpg")
 ```
 ```{marginfigure}
