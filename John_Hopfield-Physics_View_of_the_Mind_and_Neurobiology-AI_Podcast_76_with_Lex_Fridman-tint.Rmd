@@ -1,12 +1,12 @@
 ---
 title: "Interview to John Hopfield by Lex Fridman"
+subtitle: View of the Mind and Neurobiology - Artificial Intelligence Podcast
 author: "Transcript by Alfonso R. Reyes"
 date: "`r Sys.Date()`"
 output: 
   tint::tintPdf: default
   tint::tintHtml: default
 link-citations: yes
-subtitle: View of the Mind and Neurobiology - Artificial Intelligence Podcast 76
 ---
 
 ```{r setup, include=FALSE}
