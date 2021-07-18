@@ -18,7 +18,6 @@ knitr::opts_chunk$set(tidy = FALSE,
 options(htmltools.dir.version = FALSE)
 ```
 
-
 # Introduction by Lex Fridman
 
 ```{r fig.margin=TRUE, echo=FALSE, out.width="110%"}
@@ -31,10 +30,7 @@ In 1982, Hopfield developed a model of neural networks to explain how memories a
 \linebreak
 ```
 
-
 The following is a conversation with [John Hopfield](http://pni.princeton.edu/john-hopfield), professor of Princeton, whose life's work weave beautifully through Biology, Chemistry, Neuroscience and Physics. Most crucially he saw the messy world of Biology through the piercing eyes of a physicist. He's perhaps best known for his work on associative neural networks, now known as [Hopfield Networks](https://page.mi.fu-berlin.de/rojas/neural/chapter/K13.pdf), that were one of the early ideas that catalyzed the development of the modern field of [deep learning](https://en.wikipedia.org/wiki/Deep_learning). As his 2019 [Franklin medal in Physics award](https://pni.princeton.edu/news/professor-emeritus-john-hopfield-awarded-2019-benjamin-franklin-medal-physics) states, he applied concepts of theoretical physics to provide new insights and important biological questions in a variety of areas including Genetics and Neuroscience with significant impact on machine learning. And as John says in his 2018 article titled ["Now what?"](https://pni.princeton.edu/john-hopfield/john-j.-hopfield-now-what), his accomplishments have often come about by asking that very question "now what?", and often responding by a major change of direction.
-
-
 
 # Start of Interview
 
@@ -42,37 +38,37 @@ The following is a conversation with [John Hopfield](http://pni.princeton.edu/jo
 
 **Lex**: What difference between [biological neural networks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2974103/) and [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) is most captivating and profound to you -at the higher philosophical level? Let's not get technical just yet.
 
-**John**: One of the things very much intrigues me is the fact that neurons have all kinds of components, properties to them. [Evolutionary biology](https://royalsocietypublishing.org/doi/10.1098/rsfs.2016.0145), has some little quirks on how a molecule works, of how a cell works, that can be made use of. And evolution will sharpen it up and make it into a useful feature rather than a glitch. 
-So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons ... how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks. [Fig. \ref{fig:NeuralDev}].
+**John**: One of the things very much intrigues me is the fact that neurons have all kinds of components, properties to them. [Evolutionary biology](https://royalsocietypublishing.org/doi/10.1098/rsfs.2016.0145), has some little quirks on how a molecule works, of how a cell works, that can be made use of. And evolution will sharpen it up and make it into a useful feature rather than a glitch. So, you expect in [neurobiology](https://mbb.harvard.edu/pages/undergraduate-tracks-neurobiology) for evolution to have captured all kinds of possibilities of getting neurons ... how you get neurons to do things for you. And that aspect has been completely suppressed in artificial neural networks. [Fig. \ref{fig:NeuralDev}].
 
 ```{r NeuralDev, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap="Neural development starts at the embryo phase. The millions of neurons that the human brain requires for thought is reached by a process of proliferation through cell divisions."}
 knitr::include_graphics("./assets/oxfordhb-9780190456757-graphic-019-full.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Development of the Nervous System of Invertebrates](https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780190456757.001.0001/oxfordhb-9780190456757-e-3) at oxfordhandbooks.com.
 ```
 
-**[Lex]** So, the glitches become features in the biological neural networks? 
+**[Lex]** So, the glitches become features in the biological neural networks?
 
-**[John]** They can. Let me take one of the things that I used to do research on. If you take things which oscillate, their rhythms, which are sort of close to each other, under some circumstances, these things will have a phase transition, and suddenly because of this rhythm everybody will fall into step. There was a marvelous physical example of that in the [Millennium bridge](https://en.wikipedia.org/wiki/Millennium_Bridge,_London) across the Thames River about 2001, [Fig. \ref{fig:millenium_bridge}]. Pedestrians walking across. Pedestrians don't walk synchronized, they don't walk in lockstep. But if they're all walking about the same frequency, the bridge could sway at that frequency, and the slight sway made pedestrians tend a little bit to walk in lockstep. After a while, the bridge was oscillating back and forth and the pedestrians were walking in step to it. You could see it ==[ininteligible]== at the bridge. The engineers made a simple-minded a mistake: they had a feeling that when you walk is step, step, step; it's back and forth motion. But when you walk it's also right foot, left foot, side to side motion. And the side to side motion -for which the bridge was strong enough-, but it wasn't stiff enough. As a result you would feel the motion and you'd fall under step with it. People were very uncomfortable with it. They closed the bridge for two years while adding stiffening for it. 
-
-
+**[John]** They can. Let me take one of the things that I used to do research on. If you take things which oscillate, their rhythms, which are sort of close to each other, under some circumstances, these things will have a phase transition, and suddenly because of this rhythm everybody will fall into step. There was a marvelous physical example of that in the [Millennium bridge](https://en.wikipedia.org/wiki/Millennium_Bridge,_London) across the Thames River about 2001, [Fig. \ref{fig:millenium_bridge}]. And pedestrians walking across; pedestrians don't walk synchronized, they don't walk in lockstep. But if they're all walking about the same frequency, the bridge could sway at that frequency, and the slight sway made pedestrians tend a little bit to walk in lockstep. After a while, the bridge was oscillating back and forth and the pedestrians were walking in step to it. You could see it in the movies near at the bridge. The engineers made a simple-minded a mistake: they had a feeling that when you walk is step, step, step; it's back and forth motion. But when you walk it's also right foot, left foot, side to side motion. And the side to side motion -for which the bridge was strong enough-, but it wasn't stiff enough. As a result you would feel the motion and you'd fall under step with it. People were very uncomfortable with it. They closed the bridge for two years while adding stiffening for it.
 
 ```{r millenium_bridge, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Viscous passive dampers were installed at several locations at The Millenium Bridge in London to limit dynamic excitation by pedestrians walking in synchronization with the bridge movement."}
 knitr::include_graphics("./assets/millenium_bridge_modifications.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Archived web page of the Millenium Bridge project](https://web.archive.org/web/20071015055209/http://www.arup.com/MillenniumBridge/challenge/modifications.html). Video of oscillating bridge [here](https://www.youtube.com/watch?v=y2FaOJxWqLE).
 \newline
 ```
 
-Now, nerve cells produce [action potentials](https://qbi.uq.edu.au/brain-basics/brain/brain-physiology/action-potentials-and-synapses). [*Fig. \ref{fig:action-potential}*]. You have a bunch of cells, which are loosely coupled together, producing action potentials at the same rate. There'll be some circumstances under which these things can lock together; other circumstances which they won't. Well, if they fire together you can be sure the other cells are going to notice it. So, you could make a computational feature out of this in an evolving brain. Most artificial neural networks don't even have action potentials, let alone have the possibility for synchronizing them.  
+Now, nerve cells produce [action potentials](https://qbi.uq.edu.au/brain-basics/brain/brain-physiology/action-potentials-and-synapses). [*Fig.* \ref{fig:action-potential}]. You have a bunch of cells, which are loosely coupled together, producing action potentials at the same rate. There'll be some circumstances under which these things can lock together; other circumstances which they won't. Well, if they fire together you can be sure the other cells are going to notice it. So, you could make a computational feature out of this in an evolving brain. Most artificial neural networks don't even have action potentials, let alone have the possibility for synchronizing them.
 
 ```{r action-potential, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Action potential, the brief (about one-thousandth of a second) reversal of electric polarization of the membrane of a nerve cell (neuron) or muscle cell."}
 knitr::include_graphics("./assets/action-potential.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Generation of Action Potentials](https://teachmephysiology.com/nervous-system/synapses/action-potential/) at teachmephysiology.com, and [Action potential](https://www.britannica.com/science/action-potential) at britannica.com.
@@ -81,11 +77,12 @@ Source: [Generation of Action Potentials](https://teachmephysiology.com/nervous-
 
 **[Lex]** You mentioned the evolutionary process. The evolutionary process that builds on top of biological systems leverages the weird mess of it, somehow? So, how do you make sense of that ability to leverage all the different kinds of complexities in the biological brain?
 
-**[John]** Well ... Look. At the biological [molecular level](https://plato.stanford.edu/entries/molecular-biology/) *[Fig. \ref{fig:molecular_level}]* you have a piece of DNA which encodes a particular protein. You could duplicate that piece of DNA, and now one part of it encodes that protein. But the other one could itself change a little bit and then start coding for a molecule which is just slightly different. 
+**[John]** Well ... Look. At the biological [molecular level](https://plato.stanford.edu/entries/molecular-biology/) *[Fig.* \ref{fig:molecular_level}] you have a piece of DNA which encodes a particular protein. You could duplicate that piece of DNA, and now one part of it encodes that protein. But the other one could itself change a little bit and then start coding for a molecule which is just slightly different.
 
 ```{r molecular_level, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Construction of new DNA molecules involves two replication forks formed by the opening of the double-stranded DNA at the origin, the parental DNA."}
 knitr::include_graphics("./assets/OSC_Microbio_11_02_RepFork.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [DNA Replication](https://courses.lumenlearning.com/microbiology/chapter/dna-replication/) at lumenlearning.com.
@@ -95,7 +92,7 @@ Now, if that molecule was just slightly different has a function which helped an
 
 **[Lex]** Similar timescale perhaps ...
 
-**[John]** Much shorter in times still ... 
+**[John]** Much shorter in times still ...
 
 **[Lex]** Companies close, go bankrupt, and are born. Yeah, shorter but not much shorter. Some companies lasts for centuries. You're right. If you think of companies as a single organism that builds and all ... it's a fascinating dual correspondence there between biological ...
 
@@ -103,43 +100,46 @@ Now, if that molecule was just slightly different has a function which helped an
 
 **[Lex]** It's better at it. It's better at that kind of integration. So, maybe you've already said it, but what would be the most beautiful aspect or mechanism of the human mind? Is it the adaptive ..., the ability to adapt, as you've described? Or there's some other little quirk that you particularly like?
 
-**[John]** [Adaptation](https://en.wikipedia.org/wiki/Adaptation) is everything when you get down to it. 
+**[John]** [Adaptation](https://en.wikipedia.org/wiki/Adaptation) is everything when you get down to it.
 
 ```{r evolutionary_developments, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Biological evolution of greater intelligence in human individuals has promoted innovation and allowed mastery of more complex concepts and skills."}
 knitr::include_graphics("./assets/evolutionary_developments.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-16px}\noindent
 Source: [Evolutionary neuroscience of cumulative culture](https://www.pnas.org/content/114/30/7861) at Proceedings of the National Academy of Sciences (PNAS).
 \vspace*{15px}
 ```
 
-But there are differences between adaptation, where your learning goes on generations over generations in evolutionary time *[Fig. \ref{fig:evolutionary_developments}]*, or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime **[Fig. \ref{fig:lifetime_development}]**. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system. 
+But there are differences between adaptation, where your learning goes on generations over generations in evolutionary time *[Fig.* \ref{fig:evolutionary_developments}], or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime **[Fig.** \ref{fig:lifetime_development}]. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system.
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=603}{10:02}}
 
 ```{r lifetime_development, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Lifespan theories of cognitive development posit two-component models of cognition. The top section defines the categories, the bottom section illustrates postulated lifespan trajectories."}
 knitr::include_graphics("./assets/lifetime_development.png")
 ```
+
 ```{marginfigure}
 \vspace*{-16px}\noindent
 Source: [Cognitive Development](https://www.sciencedirect.com/topics/psychology/cognitive-development) at sciencedirect.com.
 \vspace*{10px}
 ```
 
-**[Lex]**  What do you mean by mathematical system? Where's the math in the biology?
+**[Lex]** What do you mean by mathematical system? Where's the math in the biology?
 
-**[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. *[Fig. \ref{fig:multidimensional_connections_cortex}]*
- 
+**[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. *[Fig.* \ref{fig:multidimensional_connections_cortex}]
+
 ```{r multidimensional_connections_cortex, fig.margin = TRUE, out.width="85%", cache=TRUE, echo=FALSE, fig.cap = "digital reconstructions of rat neocortical microcircuitry that closely resemble the biological tissue in terms of the numbers, types, and densities of neurons and their synaptic connectivity."}
 knitr::include_graphics("./assets/multidimensional_connections_cortex.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-16px}\noindent
 Source: [Cliques of Neurons Bound into Cavities Provide a Missing Link between Structure and Function](https://www.frontiersin.org/articles/10.3389/fncom.2017.00048/full#supplementary-material) at frontiersin.org.
 ```
 
-If you look at computer chips, computer chips are basically two dimensional structures; a 2.1 dimensions. They really have difficulty doing three-dimensional wiring. Biology in the neocortex is actually also sheet-like and it sits on top of the white matter, which is about ten times the volume of the gray matter, that contains all what you might call the wires. But there's is a huge ...  the effect of computer structure on what is easy and what is hard is immense. And biology does ... makes some things easy that are very difficult to understand how to do computationally. On the other hand, you can't do simple floating-point arithmetic because it's awfully stupid.
+If you look at computer chips, computer chips are basically two dimensional structures; a 2.1 dimensions. They really have difficulty doing three-dimensional wiring. Biology in the neocortex is actually also sheet-like and it sits on top of the white matter, which is about ten times the volume of the gray matter, that contains all what you might call the wires. But there's is a huge ... the effect of computer structure on what is easy and what is hard is immense. And biology does ... makes some things easy that are very difficult to understand how to do computationally. On the other hand, you can't do simple floating-point arithmetic because it's awfully stupid.
 
 **[Lex]** You're saying this kind of three dimensional complicated structure mix ... it's still math; it's still doing math? The kind of math is doing enables you to solve problems of a very different kind?
 
@@ -147,15 +147,16 @@ If you look at computer chips, computer chips are basically two dimensional stru
 
 **[Lex]** So, you mentioned two kinds of adaptation: the evolutionary adaptation and the adaptation in learning at the scale of a single human life. Which is particularly beautiful to you, and interesting? From a research and from just a human perspective? And which is more powerful?
 
-**[John]** I find things most interesting that I begin to see how to get into the edges of them and tease them apart a little bit, see how they work. And since I can't see the evolutionary process going on, I am in awe of it but I find it just a black hole as far as trying to understand what to do. And so in a certain sense I'm in awe of it but I couldn't be interested in working on it. 
+**[John]** I find things most interesting that I begin to see how to get into the edges of them and tease them apart a little bit, see how they work. And since I can't see the evolutionary process going on, I am in awe of it but I find it just a black hole as far as trying to understand what to do. And so in a certain sense I'm in awe of it but I couldn't be interested in working on it.
 
-**[Lex]** The human life timescale is however a thing you can tease apart and study? 
+**[Lex]** The human life timescale is however a thing you can tease apart and study?
 
 **[John]** Yes, you can do it. There's developmental neurobiology [Fig. \ref{fig:visual_auditory_cortex}] which understands all of these connections. Now, the structure evolves from a combination of what the genetics is like and the real; the fact is you're building a system in three dimensions.
 
 ```{r visual_auditory_cortex, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = "Stained brain sections in marmosets indicating the primary visual cortex and the primary auditory cortex."}
 knitr::include_graphics("./assets/visual_auditory_cortex.png")
 ```
+
 ```{marginfigure}
 \vspace*{-16px}\noindent
 Source: [Whole-brain metallomic analysis of the common marmoset (Callithrix jacchus)](https://pubs.rsc.org/en/content/articlehtml/2017/mt/c7mt00012j) at pubs.rsc.org.
@@ -169,20 +170,19 @@ Source: [Whole-brain metallomic analysis of the common marmoset (Callithrix jacc
 ```{r early_development, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = " Timeline of early development and neurogenesis including cell division and cell migration in the human brain."}
 knitr::include_graphics("./assets/early_development.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-16px}\noindent
 Source: [Physical biology of human brain development](https://www.frontiersin.org/articles/10.3389/fncel.2015.00257/full) at frontiersin.org.
 ```
 
-**[Lex]**  Turnover ...
+**[Lex]** Turnover ...
 
 **[John]** What is not effective, what is not wired well enough to use at the moment. is thrown out.
 
-
-
 ## **Neural Networks lack Understanding**
 
-**[Lex]** It's a mysterious process. Let me ask: from what field do you think the biggest breakthroughs in understanding the mind will come in the next decades? Is it neuroscience, computer science, neurobiology, psychology, physics, maybe math, maybe literature? [Laughter] 
+**[Lex]** It's a mysterious process. Let me ask: from what field do you think the biggest breakthroughs in understanding the mind will come in the next decades? Is it neuroscience, computer science, neurobiology, psychology, physics, maybe math, maybe literature? [Laughter]
 
 **[John]** Well, of course, I see the world always through a lens of physics. I grew up in physics and the way I pick problems is very characteristic of physics and of an intellectual background which is not psychology, which is not chemistry, and so on, and so on.
 
@@ -194,7 +194,7 @@ Source: [Physical biology of human brain development](https://www.frontiersin.or
 
 **[John]** There's the question of what do you mean by "understand"?
 
- **[Lex]** Of course ...
+**[Lex]** Of course ...
 
 **[John]** When I taught freshman physics I used to say "I wanted them to understand the subject, to understand Newton laws." I didn't want them simply to memorize a set of examples to which they knew the equations to write down, to generate the answers. I had this nebulous idea of understanding. So, if you looked at a situation you can say "oh, I expect the ball to make that trajectory. All right, I expect." So, I'm into a notion of understanding. I don't know how to express that very well; I've never known how to express it well, and you run smack up against it. Look at these simple neural nets, feed-forward neural nets, which do amazing things, and yet you know contain nothing of the essence of what I would have felt was understanding. Understanding is more than just an enormous lookup table.
 
@@ -209,47 +209,49 @@ Source: [Physical biology of human brain development](https://www.frontiersin.or
 ```{r brain_transient_oscillations, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Brain rythms and transient neuronal oscillations at different regions."}
 knitr::include_graphics("./assets/brain_transient_oscillations.jpeg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Brain rhythms and neural syntax: implications for efficient coding of cognitive content and neuropsychiatric disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3553572/) at ncbi.nlm.nih.gov.
 ```
 
-**[Lex]**  But the rhythms?
+**[Lex]** But the rhythms?
 
 **[John]** But the rhythms, what?
 
 **[Lex]** It's like ... you're comparing the greatest classical musician in the world to a child first learning to play. The question I'm at - but they're still both playing the piano - I'm asking, will it ever go on at Google? Do you have a hope? Because you're one of the seminal figures in both launching both disciplines, both sides of the river ...
 
-
-
 ## **A Timeline for Artificial Intelligence**
 
-**[John]** I think it's going to go on generation after generation the way it has, where you might call the AI computer science community, and says: "let's take the following: this is our model of neurobiology at the moment. Let's pretend it's good enough and do everything we can with it". And it does interesting things, and after a while sort of grinds into the sand, and you say "Oh something else is needed from neurobiology". And some other grand thing comes in and enables you to go a lot further. 
-What was going on ==[ininteligible]== It can be generations of this evolution. I don't know how many of them. And each one is going to get you further into what a brain does. 
+**[John]** I think it's going to go on generation after generation the way it has, where you might call the AI computer science community, and says: "let's take the following: this is our model of neurobiology at the moment. Let's pretend it's good enough and do everything we can with it". And it does interesting things, and after a while sort of grinds into the sand, and you say "Oh something else is needed from neurobiology". And some other grand thing comes in and enables you to go a lot further. What was going on ==[ininteligible]== It can be generations of this evolution. I don't know how many of them. And each one is going to get you further into what a brain does.
 
 ```{r turing_computing_machinery, fig.margin = TRUE, out.width="95%", cache=TRUE, echo=FALSE, fig.cap = "Alan Turing's paper 'Computing Machinery and Intelligence'."}
 knitr::include_graphics("./assets/turing_computing_machinery.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [The Turing Digital Archive](http://www.turingarchive.org/viewer/?id=473&title=1) at turingarchive.org.
 ```
 
-In some sense, passes the Turing test [Fig. \ref{fig:turing_computing_machinery}] longer and in more broad aspects. And how many of these are good there are going to have to be before you say "I've made something, I've made a human", I don't know.
+And, in some sense, passes the Turing test [Fig. \ref{fig:turing_computing_machinery}] longer and in more broad aspects. And how many of these are good there are going to have to be before you say "I've made something, I've made a human", I don't know.
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=1215}{20:15}}
 
 **[Lex]** But your sense is it might be a couple ...
 
-**[John]** My sense is might be a couple more. And going back to my brain waves of the word. From the AI point of view, they would say "ah, maybe these are epi-phenomena and not important at all." The first car I had ==[ininteligible]== a 1936 Dodge. It could go 45 miles an hour and the wheels were shimmering. Good speedometer. Now, ==[ininteligible]== design the cars that way, the cars now ==[ininteligible]== function to have that. But in biology, it would be useful to know when are you going more than 45 miles an hour, you just capture that and you wouldn't worry about where it came from. It'll be a long time before that kind of thing which can take place in large complex networks of things is actually used in the computation. Look, how many transistors are there in a laptop these days? 
+**[John]** My sense is might be a couple more. And going back to my brain waves of the word. From the AI point of view, they would say "ah, maybe these are epi-phenomena and not important at all." The first car I had, a 1936 Dodge. It could go 45 miles an hour and the wheels were shimmering. Good speedometer then. Now, they don't design the cars that way, the cars now functioning to have that. But in biology, it would be useful to know when are you going more than 45 miles an hour, you just capture that, and you wouldn't worry about where it came from. It'll be a long time before that kind of thing which can take place in large complex networks of things is actually used in the computation. Look, how many transistors are there in a laptop these days?
 
 **[Lex]** Actually, I don't know the number ...
 
-**[John]** it's on a scale of 10 to the 10 ^[In fact, a CPU in a laptop has above $10^9$ transisistors \vspace*{10px} ], I can't remember the number either. All the transistors are somewhat similar and most physical systems with that many parts, all of which are similar, have *collective properties*. 
+**[John]** it's on a scale of 10 to the 10 [^1], I can't remember the number either. All the transistors are somewhat similar and most physical systems with that many parts, all of which are similar, have *collective properties*.
+
+[^1]: In fact, a CPU in a laptop has above $10^9$ transistors \vspace*{10px}
 
 ```{r soundwaves_air, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Sound waves produced by a speaker showing collective properties such as phase, frequency, interferance, wavelentgh, and amplitude."}
 knitr::include_graphics("./assets/soundwaves_air.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Normal Modes of a Standing Sound Wave](https://courses.lumenlearning.com/suny-osuniversityphysics/chapter/17-4-normal-modes-of-a-standing-sound-wave/) at courses.lumenlearning.com.
@@ -258,29 +260,29 @@ Source: [Normal Modes of a Standing Sound Wave](https://courses.lumenlearning.co
 ```{r earthquake_properties, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Earthquake collective properties."}
 knitr::include_graphics("./assets/earthquake_properties.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Time-advanced occurrence of moderate-size earthquakes...](https://www.researchgate.net/figure/Seismic-properties-of-two-moderate-size-earthquakes-a-Spatial-distribution-of-the-15_fig2_327475650) at researchgate.net.
 \vspace*{20px}\noindent
 ```
 
-Sound waves in air [Fig. \ref{fig:soundwaves_air}]; earthquakes [Fig. \ref{fig:earthquake_properties}], what have you, have collective properties. Weather. There are no collective properties used in artificial neural networks, in AI. If biology uses them it's gonna take us some more generations ==[ininteligible]== before people actually dig in and see how they are used, what they mean. 
+Sound waves in air [Fig. \ref{fig:soundwaves_air}]; earthquakes [Fig. \ref{fig:earthquake_properties}], what have you, have collective properties. Weather. There are no collective properties used in artificial neural networks, in AI. If biology uses them it's gonna take us some more generations of things before people actually dig in and see how they are used, what they mean.
 
 **[Lex]** You're very right. It might have to return several times to neurobiology and try to make our transistors more messy ...
 
 **[John]** Yeah, yeah. At the same time the simple ones will conquer big aspects, and I think one of the most ..., biggest surprises to me was how well learning systems, which are manifesting non-biological, how important they can be actually, and how important, how useful they can be in AI.
 
-
-
 ## **Hopfield Networks and Associative Memory**
 
-**[Lex]**  If we can just take a stroll to some of your work, that is incredibly surprising that it works as well as it does that launched a lot of the recent work with neural networks, if we go to what are now called Hopfield Networks, can you tell me what is [associative memory](https://en.wikipedia.org/wiki/Associative_memory_(psychology)) in the mind for the human side? Let's explore memory for a bit. 
+**[Lex]** If we can just take a stroll to some of your work, that is incredibly surprising that it works as well as it does that launched a lot of the recent work with neural networks, if we go to what are now called Hopfield Networks, can you tell me what is [associative memory](https://en.wikipedia.org/wiki/Associative_memory_(psychology)) in the mind for the human side? Let's explore memory for a bit.
 
 **[John]** What you mean by associative memory [Fig. \ref{fig:associative_memory}] is: "oh, you have a memory of each of your friends. your friend has all kinds of properties from what they look like, whether voice sounds like, where they went to college, where you met them, go on and on, what science papers they've written." If I start talking about a five foot ten weary cognitive scientist that's got a very bad back. It doesn't take very long for you to say "are you talking about Geoff Hinton". I never mentioned the name, or anything very particular, but somehow a few facts are associated with this, with a particular person, enables you to get a hold of the rest of the facts, or of another subset of of them. It's this the ability to link things together, link experiences together, which goes under the general name of [associative memory](http://www.borgelt.net/doc/hfnd/hfnd.html), and a large part of intelligent behavior is actually just large associative memories at work, as far as I can see.
 
 ```{r associative_memory, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Associative memories are what allow individuals to make certain connections and inferences even when they're not clearly explained or spelled out."}
 knitr::include_graphics("./assets/an-overview-of-associative-memory-4.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [An Overview Of Associative Memory
@@ -289,13 +291,13 @@ Source: [An Overview Of Associative Memory
 
 **[Lex]** What do you think is the mechanism of how it works in the mind? Is it is it a mystery to you still? Do you have inklings of how this essential thing for cognition works?
 
-**[John]** What I made 35 years ago was, of course, a crude physics model to show the kind ... actually, enable you to understand my old sense of understanding as a physicist because you could say "ah, I understand why this goes to stable state. It's like things going down downhill." And that gives you something with which to think in physical terms rather than only in mathematical terms. 
+**[John]** What I made 35 years ago was, of course, a crude physics model to show the kind ... actually, enable you to understand my old sense of understanding as a physicist because you could say "ah, I understand why this goes to stable state. It's like things going down downhill." And that gives you something with which to think in physical terms rather than only in mathematical terms.
 
 **[Lex]** So, you've created these associative artificial ...
 
-**[John]** That's right. And now, if you if you look at what I did, I didn't at all describe a system which gracefully learns. I described it as a system in which you could understand how things, how learning could link things together, how very crudely it might learn. One of the things which intrigues me, as I re-investigate that system no,w to some extent is "Look, I see you every second for the next hour, or what have you. Each look at you is a little bit different. I don't store all those second-by-second images, I don't store 3,000 images. I somehow compact this information. So, now I have a view of you which I can use. It doesn't slavishly remember anything in particular but it could pack the information in useful chunks which are ... Somehow, it's these chunks, which are not just activities of neurons; bigger things than that which are the real ==[ininteligible]== which are useful to you.
+**[John]** That's right. And now, if you if you look at what I did, I didn't at all describe a system which gracefully learns. I described it as a system in which you could understand how things, how learning could link things together, how very crudely it might learn. One of the things which intrigues me, as I re-investigate that system now, at some extent, is "Look, I see you every second for the next hour, or what have you. Each look at you is a little bit different. I don't store all those second-by-second images, I don't store 3,000 images. I somehow compact this information. So, now I have a view of you, which I can use. It doesn't slavishly remember anything in particular but it could pack the information in useful chunks which are ... Somehow, it's these chunks, which are not just activities of neurons; bigger things than that which are the real energies which are useful to you.
 
-**[Lex]**  Useful to you to describe, to compress this information? 
+**[Lex]** Useful to you to describe, to compress this information?
 
 **[John]** I just compressed it in such a way that if I get ... the information comes in just like this again, I don't bother about how to rewrite it. Or efforts to rewrite it simply do not yield anything because those things are already written. And that needs to be not ... look this up, it has started somewhere already. It has to be something which is much more automatic in the machine hardware.
 
@@ -303,59 +305,60 @@ Source: [An Overview Of Associative Memory
 
 **[John]** It is weird ...
 
-
-
 ## **Neural Networks are not Dynamical Systems**
 
-**[Lex]** Yeah. But nevertheless that's what everyone calls them. So, here we are. So, that's a simplification. That's what a physicists would do. You and [Richard Feynman](https://www.britannica.com/biography/Richard-Feynman)^[Richard Feynman, in full Richard Phillips Feynman, (born May 11, 1918, New York, New York, U.S.—died February 15, 1988, Los Angeles, California), American theoretical physicist who was widely regarded as the most brilliant, influential, and iconoclastic figure in his field in the post-World War II era. Feynman remade quantum electrodynamics—the theory of the interaction between light and matter—and thus altered the way science understands the nature of waves and particles. He was co-awarded the Nobel Prize for Physics in 1965 for this work, which tied together in an experimentally perfect package all the varied phenomena at work in light, radio, electricity, and magnetism. ] sat down and talked about associative memory. Now, if you look at the mind ... you can't quite simplify it so perfectly ...
+**[Lex]** Yeah. But nevertheless that's what everyone calls them. So, here we are. So, that's a simplification. That's what a physicists would do. You and [Richard Feynman](https://www.britannica.com/biography/Richard-Feynman)[^2] sat down and talked about associative memory. Now, if you look at the mind ... you can't quite simplify it so perfectly ...
 
-**[John]** Let me backtrack just a little bit. Biology is about dynamical systems. Computers are dynamical systems. If you want to ==[ininteligible]== neurobiology. What is the time scale? there's a dynamical system in which you have a fairly fast timescale in which ... the synapses don't change much during this computation, so I'll think of the synapses are fixed, and just do the dynamics of the activity. Or, you can say the synapses are changing fast enough that I have to have the [synaptic dynamics](http://news.mit.edu/2012/inhibitory-and-excitatory-synapse-dynamics-in-the-brain) [Fig. \ref{fig:synaptic_dynamics_abc}] working at the same time as the system dynamics in order to understand the biology. If you look at the feed-forward of artificial neural nets they're all done as learning. First of all. I spent some time learning and not performing, then I turned off learning and I perform ...
+[^2]: Richard Feynman, in full Richard Phillips Feynman, (born May 11, 1918, New York, New York, U.S.---died February 15, 1988, Los Angeles, California), American theoretical physicist who was widely regarded as the most brilliant, influential, and iconoclastic figure in his field in the post-World War II era. Feynman remade quantum electrodynamics---the theory of the interaction between light and matter---and thus altered the way science understands the nature of waves and particles. He was co-awarded the Nobel Prize for Physics in 1965 for this work, which tied together in an experimentally perfect package all the varied phenomena at work in light, radio, electricity, and magnetism.
+
+**[John]** Let me backtrack just a little bit. Biology is about dynamical systems. Computers are dynamical systems. If you want to embottle neurobiology. What is the time scale? there's a dynamical system in which you have a fairly fast timescale in which ... the synapses don't change much during this computation, so I'll think of the synapses are fixed, and just do the dynamics of the activity. Or, you can say the synapses are changing fast enough that I have to have the [synaptic dynamics](http://news.mit.edu/2012/inhibitory-and-excitatory-synapse-dynamics-in-the-brain) [Fig. \ref{fig:synaptic_dynamics_abc}] working at the same time as the system dynamics in order to understand the biology. If you look at the feed-forward of artificial neural nets they're all done as learning. First of all. I spent some time learning and not performing, then I turned off learning and I perform ...
 
 ```{r synaptic_dynamics_abc, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Synaptic Dynamics diagram showing a network of spiking integrate-and-fire neurons; decision-making netowkr; and energy  at different phases."}
 knitr::include_graphics("./assets/synaptic_dynamics_abc.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Synaptic dynamics and decision making](https://www.pnas.org/content/107/16/7545#F2) at pnas.org.
 ```
 
-**[Lex]** Right 
+**[Lex]** Right
 
-**[John]** That's not biology. As I look more deeply at neurobiology, even as associative memory, I've got to face the fact that the dynamics of a synapse change is going on all the time, and I can't just get by by saying "I'll do the dynamics of the activity with a fixed synapses." 
+**[John]** That's not biology. As I look more deeply at neurobiology, even as associative memory, I've got to face the fact that the dynamics of a synapse change is going on all the time, and I can't just get by by saying "I'll do the dynamics of the activity with a fixed synapses."
 
-**[Lex]** So, the dynamics of the synapses, is actually fundamental to the whole system? 
+**[Lex]** So, the dynamics of the synapses, is actually fundamental to the whole system?
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=1802}{30:02}}
 
 **[John]** Yes. And there's nothing necessarily separating the time scales. The time scales can be separate. And it's neat for the physicists - of the mathematicians point of view-, but it's not necessarily true in neurobiology.
 
-
-
 ## **Hopfield Networks and Learning**
 
 **[Lex]** You're kind of dancing beautifully between showing a lot of respect to physics, and then also saying that physics cannot quite reach the complexity of biology. So, where do you land, or do you continuously dance between the two?
 
-**[John]** I continuously dance between them because my whole notion of understanding is that you can describe to somebody else how something works in ways which are honest and believable, and still not describing all the nuts and bolts in detail. Weather. I can describe weather as 10 to the 32 molecules ($10^{32}$) colliding in the atmosphere, I can simulate weather that way, or have a big enough machine to simulate it accurately. It's no good for understanding but I just want to understand things. I want to understand things in terms of wind patterns, hurricanes, pressure differentials, and so on; all things as were collective. And the physicist in me always hopes that biology will have some things which can be said about it which was both true and for which you don't need all the molecular details of the molecules colliding. That's what I mean from the roots of physics by understanding. 
+**[John]** I continuously dance between them because my whole notion of understanding is that you can describe to somebody else how something works in ways which are honest and believable, and still not describing all the nuts and bolts in detail. Weather. I can describe weather as 10 to the 32 molecules ($10^{32}$) colliding in the atmosphere, I can simulate weather that way, or have a big enough machine to simulate it accurately. It's no good for understanding but I just want to understand things. I want to understand things in terms of wind patterns, hurricanes, pressure differentials, and so on; all things as were collective. And the physicist in me always hopes that biology will have some things which can be said about it which was both true and for which you don't need all the molecular details of the molecules colliding. That's what I mean from the roots of physics by understanding.
 
 **[Lex]** How did Hopfield Networks [Fig. \ref{fig:small_hopfield_network}] help you understand what insight to give us about memory, about learning?
 
 ```{r small_hopfield_network, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "A small Hopfield network of 3 nodes. Energy on the y-axis of the diagram"}
 knitr::include_graphics("./assets/small_hopfield_network.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Discovery of Salient Low-Dimensional Dynamical Structure ... Using Hopfield Networks](https://www.researchgate.net/publication/300252504_Discovery_of_Salient_Low-Dimensional_Dynamical_Structure_in_Neuronal_Population_Activity_Using_Hopfield_Networks) at researchgate.net.
 ```
 
-**[John]** They didn't give insights about learning. They gave insights about how things having learned could be expressed. How having learned a picture -of a picture of you- reminds me of your name. That didn't describe a reasonable way of actually doing the learning. Only says if it had previously learned the connections of this kind of pattern would now be able to behave in a physical way ==[ininteligible]== part of the pattern in here, the other part of the pattern will complete over here. I can understand that physics if the right learning stuff had already been put in, and you couldn't understand why then putting in a picture of somebody else would generate something else over here. But it did not have a reasonable description of the learning process.
+**[John]** They didn't give insights about learning. They gave insights about how things having learned could be expressed. How having learned a picture -of a picture of you- reminds me of your name. That didn't describe a reasonable way of actually doing the learning. Only says if it had previously learned the connections of this kind of pattern would now be able to behave in a physical way they are off. I put part of the pattern in here, the other part of the pattern will complete over here. I can understand that physics if the right learning stuff had already been put in, and you couldn't understand why then putting in a picture of somebody else would generate something else over here. But it did not have a reasonable description of the learning process.
 
 **[Lex]** But even ... forget learning, I mean that's just a powerful concept that sort of forming representations that are useful to be robust, you know, for error correction kind of thing. So, this is kind of what the biology does we're talking about?
 
-**[John]** What my paper did was simply enable you. There are lots of ways of being robust. If you think of it a dynamical system here, you think of a system where a path is going on and in time, and if you think for a computer is a computational path which is going out in a huge dimensional space of ones and zeros. And an error-correcting system is a system which if you get a little bit off that trajectory will push you back onto that trajectory again till you get to the same answer in spite of the fact that there were things though that the computation wasn't being ideally done all the way along a line. 
+**[John]** What my paper did was simply enable you. There are lots of ways of being robust. If you think of it a dynamical system here, you think of a system where a path is going on and in time, and if you think for a computer is a computational path which is going out in a huge dimensional space of ones and zeros. And an error-correcting system is a system which if you get a little bit off that trajectory will push you back onto that trajectory again till you get to the same answer in spite of the fact that there were things though that the computation wasn't being ideally done all the way along a line.
 
 ```{r error_correction, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = "An error correction model example showing the simulation result of the longitudinal vehicle positioning control."}
 knitr::include_graphics("./assets/error_correction_2.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Online smooth error correction method for the reference trajectory ... in positioning control](https://ieeexplore.ieee.org/document/7405029) at ieeexplore.ieee.org.
@@ -367,13 +370,12 @@ There are lots of models for error correction [Fig. \ref{fig:error_correction}] 
 
 **[John]** That's right
 
-
-
 ## **Boltzmann Machines**
 
 ```{r Boltzmannexamplev2, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "A graphical representation of a Boltzmann machine with a few weights."}
 knitr::include_graphics("./assets/Boltzmannexamplev2.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Boltzmann Machines](https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf) at *cs.toronto.edu*.
@@ -381,35 +383,41 @@ Source: [Boltzmann Machines](https://www.cs.toronto.edu/~hinton/csc321/readings/
 
 **[Lex]** So, these kinds of networks actually led to a lot of the work that is going on now in neural networks, artificial neural networks. So, the follow-on work with restrictive Boltzmann Machines [Fig. \ref{fig:Boltzmannexamplev2}] and Deep Belief Nets, followed on from the from these ideas of the Hopfield network. What do you think about this continued progress of that work towards now reinvigorated exploration of feed-forward neural networks and recurrent neural networks, convolutional neural networks, and kinds of networks that are helping solve image recognition, natural language processing, all that kind of stuff?
 
-**[John]** it's always intrigued me one of the most long-lived of the learning systems is the [Boltzmann Machine](http://www.scholarpedia.org/article/Boltzmann_machine), which is intrinsically a [feedback network](http://feedbacknet.stanford.edu/). And was the brilliance of Hinton^[[Geoff Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)] and Sejnowski^[[Terry Sejnowski](https://en.wikipedia.org/wiki/Terry_Sejnowski)] to understand how to do learning in that.^[[Paper "A Learning Algorithm for Boltzmann Machines.". 1985. By David H. Ackley, Geoffrey Hinton, and Terrence J. Sejnowski](https://www.enterrasolutions.com/media/docs/2013/08/cogscibm.pdf)] 
-It's still a useful way to understand learning, and the learning that you understand has something to do with the way that feed-forward systems  work. But it's not always exactly simple to express that intuition. It always amuses me, as Geoff Hinton keeps going back to that, well yet again, on a form of the Boltzmann machine because really ... which has feedback and interesting probabilities in it. This is a lovely encapsulation of something in computational. 
+**[John]** it's always intrigued me one of the most long-lived of the learning systems is the [Boltzmann Machine](http://www.scholarpedia.org/article/Boltzmann_machine), which is intrinsically a [feedback network](http://feedbacknet.stanford.edu/). And was the brilliance of Hinton[^3] and Sejnowski[^4] to understand how to do learning in that.[^5] It's still a useful way to understand learning, and the learning that you understand has something to do with the way that feed-forward systems work. But it's not always exactly simple to express that intuition. It always amuses me, as Geoff Hinton keeps going back to that, well yet again, on a form of the Boltzmann machine because really ... which has feedback and interesting probabilities in it. This is a lovely encapsulation of something in computational.
+
+[^3]: [Geoff Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)
+
+[^4]: [Terry Sejnowski](https://en.wikipedia.org/wiki/Terry_Sejnowski)
+
+[^5]: [Paper "A Learning Algorithm for Boltzmann Machines.". 1985. By David H. Ackley, Geoffrey Hinton, and Terrence J. Sejnowski](https://www.enterrasolutions.com/media/docs/2013/08/cogscibm.pdf)
 
 **[Lex]** Something computational?
 
 ```{r feedback_network, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "A feedback based learning model."}
 knitr::include_graphics("./assets/feedback_network.png")
 ```
+
 ```{r feedback_vs_feedforward, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Feedback vs Feedforward computation graphs."}
 knitr::include_graphics("./assets/feedback_vs_feedforward.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2016/projects/wu_shen.pdf) at *web.stanford.edu*.
 ```
 
-**[John]**  Something both computational and physical. Computational in that very much related to feed-forward networks [Fig. \ref{fig:feedback_vs_feedforward}]. Physical in that Boltzmann machine learning is really learning a set of parameters for physics [Hamiltonian](https://www.britannica.com/science/Hamiltonian-function) or Energy function.
+**[John]** Something both computational and physical. Computational in that very much related to feed-forward networks [Fig. \ref{fig:feedback_vs_feedforward}]. Physical in that Boltzmann machine learning is really learning a set of parameters for physics [Hamiltonian](https://www.britannica.com/science/Hamiltonian-function) or Energy function.
 
-**[Lex]**  What do you think about learning in this whole domain. Do you think the aforementioned Geoff Hinton all the work there with [backpropagation](https://www.youtube.com/watch?v=Ilg3gGewQ5U), all the kind of learning that goes on in these networks ... How do you ... if we compared to learning in the brain, for example, is there echoes of the same kind of power that backpropagation reveals about these kinds of [recurrent networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)? Or is it something fundamentally different going on in the brain? 
+**[Lex]** What do you think about learning in this whole domain. Do you think the aforementioned Geoff Hinton all the work there with [backpropagation](https://www.youtube.com/watch?v=Ilg3gGewQ5U), all the kind of learning that goes on in these networks ... How do you ... if we compared to learning in the brain, for example, is there echoes of the same kind of power that backpropagation reveals about these kinds of [recurrent networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)? Or is it something fundamentally different going on in the brain?
 
 **[John]** I don't think the brain is as deep as the deepest networks go; the deepest computer science networks. I do wonder whether they're part of that depth, of the computer science networks, is necessitated by the fact that the only learning is easily done on a machine is feed-forward. So, there's the question of to what extent has the biology, which has some feed-forward and some feedback [Fig. \ref{fig:feedback_network}], been captured by something which got many more neurons but much more depth to the neurons in it.
 
 **[Lex]** So part of you wonders if the feedback is actually more essential than the number of neurons or the depth -the dynamics of the feedback?
 
-**[John]** The dynamics of the feedback ... if you don't have feedback it's a little bit like a building a big computer and running it up through one clock cycle, and then you can't do anything until you reload something coming in. How do you use the fact that there are multiple clocks? How do I use the fact that you can close your eyes, stop listening to me, and think about a chessboard for two minutes without any input whatsoever? 
-
-
+**[John]** The dynamics of the feedback ... if you don't have feedback it's a little bit like a building a big computer and running it up through one clock cycle, and then you can't do anything until you reload something coming in. How do you use the fact that there are multiple clocks? How do I use the fact that you can close your eyes, stop listening to me, and think about a chessboard for two minutes without any input whatsoever?
 
 ## **On Consciousness**
+
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=2400}{40:00}}
 
 **[Lex]** Yeah, that memory thing. That's fundamentally a feedback kind of mechanism. You're going back to something. Yes, it's hard to understand; hard to introspect. Let alone consciousness ...
@@ -418,11 +426,17 @@ Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2
 
 **[Lex]** Yes. Because that's tied up in there too. You can't just put that on another shelf ...
 
-**[John]** Every once in a while like I get interested in consciousness^[The words “conscious” and “consciousness” are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective “conscious” is heterogeneous in its range, being applied both to whole organisms—creature consciousness—and to particular mental states and processes—state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/) \vspace{10px}] and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them. 
+**[John]** Every once in a while like I get interested in consciousness[^6] and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them.
+
+[^6]: The words "conscious" and "consciousness" are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective "conscious" is heterogeneous in its range, being applied both to whole organisms---creature consciousness---and to particular mental states and processes---state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/) \vspace{10px}
 
 **[Lex]** What's consciousness? Let's try to take a brief step into that room ...
 
-**[John]** Well, that's Marvin Minsky^[Marvin Lee Minsky (August 9, 1927 – January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/) \vspace{10px}]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon^[An epi-phenomenon is a secondary phenomenon that occurs alongside or in parallel to a primary phenomenon. [Source: wikipedia.org](https://en.wikipedia.org/wiki/Epiphenomenon)], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it. 
+**[John]** Well, that's Marvin Minsky[^7]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon[^8], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it.
+
+[^7]: Marvin Lee Minsky (August 9, 1927 -- January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/) \vspace{10px}
+
+[^8]: An epi-phenomenon is a secondary phenomenon that occurs alongside or in parallel to a primary phenomenon. [Source: wikipedia.org](https://en.wikipedia.org/wiki/Epiphenomenon)
 
 **[Lex]** So his view that consciousness is not ... that's just like little icing on the cake. The real cake is in the subconscious?
 
@@ -430,15 +444,16 @@ Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2
 
 **[Lex]** That's the better word there
 
-**[John]** it's only the Freud captured the other word 
+**[John]** it's only the Freud captured the other word
 
-**[Lex]** Yeah. It's that's a confusing word subconscious 
+**[Lex]** Yeah. It's that's a confusing word subconscious
 
 **[John]** [Nicholas Chater](https://www.wbs.ac.uk/about/person/nick-chater/) wrote an interesting book, I think its title is ["The mind is flat"](https://www.worldcat.org/title/mind-is-flat-the-remarkable-shallowness-of-the-improvising-brain/oclc/1099681439). [Fig. \ref{fig:the_mind_is_flat}]. In a neural net sense, flat is something which is of very broad neural net without anything other than the layers in depth, or as a deep brain would be many layers and not so broad. In the same sense that if you push Minsky hard enough he would talk to you and say "consciousness is your effort to explain to yourself that what you have already done."
 
 ```{r the_mind_is_flat, fig.margin = TRUE, out.width="90%", cache=TRUE, echo=FALSE, fig.cap = "The Mind Is Flat."}
 knitr::include_graphics("./assets/the_mind_is_flat.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Book: [The Mind Is Flat: The Remarkable Shallowness of the Improvising Brain](https://www.amazon.com/Mind-Flat-Remarkable-Shallowness-Improvising/dp/030023872X) at *amazon.com*.
@@ -448,20 +463,26 @@ Book: [The Mind Is Flat: The Remarkable Shallowness of the Improvising Brain](ht
 
 **[John]** That's right. And then, so much of what we do for our memories of events. For example, if there's some traumatic event you witness, you will have a few facts about it correctly done. If somebody asks you about it you will weave a narrative which is actually much more rich in detail than that. Based on some anchor points you have of correct things and pulling together general knowledge on the other but you will have a narrative and once you generate that narrative you are very likely to repeat that narrative and claim that all the things you have hidden are actually the correct things. There was a marvelous example of that in the [Watergate](https://www.britannica.com/event/Watergate-Scandal) / impeachment era of John Dean. John Dean -you're too young to know-, had been the personal lawyer of Nixon. And John Dean was involved in the cover-up. [John Dean](https://en.wikipedia.org/wiki/John_Dean) ultimately realized the only way to keep himself out of jail for a long time was actually to tell some of the truths about [Nixon](https://www.whitehouse.gov/about-the-white-house/presidents/richard-m-nixon/). John Dean was a tremendous witness; he would remember these conversations in great detail, very convincingly detail. Long afterward some of the tapes, the secret cases from where John Dean was recalling these conversations, were published. And one found out that John Dean had a good but not exceptional memory. What he had was an ability to paint vividly, and in some sense accurately, the tone of what was going on.
 
-**[Lex]** By the way, that's a beautiful description of consciousness. Where do you stand in today -perhaps has changed day to day-, but where do you stand on the importance of consciousness in our whole big mess of cognition? Is it just a little narrative maker, or is it actually fundamental to intelligence? 
+**[Lex]** By the way, that's a beautiful description of consciousness. Where do you stand in today -perhaps has changed day to day-, but where do you stand on the importance of consciousness in our whole big mess of cognition? Is it just a little narrative maker, or is it actually fundamental to intelligence?
 
-**[John]** That's a very hard one. I asked Francis Crick^[Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick) \vspace{10px}] about consciousness. He launched forward a long monologue about handling the peas, and how Mendel^[Gregor Mendel, (born July 22, 1822, Heinzendorf, Silesia, Austrian Empire [now Hynčice, Czech Republic]—died January 6, 1884, botanist, teacher, and Augustinian prelate, the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism. [Source: britannica.com](https://www.britannica.com/biography/Gregor-Mendel) \vspace{10px}] knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his position^[
-Dr. Crick, in his 28 years at the Salk Institute for Biological Studies, has focused on the mind, and in particular the question of consciousness. While many scientists assume that consciousness is a global property of the brain - 'a gestalt phenomenon' - Dr. Koch and Dr. Crick say they believe that only a few neurons are responsible at any given moment. Of the 50 billion or so neurons in the brain, Dr. Crick says that perhaps only tens of thousands, or even a few thousand, give rise to the feeling of conscious awareness. 'We believe it is essentially a local phenomenon,' he said. [Source: nytimes.com](https://www.nytimes.com/2004/04/13/science/scientists-work-francis-crick-christof-koch-after-double-helix-unraveling.html) \vspace{10px}]. If you read this book [Fig. \ref{fig:quest_for_consciousness}] which he wrote with Koch, I think ...
+**[John]** That's a very hard one. I asked Francis Crick[^9] about consciousness. He launched forward a long monologue about handling the peas, and how Mendel[^10] knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his position[^11]. If you read this book [Fig. \ref{fig:quest_for_consciousness}] which he wrote with Koch, I think ...
+
+[^9]: Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick) \vspace{10px}
+
+[^10]: Gregor Mendel, (born July 22, 1822, Heinzendorf, Silesia, Austrian Empire [now Hynčice, Czech Republic]---died January 6, 1884, botanist, teacher, and Augustinian prelate, the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism. [Source: britannica.com](https://www.britannica.com/biography/Gregor-Mendel) \vspace{10px}
+
+[^11]:  Dr. Crick, in his 28 years at the Salk Institute for Biological Studies, has focused on the mind, and in particular the question of consciousness. While many scientists assume that consciousness is a global property of the brain - 'a gestalt phenomenon' - Dr. Koch and Dr. Crick say they believe that only a few neurons are responsible at any given moment. Of the 50 billion or so neurons in the brain, Dr. Crick says that perhaps only tens of thousands, or even a few thousand, give rise to the feeling of conscious awareness. 'We believe it is essentially a local phenomenon,' he said. [Source: nytimes.com](https://www.nytimes.com/2004/04/13/science/scientists-work-francis-crick-christof-koch-after-double-helix-unraveling.html) \vspace{10px}
 
 ```{r quest_for_consciousness, fig.margin = TRUE, out.width="90%", cache=TRUE, echo=FALSE, fig.cap = "The Quest for Consciousness: A Neurobiological Approach."}
 knitr::include_graphics("./assets/quest_for_consciousness.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr_ext_tmb) at *amazon.com*.
 ```
 
-**[Lex]** Yeah, [Christof Koch](https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/christof-koch/) 
+**[Lex]** Yeah, [Christof Koch](https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/christof-koch/)
 
 **[John]** I find it unconvincing for this first smoking gun reason. Start going on and collecting views without actually having taken a very strong one myself because I haven't seen the entry point. Not seeing the smoking gun and the point of view of physics, I don't see the entry point. Whereas the neurobiologist, once they understood the idea of a collective and evolutional dynamics, which could be described as a collective phenomenon, I thought "Ah, there's a point where I know about physics", it is so different from any neurobiologist that I have something that I might be able to contribute.
 
@@ -469,71 +490,77 @@ Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr
 
 **[John]** From my point of view that's correct. And of course people ... this is like everybody else. You think very but broadly about things you have. The closest related question is about free will. Your belief you have free will. Physicists will give an offhand answer and then backtrack, backtrack, backtrack, when they realize that the answer they gave must fundamentally contradict the laws of physics.
 
-**[Lex]**  Answering questions of freewill and consciousness naturally lead to contradictions from a physics perspective. It eventually ends up with quantum mechanics, and then you get into that whole mess of trying to understand how much from a physics perspective, how much is determined -already predetermined-, much is already deterministic about our universe, there's lots of difference ...
+**[Lex]** Answering questions of freewill and consciousness naturally lead to contradictions from a physics perspective. It eventually ends up with quantum mechanics, and then you get into that whole mess of trying to understand how much from a physics perspective, how much is determined -already predetermined-, much is already deterministic about our universe, there's lots of difference ...
 
-**[John]** And if you don't push quite that far you can say "essentially all of neurobiology, which is relevant, it can be captured by classical equations of motion." Because in my view of the mysteries of the brain are not the mysteries of quantum mechanics but the mysteries of what can happen when you have a dynamical system, a driven system, with 10 to the 14 ($10^{14}$) parts. The bare complexity is something which is ..., the physical complex system is at least as badly understood as the physics of phase coherence in Quantum Mechanics. 
-
-
+**[John]** And if you don't push quite that far you can say "essentially all of neurobiology, which is relevant, it can be captured by classical equations of motion." Because in my view of the mysteries of the brain are not the mysteries of quantum mechanics but the mysteries of what can happen when you have a dynamical system, a driven system, with 10 to the 14 ($10^{14}$) parts. The bare complexity is something which is ..., the physical complex system is at least as badly understood as the physics of phase coherence in Quantum Mechanics.
 
 ## **Attractor Networks**
 
-**[Lex]** Can we go there for a second? You've talked about *attractor networks*^[In general, an **attractor network** is a network of nodes (i.e., neurons in a biological network), often recurrently connected, whose time dynamics settle to a stable pattern. That pattern may be stationary, time-varying (e.g. cyclic), or even stochastic-looking (e.g., chaotic). The particular pattern a network settles to is called its ‘attractor’. In theoretical neuroscience, different kinds of attractor neural networks have been associated with different functions, such as memory, motor behavior, and classification. Describing networks as attractor networks allows researchers to employ methods of dynamical systems theory to quantitatively analyze their characteristics (e.g. stability, robustness, etc.). [Source: www.scholarpedia.org ](http://www.scholarpedia.org/article/Attractor_network)], and just maybe you could say what are attractor networks? And, more broadly, what are interesting network dynamics that emerge in these or other complex systems?
+**[Lex]** Can we go there for a second? You've talked about *attractor networks*[^12], and just maybe you could say what are attractor networks? And, more broadly, what are interesting network dynamics that emerge in these or other complex systems?
 
-**[John]** You have to be willing to think in a huge number of dimensions. In a huge number of dimensions the behavior of a system can be thought of as just the motion of the point over time in those huge number of dimensions. An attractor network is simply a network where there is a line and other lines converge on it in time. That's the essence of an attractor network that's how you ... 
+[^12]: In general, an **attractor network** is a network of nodes (i.e., neurons in a biological network), often recurrently connected, whose time dynamics settle to a stable pattern. That pattern may be stationary, time-varying (e.g. cyclic), or even stochastic-looking (e.g., chaotic). The particular pattern a network settles to is called its 'attractor'. In theoretical neuroscience, different kinds of attractor neural networks have been associated with different functions, such as memory, motor behavior, and classification. Describing networks as attractor networks allows researchers to employ methods of dynamical systems theory to quantitatively analyze their characteristics (e.g. stability, robustness, etc.). [Source: www.scholarpedia.org](http://www.scholarpedia.org/article/Attractor_network)
+
+**[John]** You have to be willing to think in a huge number of dimensions. In a huge number of dimensions the behavior of a system can be thought of as just the motion of the point over time in those huge number of dimensions. An attractor network is simply a network where there is a line and other lines converge on it in time. That's the essence of an attractor network that's how you ...
 
 **[Lex]** In a highly dimensional space ...
 
-**[John]** And the easiest way to get that is to do it in a high dimensional space where some of these dimensions provide the dissipation ==[ininteligible]==. In a physical system, trajectories can contract everywhere - they have to contract in some places and expand in others. There was a fundamental classical theorem in statistical mechanics which goes under the name of [Liouville's theorem](https://en.wikiversity.org/wiki/Advanced_Classical_Mechanics/Liouville%27s_theorem) which says "you can't contract everywhere; if you contract somewhere, you have to expand somewhere else."^[**Liouville's theorem** applies only to Hamiltonian systems. The Hamiltonian is allowed to vary with time, and there are no restrictions regarding how strongly the degrees of freedom are coupled. Liouville's theorem states that: *The density of states in an ensemble of many identical states with different initial conditions is constant along every trajectory in phase space.* It states that if one constructs an ensemble of paths, the probability density along the trajectory remains constant. \vspace{5px} ] In interesting physical systems you get driven systems where you have a small subsystem which is the interesting part, and the rest of the contraction of an expansion, the physicists say it's the entropy flow in this other part of the system. But basically attractor networks are dynamics funneling down ... if you start somewhere in the [dynamical system](https://en.wikipedia.org/wiki/Dynamical_system)^[A **Hamiltonian system** is a dynamical system governed by Hamilton's equations. In physics, this dynamical system describes the evolution of a physical system such as a planetary system or an electron in an electromagnetic field. These systems can be studied in both Hamiltonian mechanics and dynamical systems theory.] you will soon find yourself on a pretty well determined pathway which goes somewhere; if you start somewhere else, you'll wind up on a different pathway. I don't have just all possible things, you have some defined pathways which are allowed and under which you will converge. And that's the way you make a stable computer, and that's the way you make a stable behavior.
+**[John]** And the easiest way to get that is to do it in a high dimensional space where some of these dimensions provide the dissipation which ... In a physical system, trajectories can contract everywhere - they have to contract in some places and expand in others. There was a fundamental classical theorem in statistical mechanics which goes under the name of [Liouville's theorem](https://en.wikiversity.org/wiki/Advanced_Classical_Mechanics/Liouville%27s_theorem) which says "you can't contract everywhere; if you contract somewhere, you have to expand somewhere else."[^13] In interesting physical systems you get driven systems where you have a small subsystem which is the interesting part, and the rest of the contraction of an expansion, the physicists say it's the entropy flow in this other part of the system. But basically attractor networks are dynamics funneling down ... if you start somewhere in the [dynamical system](https://en.wikipedia.org/wiki/Dynamical_system)[^14] you will soon find yourself on a pretty well determined pathway which goes somewhere; if you start somewhere else, you'll wind up on a different pathway. I don't have just all possible things, you have some defined pathways which are allowed and under which you will converge. And that's the way you make a stable computer, and that's the way you make a stable behavior.
+
+[^13]: **Liouville's theorem** applies only to Hamiltonian systems. The Hamiltonian is allowed to vary with time, and there are no restrictions regarding how strongly the degrees of freedom are coupled. Liouville's theorem states that: *The density of states in an ensemble of many identical states with different initial conditions is constant along every trajectory in phase space.* It states that if one constructs an ensemble of paths, the probability density along the trajectory remains constant. \vspace{5px}
+
+[^14]: A **Hamiltonian system** is a dynamical system governed by Hamilton's equations. In physics, this dynamical system describes the evolution of a physical system such as a planetary system or an electron in an electromagnetic field. These systems can be studied in both Hamiltonian mechanics and dynamical systems theory.
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=3066}{51:06}}
 
-**[Lex]** So, in general, looking at the physics of the emergent stability in networks, what are some interesting characteristics that ..,  what are some interesting insights from studying the dynamics of such high dimensional systems? 
+**[Lex]** So, in general, looking at the physics of the emergent stability in networks, what are some interesting characteristics that .., what are some interesting insights from studying the dynamics of such high dimensional systems?
 
 **[John]** Most dynamical systems, driven dynamical systems, where driven means they're are coupled to an energy source, their dynamics keeps going because of its coupling to the energy source. In most of them, it's very difficult to understand at all what the dynamical behavior is going to be ...
 
 **[Lex]** You have to run it ...
 
-**[John]** You have to run it. There's this subset of systems which has a clean tone known to mathematicians as the *Lyapunov functions* [Table \ref{tab:lyapunov}]. And those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Lyapunov functions were in the simple model I made in the early 80s; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down. 
+**[John]** You have to run it. There's this subset of systems which has a clean tone known to mathematicians as the *Lyapunov functions* [Table \ref{tab:lyapunov}]. And those systems you can understand convergent dynamics by saying you're going downhill on something or other. And that's what I found without ever knowing what the Lyapunov functions were in the simple model I made in the early 80s; it was an energy function so you could understand how you get this channeling under pathways without having to follow the dynamics in an infinite detail. You started rolling a ball as off of a mountain that's gonna wind up at the bottom of a valley you know that it's true without actually watching the ball fall roll down.
 
 **[Lex]** There's certain properties of the system that when you can know that?
 
 **[John]** That's right and not all systems behave that way ...
 
+```{=tex}
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \begin{margintable}%
   \centering
   \begin{tabular}{l}
     The breadth of Lyapunov's idea \\
     \midrule
-    \tabitem performance indices  \\
-    \tabitem decay/growth rate, Lyapunov exponent  \\
-    \tabitem uncertain dynamics, stochastic systems \\
-    \tabitem time delay systems  \\
-    \tabitem reachabilty  \\
-    \tabitem input/output analysis (passivity, gain)  \\
-    \tabitem state feedback synthesis  \\
-    \tabitem stochastic control  \\
+    ~~\llap{\textbullet}~~performance indices  \\
+    ~~\llap{\textbullet}~~decay/growth rate, Lyapunov exponent  \\
+    ~~\llap{\textbullet}~~uncertain dynamics, stochastic systems \\
+    ~~\llap{\textbullet}~~time delay systems  \\
+    ~~\llap{\textbullet}~~reachabilty  \\
+    ~~\llap{\textbullet}~~input/output analysis (passivity, gain)  \\
+    ~~\llap{\textbullet}~~state feedback synthesis  \\
+    ~~\llap{\textbullet}~~stochastic control  \\
     \bottomrule
   \end{tabular}
   \caption{Lyapunov functions can be used for a wide variety of problems, way beyond stability.}
   \label{tab:lyapunov}
 \end{margintable}
+```
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [120 Years of Lyapunov’s Methods](https://stanford.edu/~boyd/papers/pdf/springer_15_colloquium.pdf) at *stanford.edu*.
 ```
 
-**[Lex]** Most don't 
+**[Lex]** Most don't
 
-**[John]** Most don't. But it provides you with the metaphor for thinking about systems which are stable enough to have these attractors behave. Even if you can't find the Lyapunov function behind them, or an energy function behind them. That gives you a metaphor for thought. 
-
-
+**[John]** Most don't. But it provides you with the metaphor for thinking about systems which are stable enough to have these attractors behave. Even if you can't find the Lyapunov function behind them, or an energy function behind them. That gives you a metaphor for thought.
 
 ## **Neural Networks not a Biological System**
 
-**[Lex]** Speaking of thought, if I had a glint in my eye with excitement and said: "you know I'm really excited about this something called deep learning and neural networks, and I would like to create an intelligent system." And came to you as an adviser, what would you recommend? Is it a hopeless pursuit these neural networks, what kind of mechanism should we explore what kind of ideas should we explore?
+**[Lex]** Speaking of thought, if I had a glint in my eye with excitement and said: "you know, I'm really excited about this something called deep learning and neural networks, and I would like to create an intelligent system." And came to you as an adviser, what would you recommend? Is it a hopeless pursuit these neural networks to achieve thought? What kind of mechanism should we explore? What kind of ideas should we explore?
 
-**[John]** Well, you look at this as the simple network for ==[ininteligible]== networks. They don't support [multiple hypotheses](http://www.gly.uga.edu/railsback/railsback_chamberlin.html) very well^[The method of **multiple working hypotheses** involves the development, prior to our research, of several hypotheses that might explain the phenomenon we want to study. Many of these hypotheses will be contradictory, so that some, if not all, will prove to be false. However, the development of multiple hypotheses prior to the research lets us avoid the trap of the ruling hypothesis and thus makes it more likely that our research will lead to meaningful results. We open-mindedly envision all the possible explanations of the phenomenon to be studied, including the possibility that none of explanations are correct ("none of the above") and the possibility that some new explanation may emerge. \vspace*{15px} ]. As I have tried to work with very simple systems which do something which you might consider to be thinking. Thought has to do with the ability to do mental exploration before you make it, take a physical action. 
+**[John]** Well, you look at this as the simple network. They don't support [multiple hypotheses](http://www.gly.uga.edu/railsback/railsback_chamberlin.html) very well[^15]. As I have tried to work with very simple systems which do something which you might consider to be thinking. Thought has to do with the ability to do mental exploration before you make it, take a physical action.
+
+[^15]: The method of **multiple working hypotheses** involves the development, prior to our research, of several hypotheses that might explain the phenomenon we want to study. Many of these hypotheses will be contradictory, so that some, if not all, will prove to be false. However, the development of multiple hypotheses prior to the research lets us avoid the trap of the ruling hypothesis and thus makes it more likely that our research will lead to meaningful results. We open-mindedly envision all the possible explanations of the phenomenon to be studied, including the possibility that none of explanations are correct ("none of the above") and the possibility that some new explanation may emerge. \vspace*{15px}
 
 **[Lex]** Almost they're like we were mentioning playing chess visualizing, simulating inside your head different outcomes ...
 
@@ -544,6 +571,7 @@ Source: [120 Years of Lyapunov’s Methods](https://stanford.edu/~boyd/papers/pd
 ```{r poor_training_dataset, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Neural networks and poor training datasets."}
 knitr::include_graphics("./assets/poor_training_dataset.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Book: [Neural network working well on datasets near the training set, but poorly on farther datasets. Why?](https://stats.stackexchange.com/q/208042/154908) at *stats.stackexchange.com*.
@@ -551,73 +579,77 @@ Book: [Neural network working well on datasets near the training set, but poorly
 
 **[John]** There's a creative element. And in a simple-minded neural net you have a constellation of instances from which you've learned. And if you are within that space, if there is a new question and the question is within this space you can actually rely on that system pretty well. Come up with a good suggestion for what to do. If on the other hand, the query comes from outside the space, you have no way of knowing how the system is going to behave; there are no limitations on what could happen. With the artificial neural network is always very much ... I have a a population of examples; the test set must be drawn from the equivalent population. If the test set has examples which are from a population which is completely different, there's no way that you could expect to get the answer right. [Fig. \ref{fig:poor_training_dataset}]
 
-**[Lex]**  What they call outside the distribution?
+**[Lex]** What they call outside the distribution?
 
-**[John]** That's right, that's right. And if you see a ball rolling across the streets at dusk, if that wasn't in your training set, the idea that a child may be coming close behind that is not going to occur with the neural net. 
+**[John]** That's right, that's right. And if you see a ball rolling across the streets at dusk, if that wasn't in your training set, the idea that a child may be coming close behind that is not going to occur with the neural net.
 
 **[Lex]** There's something in your biology that allows that ...
 
-**[John]** There's something in the way of what it means to be outside of the population, of the training set, the ==[ininteligible]== is that the training set isn't just ==[ininteligible]== set of examples. There's more to it than that. It gets back to my own question of where's is it to understand something.
-
-
+**[John]** There's something in the way of what it means to be outside of the population, of the training set, the population in the training set isn't just a sort. or set of examples. There's more to it than that. It gets back to my own question of where's is it to understand something.
 
 ## **Physics and Data**
 
-**[Lex]** You know is in a small tangent, you've talked about the value of thinking of [deductive reasoning](https://en.wikipedia.org/wiki/Deductive_reasoning) in science versus large data collection^[**Deductive reasoning**, also deductive logic, is the process of reasoning from one or more statements (premises) to reach a logically certain conclusion.
-Deductive reasoning goes in the same direction as that of the conditionals, and links premises with conclusions. If all premises are true, the terms are clear, and the rules of deductive logic are followed, then the conclusion reached is necessarily true.]. So, sort of thinking about the problem but I suppose it's the physics side of you of going back to first principles and thinking, but what do you think is the value of deductive reasoning in in a scientific process?
+**[Lex]** You know is in a small tangent, you've talked about the value of thinking of [deductive reasoning](https://en.wikipedia.org/wiki/Deductive_reasoning) in science versus large data collection[^16]. So, sort of thinking about the problem but I suppose it's the physics side of you of going back to first principles and thinking, but what do you think is the value of deductive reasoning in in a scientific process?
 
-**[John]**  There obviously scientific questions in which the route to the answer to it come through the analysis of a hell of a lot of data 
+[^16]: **Deductive reasoning**, also deductive logic, is the process of reasoning from one or more statements (premises) to reach a logically certain conclusion. Deductive reasoning goes in the same direction as that of the conditionals, and links premises with conclusions. If all premises are true, the terms are clear, and the rules of deductive logic are followed, then the conclusion reached is necessarily true.
+
+**[John]** There obviously scientific questions in which the route to the answer to it come through the analysis of a hell of a lot of data
 
 **[Lex]** Right. Cosmology and that kind of stuff ...
 
-**[John]**  ==[ininteligible]== never written the kind of problem in which I've had any particular insight. Though I would say if you look at cosmology, it is was one of those. If you look at the actual things that *Jim Peebles*^[Phillip **James** Edwin **Peebles** (born April 25, 1935) is a Canadian-American astrophysicist, astronomer, and theoretical cosmologist who is currently the Albert Einstein Professor Emeritus of Science at Princeton University. He is widely regarded as one of the world's leading theoretical cosmologists in the period since 1970, with major theoretical contributions to primordial nucleosynthesis, dark matter, the cosmic microwave background, and structure formation. Peebles was awarded half of the Nobel Prize in Physics in 2019 for his theoretical discoveries in physical cosmology.[Source: en.wikipedia.org](https://en.wikipedia.org/wiki/Jim_Peebles)], one of this year's Nobel Prize, ==[ininteligible]== the kinds of things he's done. He's never crunched large data never, never, never. He's used the encapsulation of the work of others in this regard.
+**[John]** I have never written the kind of problem in which I've had any particular insight. Though I would say if you look at cosmology, it is was one of those. If you look at the actual things that *Jim Peebles*[^17], one of this year's Nobel Prize, did in physics, the kinds of things he's done. He's never crunched large data never, never, never. He's used the encapsulation of the work of others in this regard.
+
+[^17]: Phillip **James** Edwin **Peebles** (born April 25, 1935) is a Canadian-American astrophysicist, astronomer, and theoretical cosmologist who is currently the Albert Einstein Professor Emeritus of Science at Princeton University. He is widely regarded as one of the world's leading theoretical cosmologists in the period since 1970, with major theoretical contributions to primordial nucleosynthesis, dark matter, the cosmic microwave background, and structure formation. Peebles was awarded half of the Nobel Prize in Physics in 2019 for his theoretical discoveries in physical cosmology.[Source: en.wikipedia.org](https://en.wikipedia.org/wiki/Jim_Peebles)
 
 **[Lex]** But ultimately boils down to thinking through the problem, like what are the principles under which a particular phenomena operates?
 
-**[John]** Look. Physics is always going to look for ways in which you can describe the system, in which rises above the details and ==[ininteligible]==. Biology works because of the details. And physics, to the physicists, we want an explanation, which is right in spite of the details. And they will leave questions which we cannot answer as physicists because the answer cannot be found that way.
-
-
+**[John]** Look. Physics is always going to look for ways in which you can describe the system, in which rises above the details and the hard ... in the world biologists. Biology works because of the details. And physics, to the physicists, we want an explanation, which is right in spite of the details. And they will leave questions which we cannot answer as physicists because the answer cannot be found that way.
 
 ## **Brain-Machine Interfaces**
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=3600}{60:00}}
 
-**[Lex]** If you're familiar with the entire field of [brain-computer interfaces](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3497935/).^[**Brain-computer interfaces** (BCIs) acquire brain signals, analyze them, and translate them into commands that are relayed to output devices that carry out desired actions. BCIs do not use normal neuromuscular output pathways. The main goal of BCI is to replace or restore useful function to people disabled by neuromuscular disorders such as amyotrophic lateral sclerosis, cerebral palsy, stroke, or spinal cord injury.] It has become more and more intensely researched and developed recently. Especially with companies like [NeuraLink](https://en.wikipedia.org/wiki/Neuralink) with Elon Musk.^[**Neuralink Corporation** is an American neurotechnology company founded by Elon Musk and others, developing implantable brain–machine interfaces (BMIs). The company's headquarters are in San Francisco; it was started in 2016 and was first publicly reported in March 2017.] 
+**[Lex]** If you're familiar with the entire field of [brain-computer interfaces](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3497935/).[^18] It has become more and more intensely researched and developed recently. Especially with companies like [NeuraLink](https://en.wikipedia.org/wiki/Neuralink) with Elon Musk.[^19]
 
-**[John]** I know they've always been the interested both in things like getting the eyes to be able to control things, or getting the thought patterns to be able to move what had been a connected limb which is now connected through a computer. 
+[^18]: **Brain-computer interfaces** (BCIs) acquire brain signals, analyze them, and translate them into commands that are relayed to output devices that carry out desired actions. BCIs do not use normal neuromuscular output pathways. The main goal of BCI is to replace or restore useful function to people disabled by neuromuscular disorders such as amyotrophic lateral sclerosis, cerebral palsy, stroke, or spinal cord injury.
+
+[^19]: **Neuralink Corporation** is an American neurotechnology company founded by Elon Musk and others, developing implantable brain--machine interfaces (BMIs). The company's headquarters are in San Francisco; it was started in 2016 and was first publicly reported in March 2017.
+
+**[John]** I know they've always been the interested both in things like getting the eyes to be able to control things, or getting the thought patterns to be able to move what had been a connected limb which is now connected through a computer.
 
 **[Lex]** That's right. So, in the case of NeuraLink they're doing thousand-plus connections where they're able to do two-way: activate and read spikes, neural spikes. Do you have hope for that kind of computer-brain interaction in the near -or maybe even- far future? Of being able to expand the ability of the mind of cognition, or understand the mind?
 
-**[John]** This is as watching things go. When I first became interested in neurobiology most of the practitioners thought you would be able to understand neurobiology by techniques which allowed you to record only one cell at a time. People like *David Hubel*^[David Hunter Hubel FRS (February 27, 1926 – September 22, 2013) was a Canadian American neurophysiologist noted for his studies of the structure and function of the visual cortex. He was co-recipient with Torsten Wiesel of the 1981 Nobel Prize in Physiology or Medicine (shared with Roger W. Sperry), for their discoveries concerning information processing in the visual system. For much of his career, Hubel was the John Franklin Enders University Professor of Neurobiology at Harvard Medical School. In 1978, Hubel and Wiesel were awarded the Louisa Gross Horwitz Prize from Columbia University. [Source: en.wikipedia.org](https://en.wikipedia.org/wiki/David_H._Hubel) \vspace*{15px} ], very strongly reflected that point of view. And that's been taken over by a generation, a couple of generations later, by a set of people who says: "Not until we can record from 10 to the 4 ($10^4$), or 10 to the 5 ($10^5$) at a time, where we actually be able to understand how the brain actually works." And in a general sense, I think that's right. You have to look you have to begin to be able to look for the collective modes, collective operations of things. It doesn't rely on this action potential or death of cells; it relies on the collective properties of this set of cells connected to this kind of patterns, and so on. And you're not going to see did the thing what those collective activities are without recording many cells at once. 
+**[John]** This is as watching things go. When I first became interested in neurobiology most of the practitioners thought you would be able to understand neurobiology by techniques which allowed you to record only one cell at a time. People like *David Hubel*[^20], very strongly reflected that point of view. And that's been taken over by a generation, a couple of generations later, by a set of people who says: "Not until we can record from 10 to the 4 ($10^4$), or 10 to the 5 ($10^5$) at a time, where we actually be able to understand how the brain actually works." And in a general sense, I think that's right. You have to look you have to begin to be able to look for the collective modes, collective operations of things. It doesn't rely on this action potential or death of cells; it relies on the collective properties of this set of cells connected to this kind of patterns, and so on. And you're not going to see did the thing what those collective activities are without recording many cells at once.
+
+[^20]: David Hunter Hubel FRS (February 27, 1926 -- September 22, 2013) was a Canadian American neurophysiologist noted for his studies of the structure and function of the visual cortex. He was co-recipient with Torsten Wiesel of the 1981 Nobel Prize in Physiology or Medicine (shared with Roger W. Sperry), for their discoveries concerning information processing in the visual system. For much of his career, Hubel was the John Franklin Enders University Professor of Neurobiology at Harvard Medical School. In 1978, Hubel and Wiesel were awarded the Louisa Gross Horwitz Prize from Columbia University. [Source: en.wikipedia.org](https://en.wikipedia.org/wiki/David_H._Hubel) \vspace*{15px}
 
 **[Lex]** And the question is how many at once what's the threshold?
-
 
 ```{r motor_cortex, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "The motor cortex is the region of the cerebral cortex involved in the planning, control, and execution of voluntary movements."}
 knitr::include_graphics("./assets/motor_cortex.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Motor Cortex](https://en.wikipedia.org/wiki/Motor_cortex) at *en.wikipedia.org*.
 ```
 
-**[John]** The motor cortex does something which is complex and yet with the problem you're trying to address is very simple. Now, neurobiology does it in ways that's different from the way an engineer would do it. An engineer would put in six highly accurate stepping motors controlling a limb rather than 100,000 muscle fibers, each of which has to be individually controlled. So, understanding how to do things, in a way which is much more forgiving and much more neural, I think would benefit the engineering world. In the engineering world: touch. That's where their pressure sensor or to let vary them an array of of a gazillion pressure sensors, none of which are accurate, all of which are perpetually recalibrating themselves. 
+**[John]** The motor cortex does something which is complex and yet with the problem you're trying to address is very simple. Now, neurobiology does it in ways that's different from the way an engineer would do it. An engineer would put in six highly accurate stepping motors controlling a limb rather than 100,000 muscle fibers, each of which has to be individually controlled. So, understanding how to do things, in a way which is much more forgiving and much more neural, I think would benefit the engineering world. In the engineering world: touch. That's where their pressure sensor or to let vary them an array of of a gazillion pressure sensors, none of which are accurate, all of which are perpetually recalibrating themselves.
 
 **[Lex]** You're saying your hope, your advice for the engineers of the future is to the embrace the large chaos of a messy error-prone system like those of the biological systems? Like that's probably the way to solve some of these challenges?
 
 **[John]** I think you'll be able to make better computations towards robotics that way than by trying to force things into a robotics, where joint motors are powerful and stepping motors are accurate.
 
-
-
 ## **Equations as the Confluence of Biology and Physics**
 
-**[Lex]** But then the physicist in you will be lost forever in such systems because there's no simple fundamentals to exploring systems that are so large ... 
+**[Lex]** But then the physicist in you will be lost forever in such systems because there's no simple fundamentals to exploring systems that are so large ...
 
-**[John]** Well..., there's a lot of physics. The *Navier-Stokes equations* [Fig. \ref{fig:navier_stokes}]: the equations of non-linear hydrodynamics; huge amount of physics in them. All the physics of atoms and molecules has been lost but they have been replaced by this other set of equations which is just as true as the equations that ==[ininteligible]== them. Those equations are going to be harder to find in neural biology but the physicist in me says there are probably some equations of that sort.
+**[John]** Well..., there's a lot of physics. The *Navier-Stokes equations* [Fig. \ref{fig:navier_stokes}]: the equations of non-linear hydrodynamics; huge amount of physics in them. All the physics of atoms and molecules has been lost but they have been replaced by this other set of equations which is just as true as the equations that embottle them. Those equations are going to be harder to find in neural biology but the physicist in me says there are probably some equations of that sort.
 
 ```{r navier_stokes, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Three-dimensional unsteady form of the Navier-Stokes Equations."}
 knitr::include_graphics("./assets/navier_stokes.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Navier-Stokes](https://www.grc.nasa.gov/www/k-12/airplane/nseqs.html) at *grc.nasa.gov*.
@@ -625,37 +657,38 @@ Source: [Navier-Stokes](https://www.grc.nasa.gov/www/k-12/airplane/nseqs.html) a
 
 **[Lex]** They're out there ...
 
-**[John]** They're out there. And if the physics is going to contribute anything it may contribute to trying to find out what those equations are and how to capture them from biology 
+**[John]** They're out there. And if the physics is going to contribute anything it may contribute to trying to find out what those equations are and how to capture them from biology
 
-**[Lex]** Would you say that's one of the main open problems of our age is to discover those equations? 
+**[Lex]** Would you say that's one of the main open problems of our age is to discover those equations?
 
-**[John]** Yeah. If you look at as molecules and psychological behavior. These two are somehow related. There are layers of detail, there are layers of collectiveness. And to capture that at some vague way, several stages on the way up to see how these things that can actually be linked together. 
+**[John]** Yeah. If you look at as molecules and psychological behavior. These two are somehow related. There are layers of detail, there are layers of collectiveness. And to capture that at some vague way, several stages on the way up to see how these things that can actually be linked together.
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=3900}{65:00}}
 
-**[Lex]** So, it seems in our universe there's a lot of elegant equations that can describe the fundamental way that things behave -which is a surprise. I mean it's compressible into equations: it's simple and beautiful. But there is still an open question whether that link is equally between molecules and the brain is equally compressible into elegant equations. But you're both a physicist and a dreamer.  You have a sense that ...
+**[Lex]** So, it seems in our universe there's a lot of elegant equations that can describe the fundamental way that things behave -which is a surprise. I mean it's compressible into equations: it's simple and beautiful. But there is still an open question whether that link is equally between molecules and the brain is equally compressible into elegant equations. But you're both a physicist and a dreamer. You have a sense that ...
 
-**[John]** Yes. But I can only dream physics dreams. There was an interesting book called *Einstein's Dreams*^[The novel fictionalizes Albert Einstein as a young scientist who is troubled by dreams as he works on his theory of relativity in 1905. The book consists of 30 chapters, each exploring one dream about time that Einstein had during this period. The framework of the book consists of a prelude, three interludes, and an epilogue.], which alternates between chapters on his life and descriptions of the way time might have been but isn't [Fig. \ref{fig:einstein_dreams_book}]. As linking between these things, of course, ideas that Einstein might have had to think about the essence of time as he was thinking about time. 
+**[John]** Yes. But I can only dream physics dreams. There was an interesting book called *Einstein's Dreams*[^21], which alternates between chapters on his life and descriptions of the way time might have been but isn't [Fig. \ref{fig:einstein_dreams_book}]. As linking between these things, of course, ideas that Einstein might have had to think about the essence of time as he was thinking about time.
+
+[^21]: The novel fictionalizes Albert Einstein as a young scientist who is troubled by dreams as he works on his theory of relativity in 1905. The book consists of 30 chapters, each exploring one dream about time that Einstein had during this period. The framework of the book consists of a prelude, three interludes, and an epilogue.
 
 ```{r einstein_dreams_book, fig.margin = TRUE, out.width="70%", cache=TRUE, echo=FALSE, fig.cap = "'Einstein's Dreams' book."}
 knitr::include_graphics("./assets/einstein_dreams_book.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Einstein's Dreams](https://en.wikipedia.org/wiki/Einstein%27s_Dreams) at *en.wikipedia.org*.
 ```
 
-
-
 ## **A Digital Version of Immortality**
 
-**[Lex]** So, speaking of the essence of time in neurobiology, you're one human, famous impactful human, but just one human with a brain, living the human condition. But you're ultimately mortal like all of us. Has studying the mind as a mechanism changes the way you think about your own mortality? 
+**[Lex]** So, speaking of the essence of time in neurobiology, you're one human, famous impactful human, but just one human with a brain, living the human condition. But you're ultimately mortal like all of us. Has studying the mind as a mechanism changes the way you think about your own mortality?
 
-**[John]** It has, really. Because as particularly as you get older in the body comes apart in various ways, I became much more aware of the fact that what if somebody is contained in the brain and not in the body that you worry about burying. And it is to a certain extent true that for people who write things down: equations, dreams, notepads, diaries. Fractions of their thought does continue to live after they're dead and gone -after their body is dead and gone. And there's a sea change in there going on in my lifetime between - when my father died - when, except for the things that were actually written by him, there were very few facts about him that had been recorded. And the number of facts which are recorded about each and every one of us, forever, -now, as far as I can see-, in the digital world. And so the whole question of "what is death?" It may be different for people a generation ago and in a generation ahead. 
+**[John]** It has, really. Because as particularly as you get older in the body comes apart in various ways, I became much more aware of the fact that what if somebody is contained in the brain and not in the body that you worry about burying. And it is to a certain extent true that for people who write things down: equations, dreams, notepads, diaries. Fractions of their thought does continue to live after they're dead and gone -after their body is dead and gone. And there's a sea change in there going on in my lifetime between - when my father died - when, except for the things that were actually written by him, there were very few facts about him that had been recorded. And the number of facts which are recorded about each and every one of us, forever, -now, as far as I can see-, in the digital world. And so the whole question of "what is death?" It may be different for people a generation ago and in a generation ahead.
 
 **[Lex]** Maybe we have become immortal under some definition?
 
-**[John]** Yeah, yeah. 
+**[John]** Yeah, yeah.
 
 ## **On the meaning of life**
 
@@ -668,12 +701,13 @@ Source: [Einstein's Dreams](https://en.wikipedia.org/wiki/Einstein%27s_Dreams) a
 ```{r cortex_layered, fig.margin = TRUE, out.width="120%", cache=TRUE, echo=FALSE, fig.cap = "Layered cortex and interconnections."}
 knitr::include_graphics("./assets/cortex_layered.jpg")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [How to build a General Intelligence: Circuits and Pathways](https://agi.io/2015/12/22/how-to-build-a-general-intelligence-circuits-and-pathways/) at *agi.io*.
 ```
 
-**[John]** I've been amazed at how hard it is to define things in a living system. In the sense that one hydrogen atom is pretty much like another. One bacterium is not so much like another bacterium, even of the same nominal species. In fact, the whole notion of what is a species gets a little bit fuzzy. And species exists in the absence of certain classes of environments. And pretty soon one winds up with the biology, which the whole thing is living. What if there's actually any element of it, which by itself would be said to be living? It becomes a little bit vague in my mind. 
+**[John]** I've been amazed at how hard it is to define things in a living system. In the sense that one hydrogen atom is pretty much like another. One bacterium is not so much like another bacterium, even of the same nominal species. In fact, the whole notion of what is a species gets a little bit fuzzy. And species exists in the absence of certain classes of environments. And pretty soon one winds up with the biology, which the whole thing is living. What if there's actually any element of it, which by itself would be said to be living? It becomes a little bit vague in my mind.
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=4200}{70:00}}
 
@@ -684,24 +718,21 @@ Source: [How to build a General Intelligence: Circuits and Pathways](https://agi
 ```{r cortex_spinal_cord, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Cortex to spinal cord."}
 knitr::include_graphics("./assets/cortex_spinal_cord.png")
 ```
+
 ```{marginfigure}
 \vspace*{-15px}\noindent
 Source: [Neuroanatomy Primer: Structure and Function of the Human Nervous System](https://link.springer.com/chapter/10.1007/978-0-387-76978-3_3) at *springer.com*.
 ```
 
-**[Lex]** Yeah, maybe to understand and to build thought you have to build the universe along with the neocortex; it's all interlinked through the spinal cord. John is a huge honor talking today. Thank you so much for your time, I really appreciate it. 
+**[Lex]** Yeah, maybe to understand and to build thought you have to build the universe along with the neocortex; it's all interlinked through the spinal cord. John is a huge honor talking today. Thank you so much for your time, I really appreciate it.
 
-**[John]** Well thank you for the challenge of talking with you and the interesting to see whether you can ==[ininteligible]== with 5 minutes out of coherent sense to anywhere. 
+**[John]** Well thank you for the challenge of talking with you and the interesting to see whether you can winnow 5 minutes out of coherent sense to anywhere.
 
 **[Lex]** Beautiful!
 
-
-
 # End of Interview
 
-Thanks for listening to this conversation with John Hopfield. And thank you to our presenting sponsor CashApp.\marginnote{\textbf{CashApp} is a sponsor of this podcast.} Download it, used LexPodcast you'll get ten dollars, and ten dollars will go to FIRST, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. if you enjoyed this podcast subscribe in YouTube, give it five stars in Apple podcast, support on Patreon, or simply connect with me on Twitter at [LexFridman](https://twitter.com/lexfridman). 
-
-
+Thanks for listening to this conversation with John Hopfield. And thank you to our presenting sponsor CashApp.\marginnote{\textbf{CashApp} is a sponsor of this podcast.} Download it, used LexPodcast you'll get ten dollars, and ten dollars will go to FIRST, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. if you enjoyed this podcast subscribe in YouTube, give it five stars in Apple podcast, support on Patreon, or simply connect with me on Twitter at [LexFridman](https://twitter.com/lexfridman).
 
 # Epilogue
 
@@ -712,33 +743,23 @@ And now let me leave you with some words of wisdom from John Hopfield in his art
 knitr::include_graphics("./assets/now-what.png")
 ```
 
-> "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents."" 
+> "Choosing problems is the primary determinant of what one accomplishes in science. I have generally had a relatively short attention span on science problems, thus, i have always been on the lookout for more interesting questions either as my present ones get worked out, or as it get classified by me as intractable given my particular talents.""
 
 He then goes on to say:
 
 > "What I have done in science relies entirely on experimental and theoretical studies by experts. I have a great respect for them. Especially for those who are willing to attempt communication with someone who is not an expert in the field. I would only add that experts are good at answering questions. If you're brash enough, ask your own. Don't worry too much about how you found them.""
 
-
 **[Lex]** Thank you for listening and hope to see you next time.
-
 
 # References
 
-
-
 # Links
 
-*   [Podcast](https://lexfridman.com/john-hopfield/)
-*   [Video](https://www.youtube.com/watch?v=DKyzcbNr8WE&t=12s)
-*   [Transcript in GitHub]( https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman)
-*   [Transcript in LinkedIn](https://www.linkedin.com/pulse/transcript-interview-john-hopfield-lex-fridman-alfonso-r-reyes)
-*   [Tweet](https://twitter.com/OilGains/status/1249787240076775431?s=20)
-* [Rmarkdown version of the interview in Tufte style](https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman/blob/master/John_Hopfield-Physics_View_of_the_Mind_and_Neurobiology-AI_Podcast_76_with_Lex_Fridman-tint.Rmd)
-* [PDF generated from Rmarkdown written in Tufte style](https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman/blob/master/John_Hopfield-Physics_View_of_the_Mind_and_Neurobiology-AI_Podcast_76_with_Lex_Fridman-tint.pdf)
-* [LinkedIn post announcing PDF in Tufte style](https://www.linkedin.com/posts/alfonsorreyes_transcript-of-interview-to-john-hopfield-activity-6661662844087476224-hUmq)
-
-
-
-
-
-
+-   [Podcast](https://lexfridman.com/john-hopfield/)
+-   [Video](https://www.youtube.com/watch?v=DKyzcbNr8WE&t=12s)
+-   [Transcript in GitHub](https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman)
+-   [Transcript in LinkedIn](https://www.linkedin.com/pulse/transcript-interview-john-hopfield-lex-fridman-alfonso-r-reyes)
+-   [Tweet](https://twitter.com/OilGains/status/1249787240076775431?s=20)
+-   [Rmarkdown version of the interview in Tufte style](https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman/blob/master/John_Hopfield-Physics_View_of_the_Mind_and_Neurobiology-AI_Podcast_76_with_Lex_Fridman-tint.Rmd)
+-   [PDF generated from Rmarkdown written in Tufte style](https://github.com/f0nzie/transcript_interview_john_hopfield_by_lex_fridman/blob/master/John_Hopfield-Physics_View_of_the_Mind_and_Neurobiology-AI_Podcast_76_with_Lex_Fridman-tint.pdf)
+-   [LinkedIn post announcing PDF in Tufte style](https://www.linkedin.com/posts/alfonsorreyes_transcript-of-interview-to-john-hopfield-activity-6661662844087476224-hUmq)
