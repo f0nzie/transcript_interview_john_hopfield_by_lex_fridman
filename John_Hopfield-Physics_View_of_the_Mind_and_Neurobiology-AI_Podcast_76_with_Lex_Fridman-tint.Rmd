@@ -77,7 +77,7 @@ Source: [Generation of Action Potentials](https://teachmephysiology.com/nervous-
 
 **[Lex]** You mentioned the evolutionary process. The evolutionary process that builds on top of biological systems leverages the weird mess of it, somehow? So, how do you make sense of that ability to leverage all the different kinds of complexities in the biological brain?
 
-**[John]** Well ... Look. At the biological [molecular level](https://plato.stanford.edu/entries/molecular-biology/) *[Fig.* \ref{fig:molecular_level}] you have a piece of DNA which encodes a particular protein. You could duplicate that piece of DNA, and now one part of it encodes that protein. But the other one could itself change a little bit and then start coding for a molecule which is just slightly different.
+**[John]** Well ... Look. At the biological [molecular level](https://plato.stanford.edu/entries/molecular-biology/) [*Fig.* \ref{fig:molecular_level}] you have a piece of DNA which encodes a particular protein. You could duplicate that piece of DNA, and now one part of it encodes that protein. But the other one could itself change a little bit and then start coding for a molecule which is just slightly different.
 
 ```{r molecular_level, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Construction of new DNA molecules involves two replication forks formed by the opening of the double-stranded DNA at the origin, the parental DNA."}
 knitr::include_graphics("./assets/OSC_Microbio_11_02_RepFork.jpg")
@@ -100,7 +100,6 @@ Now, if that molecule was just slightly different has a function which helped an
 
 **[Lex]** It's better at it. It's better at that kind of integration. So, maybe you've already said it, but what would be the most beautiful aspect or mechanism of the human mind? Is it the adaptive ..., the ability to adapt, as you've described? Or there's some other little quirk that you particularly like?
 
-**[John]** [Adaptation](https://en.wikipedia.org/wiki/Adaptation) is everything when you get down to it.
 
 ```{r evolutionary_developments, fig.margin = TRUE, out.width="100%", cache=TRUE, echo=FALSE, fig.cap = "Biological evolution of greater intelligence in human individuals has promoted innovation and allowed mastery of more complex concepts and skills."}
 knitr::include_graphics("./assets/evolutionary_developments.jpg")
@@ -112,7 +111,8 @@ Source: [Evolutionary neuroscience of cumulative culture](https://www.pnas.org/c
 \vspace*{15px}
 ```
 
-But there are differences between adaptation, where your learning goes on generations over generations in evolutionary time *[Fig.* \ref{fig:evolutionary_developments}], or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime **[Fig.** \ref{fig:lifetime_development}]. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system.
+**[John]** [Adaptation](https://en.wikipedia.org/wiki/Adaptation) is everything when you get down to it.
+But there are differences between adaptation, where your learning goes on generations over generations in evolutionary time [*Fig.* \ref{fig:evolutionary_developments}], or your learning goes on at the timescale of one individual who must learn from the environment during that individual's lifetime [*Fig.* \ref{fig:lifetime_development}]. And biology has both kinds of learning in it. The thing which makes neurobiology hard is that a mathematical system that were built on this other kind of evolutionary system.
 
 \marginnote{\href{https://youtu.be/DKyzcbNr8WE?t=603}{10:02}}
 
@@ -128,7 +128,7 @@ Source: [Cognitive Development](https://www.sciencedirect.com/topics/psychology/
 
 **[Lex]** What do you mean by mathematical system? Where's the math in the biology?
 
-**[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. *[Fig.* \ref{fig:multidimensional_connections_cortex}]
+**[John]** Well, when you talk to a computer scientist about neural networks it's all math. The fact that biology actually came about from evolution, and the fact that biology is about a system which you can build in three dimensions. [*Fig.* \ref{fig:multidimensional_connections_cortex}]
 
 ```{r multidimensional_connections_cortex, fig.margin = TRUE, out.width="85%", cache=TRUE, echo=FALSE, fig.cap = "digital reconstructions of rat neocortical microcircuitry that closely resemble the biological tissue in terms of the numbers, types, and densities of neurons and their synaptic connectivity."}
 knitr::include_graphics("./assets/multidimensional_connections_cortex.jpg")
@@ -151,7 +151,7 @@ If you look at computer chips, computer chips are basically two dimensional stru
 
 **[Lex]** The human life timescale is however a thing you can tease apart and study?
 
-**[John]** Yes, you can do it. There's developmental neurobiology [Fig. \ref{fig:visual_auditory_cortex}] which understands all of these connections. Now, the structure evolves from a combination of what the genetics is like and the real; the fact is you're building a system in three dimensions.
+**[John]** Yes, you can do it. There's developmental neurobiology [*Fig.* \ref{fig:visual_auditory_cortex}] which understands all of these connections. Now, the structure evolves from a combination of what the genetics is like and the real; the fact is you're building a system in three dimensions.
 
 ```{r visual_auditory_cortex, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = "Stained brain sections in marmosets indicating the primary visual cortex and the primary auditory cortex."}
 knitr::include_graphics("./assets/visual_auditory_cortex.png")
@@ -165,7 +165,7 @@ Source: [Whole-brain metallomic analysis of the common marmoset (Callithrix jacc
 
 **[Lex]** In just days and months, those early days of human life are really interesting ...
 
-**[John]** They are. And of course there are times of immense cell multiplication. There are also times of the craziest cell death in the brain; it's during infancy. [Fig. \ref{fig:early_development}]
+**[John]** They are. And of course there are times of immense cell multiplication. There are also times of the craziest cell death in the brain; it's during infancy. [*Fig.* \ref{fig:early_development}]
 
 ```{r early_development, fig.margin = TRUE, out.width="110%", cache=TRUE, echo=FALSE, fig.cap = " Timeline of early development and neurogenesis including cell division and cell migration in the human brain."}
 knitr::include_graphics("./assets/early_development.jpg")
@@ -381,7 +381,7 @@ knitr::include_graphics("./assets/Boltzmannexamplev2.png")
 Source: [Boltzmann Machines](https://www.cs.toronto.edu/~hinton/csc321/readings/boltz321.pdf) at *cs.toronto.edu*.
 ```
 
-**[Lex]** So, these kinds of networks actually led to a lot of the work that is going on now in neural networks, artificial neural networks. So, the follow-on work with restrictive Boltzmann Machines [Fig. \ref{fig:Boltzmannexamplev2}] and Deep Belief Nets, followed on from the from these ideas of the Hopfield network. What do you think about this continued progress of that work towards now reinvigorated exploration of feed-forward neural networks and recurrent neural networks, convolutional neural networks, and kinds of networks that are helping solve image recognition, natural language processing, all that kind of stuff?
+**[Lex]** So, these kinds of networks actually led to a lot of the work that is going on now in neural networks, artificial neural networks. So, the follow-on work with restrictive Boltzmann Machines [Fig. \ref{fig:Boltzmannexamplev2}], and Deep Belief Nets, followed on from the from these ideas of the Hopfield network. What do you think about this continued progress of that work towards now reinvigorated exploration of feed-forward neural networks and recurrent neural networks, convolutional neural networks, and kinds of networks that are helping solve image recognition, natural language processing, all that kind of stuff?
 
 **[John]** it's always intrigued me one of the most long-lived of the learning systems is the [Boltzmann Machine](http://www.scholarpedia.org/article/Boltzmann_machine), which is intrinsically a [feedback network](http://feedbacknet.stanford.edu/). And was the brilliance of Hinton[^3] and Sejnowski[^4] to understand how to do learning in that.[^5] It's still a useful way to understand learning, and the learning that you understand has something to do with the way that feed-forward systems work. But it's not always exactly simple to express that intuition. It always amuses me, as Geoff Hinton keeps going back to that, well yet again, on a form of the Boltzmann machine because really ... which has feedback and interesting probabilities in it. This is a lovely encapsulation of something in computational.
 
@@ -414,7 +414,7 @@ Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2
 
 **[Lex]** So part of you wonders if the feedback is actually more essential than the number of neurons or the depth -the dynamics of the feedback?
 
-**[John]** The dynamics of the feedback ... if you don't have feedback it's a little bit like a building a big computer and running it up through one clock cycle, and then you can't do anything until you reload something coming in. How do you use the fact that there are multiple clocks? How do I use the fact that you can close your eyes, stop listening to me, and think about a chessboard for two minutes without any input whatsoever?
+**[John]** The dynamics of the feedback ... if you don't have feedback it's a little bit like a building a big computer and running it up through one clock cycle, and then you can't do anything until you reload something coming in. How do you use the fact that there are multiple clocks? How do I use the fact that you can close your eyes, stop listening to me, and think about a chessboard for two minutes without any input whatsoever?  \vspace{15px}
 
 ## **On Consciousness**
 
@@ -428,13 +428,13 @@ Source: [Feedback based Neural Networks](https://web.stanford.edu/class/cs331b/2
 
 **[John]** Every once in a while like I get interested in consciousness[^6] and then I go -and I've done that for years-, and ask one of my betters what's their view on consciousness. It's interesting collecting them.
 
-[^6]: The words "conscious" and "consciousness" are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective "conscious" is heterogeneous in its range, being applied both to whole organisms---creature consciousness---and to particular mental states and processes---state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/) \vspace{10px}
+[^6]: The words "conscious" and "consciousness" are umbrella terms that cover a wide variety of mental phenomena. Both are used with a diversity of meanings, and the adjective "conscious" is heterogeneous in its range, being applied both to whole organisms---creature consciousness---and to particular mental states and processes---state consciousness (Rosenthal 1986, Gennaro 1995, Carruthers 2000). [Source: standford.edu](https://plato.stanford.edu/entries/consciousness/) \vspace{5px}
 
 **[Lex]** What's consciousness? Let's try to take a brief step into that room ...
 
-**[John]** Well, that's Marvin Minsky[^7]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon[^8], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it.
+**[John]** Well, that's Marvin Minsky[^7]; his view on consciousness. And Marvin said "consciousness is basically overrated". It may be an epi-phenomenon[^8], after all, all the things your brain does ... they're actually hard computations, you do not do consciously. And there's so much evidence that even the things ..., the simple things you do, you can make decisions, you can make committed decisions about them. The neurobiologist can say "He's now committed, he's going to move the hand left", before you know it. 
 
-[^7]: Marvin Lee Minsky (August 9, 1927 -- January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/) \vspace{10px}
+[^7]: Marvin Lee Minsky (August 9, 1927 -- January 24, 2016) was an American cognitive scientist concerned largely with research of artificial intelligence (AI), co-founder of the Massachusetts Institute of Technology's AI laboratory, and author of several texts concerning AI and philosophy. [Source: mit.edu](https://web.media.mit.edu/~minsky/) \vspace{5px}
 
 [^8]: An epi-phenomenon is a secondary phenomenon that occurs alongside or in parallel to a primary phenomenon. [Source: wikipedia.org](https://en.wikipedia.org/wiki/Epiphenomenon)
 
@@ -467,7 +467,8 @@ Book: [The Mind Is Flat: The Remarkable Shallowness of the Improvising Brain](ht
 
 **[John]** That's a very hard one. I asked Francis Crick[^9] about consciousness. He launched forward a long monologue about handling the peas, and how Mendel[^10] knew that there was something, and how biologists understood there was something in inheritance which was just very, very different, and that the effect that inherited traits didn't just wash out into a grave where this or this propagated. That was absolutely fundamental in biology and it took generations of biologists to understand that there was genetics. And it took another generation or two to understand that genetics came from DNA. But very shortly after Mendel, thinking biologists did realize that there was a deep problem about inheritance. And Francis, in all likelihood, would have said "that's why I'm we're working on consciousness." But of course he didn't have any smoking gun in the sense of Mendel. And that's the weakness of his position[^11]. If you read this book [Fig. \ref{fig:quest_for_consciousness}] which he wrote with Koch, I think ...
 
-[^9]: Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick) \vspace{10px}
+
+[^9]: Francis Crick (1916-2004) was one of Britain's great scientists. He is best known for his work with James Watson which led to the identification of the structure of DNA in 1953, drawing on the work of Maurice Wilkins, Rosalind Franklin and others. This discovery proved to be of enormous importance to biomedical research - and to life and health - and earned Crick, Watson and Wilkins the Nobel Prize in Physiology or Medicine in 1962. [Source: crick.ac.uk](https://www.crick.ac.uk/about-us/our-history/about-dr-francis-crick) \vspace{1px}
 
 [^10]: Gregor Mendel, (born July 22, 1822, Heinzendorf, Silesia, Austrian Empire [now Hynčice, Czech Republic]---died January 6, 1884, botanist, teacher, and Augustinian prelate, the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism. [Source: britannica.com](https://www.britannica.com/biography/Gregor-Mendel) \vspace{10px}
 
@@ -506,7 +507,7 @@ Book: [The Quest for Consciousness](https://www.amazon.com/dp/1936221047/ref=rdr
 
 **[John]** And the easiest way to get that is to do it in a high dimensional space where some of these dimensions provide the dissipation which ... In a physical system, trajectories can contract everywhere - they have to contract in some places and expand in others. There was a fundamental classical theorem in statistical mechanics which goes under the name of [Liouville's theorem](https://en.wikiversity.org/wiki/Advanced_Classical_Mechanics/Liouville%27s_theorem) which says "you can't contract everywhere; if you contract somewhere, you have to expand somewhere else."[^13] In interesting physical systems you get driven systems where you have a small subsystem which is the interesting part, and the rest of the contraction of an expansion, the physicists say it's the entropy flow in this other part of the system. But basically attractor networks are dynamics funneling down ... if you start somewhere in the [dynamical system](https://en.wikipedia.org/wiki/Dynamical_system)[^14] you will soon find yourself on a pretty well determined pathway which goes somewhere; if you start somewhere else, you'll wind up on a different pathway. I don't have just all possible things, you have some defined pathways which are allowed and under which you will converge. And that's the way you make a stable computer, and that's the way you make a stable behavior.
 
-[^13]: **Liouville's theorem** applies only to Hamiltonian systems. The Hamiltonian is allowed to vary with time, and there are no restrictions regarding how strongly the degrees of freedom are coupled. Liouville's theorem states that: *The density of states in an ensemble of many identical states with different initial conditions is constant along every trajectory in phase space.* It states that if one constructs an ensemble of paths, the probability density along the trajectory remains constant. \vspace{5px}
+[^13]: **Liouville's theorem** applies only to Hamiltonian systems. The Hamiltonian is allowed to vary with time, and there are no restrictions regarding how strongly the degrees of freedom are coupled. Liouville's theorem states that: *The density of states in an ensemble of many identical states with different initial conditions is constant along every trajectory in phase space.* It states that if one constructs an ensemble of paths, the probability density along the trajectory remains constant. \vspace{10px}
 
 [^14]: A **Hamiltonian system** is a dynamical system governed by Hamilton's equations. In physics, this dynamical system describes the evolution of a physical system such as a planetary system or an electron in an electromagnetic field. These systems can be studied in both Hamiltonian mechanics and dynamical systems theory.
 
